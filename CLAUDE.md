@@ -3,7 +3,12 @@
 This file tells Claude how to edit the videos in this repo. Read it before starting any edit.
 
 ## Input
-- Raw media goes in `raw/`: one or more camera angles and a separate audio track.
+- Raw media goes in these folders:
+  - `raw/camera/`: the camera angles. `cam1` is the main camera.
+  - `raw/audio/`: the separated audio.
+  - `raw/music/`: optional background music.
+  - `raw/assets/`: logos and fonts, plus `speakers.txt` for the speaker names.
+- Naming rules are in `README.md`.
 - Large files are stored with Git LFS. If `raw/` is empty or missing, stop and ask the user where the media is. Never use placeholder or invented footage.
 - If the user gives a Google Drive folder or a direct URL instead, download the files into `raw/`.
 
