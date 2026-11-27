@@ -1,0 +1,7265 @@
+{
+ "fps": 30,
+ "total": 1426.4666666666667,
+ "keep_ranges_session": [
+  [
+   11.95,
+   604.45
+  ],
+  [
+   661.95,
+   766.3
+  ],
+  [
+   805.2,
+   1125.3
+  ],
+  [
+   1155.2,
+   1333.3
+  ],
+  [
+   1369.45,
+   1531.7
+  ],
+  [
+   1542.3,
+   1626.3
+  ]
+ ],
+ "keep_ranges_after_pause_trim": [
+  [
+   11.95,
+   27.15
+  ],
+  [
+   28.41,
+   52.97
+  ],
+  [
+   53.89,
+   61.43
+  ],
+  [
+   62.63,
+   72.37
+  ],
+  [
+   75.05,
+   138.95
+  ],
+  [
+   139.93,
+   228.55
+  ],
+  [
+   229.97,
+   249.29
+  ],
+  [
+   251.61,
+   303.75
+  ],
+  [
+   305.33,
+   381.35
+  ],
+  [
+   382.77,
+   425.79
+  ],
+  [
+   427.45,
+   495.51
+  ],
+  [
+   497.45,
+   604.45
+  ],
+  [
+   661.95,
+   672.77
+  ],
+  [
+   673.93,
+   766.3
+  ],
+  [
+   805.2,
+   888.36
+  ],
+  [
+   889.54,
+   956.36
+  ],
+  [
+   957.86,
+   976.64
+  ],
+  [
+   978.5,
+   1006.84
+  ],
+  [
+   1008.48,
+   1045.75
+  ],
+  [
+   1047.31,
+   1095.41
+  ],
+  [
+   1097.91,
+   1125.3
+  ],
+  [
+   1155.2,
+   1164.91
+  ],
+  [
+   1167.19,
+   1207.17
+  ],
+  [
+   1208.27,
+   1260.35
+  ],
+  [
+   1262.19,
+   1285.15
+  ],
+  [
+   1295.24,
+   1308.8
+  ],
+  [
+   1314.45,
+   1323.63
+  ],
+  [
+   1325.67,
+   1333.3
+  ],
+  [
+   1369.45,
+   1376.01
+  ],
+  [
+   1376.98,
+   1384.03
+  ],
+  [
+   1385.07,
+   1481.79
+  ],
+  [
+   1483.45,
+   1504.97
+  ],
+  [
+   1507.07,
+   1531.7
+  ],
+  [
+   1542.3,
+   1559.15
+  ],
+  [
+   1561.39,
+   1574.17
+  ],
+  [
+   1575.3375,
+   1578.839
+  ],
+  [
+   1580.34,
+   1626.3
+  ]
+ ],
+ "cuts": [
+  {
+   "master_from": 604.45,
+   "master_to": 661.95,
+   "why": "Alice's fumbled first attempt at the question / restart"
+  },
+  {
+   "master_from": 766.3,
+   "master_to": 805.2,
+   "why": "off-script chatter between questions"
+  },
+  {
+   "master_from": 1125.3,
+   "master_to": 1155.2,
+   "why": "host restarting the last question twice"
+  },
+  {
+   "master_from": 1333.3,
+   "master_to": 1369.45,
+   "why": "false ending + off-mic crew chatter before the empathy topic"
+  },
+  {
+   "master_from": 1531.7,
+   "master_to": 1542.3,
+   "why": "off-topic chatter"
+  }
+ ],
+ "segments": [
+  {
+   "section": "intro",
+   "audio": "intro",
+   "a0": 9.0,
+   "a1": 33.6,
+   "tl": 0.0
+  },
+  {
+   "section": "pengenalan",
+   "audio": "pengenalan_diri",
+   "a0": 0.06,
+   "a1": 17.9,
+   "tl": 24.950000000000003
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 11.95,
+   "a1": 27.15,
+   "tl": 43.14
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 28.41,
+   "a1": 52.97,
+   "tl": 58.34
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 53.89,
+   "a1": 61.43,
+   "tl": 82.9
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 62.63,
+   "a1": 72.37,
+   "tl": 90.44
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 75.05,
+   "a1": 138.95,
+   "tl": 100.18
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 139.93,
+   "a1": 228.55,
+   "tl": 164.07999999999998
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 229.97,
+   "a1": 249.29,
+   "tl": 252.7
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 251.61,
+   "a1": 303.75,
+   "tl": 272.02
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 305.33,
+   "a1": 381.35,
+   "tl": 324.15999999999997
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 382.77,
+   "a1": 425.79,
+   "tl": 400.18
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 427.45,
+   "a1": 495.51,
+   "tl": 443.20000000000005
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 497.45,
+   "a1": 604.45,
+   "tl": 511.26000000000005
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 661.95,
+   "a1": 672.77,
+   "tl": 618.2600000000001
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 673.93,
+   "a1": 766.3,
+   "tl": 629.08
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 805.2,
+   "a1": 888.36,
+   "tl": 721.45
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 889.54,
+   "a1": 956.36,
+   "tl": 804.61
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 957.86,
+   "a1": 976.64,
+   "tl": 871.4300000000001
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 978.5,
+   "a1": 1006.84,
+   "tl": 890.21
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 1008.48,
+   "a1": 1045.75,
+   "tl": 918.5500000000001
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 1047.31,
+   "a1": 1095.41,
+   "tl": 955.82
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 1097.91,
+   "a1": 1125.3,
+   "tl": 1003.9200000000002
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 1155.2,
+   "a1": 1164.91,
+   "tl": 1031.31
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 1167.19,
+   "a1": 1207.17,
+   "tl": 1041.02
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 1208.27,
+   "a1": 1260.35,
+   "tl": 1081.0
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 1262.19,
+   "a1": 1285.15,
+   "tl": 1133.08
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 1295.24,
+   "a1": 1308.8,
+   "tl": 1156.04
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 1314.45,
+   "a1": 1323.63,
+   "tl": 1169.6
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 1325.67,
+   "a1": 1333.3,
+   "tl": 1178.78
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 1369.45,
+   "a1": 1376.01,
+   "tl": 1186.4099999999999
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 1376.98,
+   "a1": 1384.03,
+   "tl": 1192.9699999999998
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 1385.07,
+   "a1": 1481.79,
+   "tl": 1200.0199999999998
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 1483.45,
+   "a1": 1504.97,
+   "tl": 1296.7399999999998
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 1507.07,
+   "a1": 1531.7,
+   "tl": 1318.2599999999998
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 1542.3,
+   "a1": 1559.15,
+   "tl": 1342.8899999999999
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 1561.39,
+   "a1": 1574.17,
+   "tl": 1359.74
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 1575.3375,
+   "a1": 1578.839,
+   "tl": 1372.52
+  },
+  {
+   "section": "sesi",
+   "audio": "sesi_podcast",
+   "a0": 1580.34,
+   "a1": 1626.3,
+   "tl": 1376.0214999999998
+  }
+ ],
+ "chapters": [
+  {
+   "master_T": 11.95,
+   "tl": 43.14,
+   "num": "01",
+   "title": "Mengenali Tetamu"
+  },
+  {
+   "master_T": 314.0,
+   "tl": 332.83,
+   "num": "02",
+   "title": "Apa Itu Romantisisme?"
+  },
+  {
+   "master_T": 661.95,
+   "tl": 618.26,
+   "num": "03",
+   "title": "Akal & Perasaan"
+  },
+  {
+   "master_T": 805.2,
+   "tl": 721.45,
+   "num": "04",
+   "title": "Manusia & Alam"
+  },
+  {
+   "master_T": 958.0,
+   "tl": 871.57,
+   "num": "05",
+   "title": "Berani Menjadi Diri Sendiri"
+  },
+  {
+   "master_T": 1116.5,
+   "tl": 1022.51,
+   "num": "06",
+   "title": "Romantisisme Masa Kini"
+  },
+  {
+   "master_T": 1369.45,
+   "tl": 1186.41,
+   "num": "07",
+   "title": "Empati"
+  },
+  {
+   "master_T": 1542.3,
+   "tl": 1342.89,
+   "num": "08",
+   "title": "Penutup"
+  }
+ ],
+ "regions": [
+  [
+   11.95,
+   26.0,
+   "H"
+  ],
+  [
+   26.0,
+   28.6,
+   "D"
+  ],
+  [
+   28.6,
+   41.3,
+   "H"
+  ],
+  [
+   41.3,
+   65.5,
+   "D"
+  ],
+  [
+   65.5,
+   68.0,
+   "H"
+  ],
+  [
+   68.0,
+   95.5,
+   "D"
+  ],
+  [
+   95.5,
+   100.2,
+   "H"
+  ],
+  [
+   100.2,
+   106.5,
+   "D"
+  ],
+  [
+   106.5,
+   111.6,
+   "H"
+  ],
+  [
+   111.6,
+   165.0,
+   "D"
+  ],
+  [
+   165.0,
+   173.5,
+   "H"
+  ],
+  [
+   173.5,
+   229.9,
+   "D"
+  ],
+  [
+   229.9,
+   238.7,
+   "H"
+  ],
+  [
+   238.7,
+   251.8,
+   "A"
+  ],
+  [
+   251.8,
+   264.8,
+   "H"
+  ],
+  [
+   264.8,
+   302.7,
+   "D"
+  ],
+  [
+   302.7,
+   323.0,
+   "H"
+  ],
+  [
+   323.0,
+   355.0,
+   "A"
+  ],
+  [
+   355.0,
+   377.0,
+   "H"
+  ],
+  [
+   377.0,
+   599.6,
+   "D"
+  ],
+  [
+   599.6,
+   604.45,
+   "A"
+  ],
+  [
+   661.95,
+   672.6,
+   "H"
+  ],
+  [
+   672.6,
+   742.6,
+   "D"
+  ],
+  [
+   742.6,
+   749.0,
+   "H"
+  ],
+  [
+   749.0,
+   766.4,
+   "D"
+  ],
+  [
+   805.2,
+   835.6,
+   "H"
+  ],
+  [
+   835.6,
+   926.8,
+   "D"
+  ],
+  [
+   926.8,
+   928.3,
+   "H"
+  ],
+  [
+   928.3,
+   938.5,
+   "D"
+  ],
+  [
+   938.5,
+   940.2,
+   "H"
+  ],
+  [
+   940.2,
+   948.8,
+   "D"
+  ],
+  [
+   948.8,
+   978.8,
+   "H"
+  ],
+  [
+   978.8,
+   1112.2,
+   "D"
+  ],
+  [
+   1112.2,
+   1125.3,
+   "H"
+  ],
+  [
+   1155.2,
+   1166.8,
+   "H"
+  ],
+  [
+   1166.8,
+   1272.0,
+   "D"
+  ],
+  [
+   1272.0,
+   1315.6,
+   "H"
+  ],
+  [
+   1315.6,
+   1333.3,
+   "D"
+  ],
+  [
+   1369.45,
+   1531.7,
+   "D"
+  ],
+  [
+   1542.3,
+   1551.5,
+   "H"
+  ],
+  [
+   1551.5,
+   1580.0,
+   "D"
+  ],
+  [
+   1580.0,
+   1626.3,
+   "H"
+  ]
+ ],
+ "shots": [
+  {
+   "view": "BLACK",
+   "tl": 0.0,
+   "dur": 0.45,
+   "frames": 14,
+   "id": 0
+  },
+  {
+   "view": "3710",
+   "src": "3710",
+   "file": "IMG_3710.MOV",
+   "hdr": false,
+   "lut": "3710",
+   "src_in": 0.0349,
+   "dur": 7.05,
+   "tl": 0.45,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1.07
+   ],
+   "fade_in": 0.8,
+   "fade_out": 0,
+   "master_T": 9.45,
+   "frames": 211,
+   "id": 1
+  },
+  {
+   "view": "3710_H",
+   "src": "3710",
+   "file": "IMG_3710.MOV",
+   "hdr": false,
+   "lut": "3710",
+   "src_in": 7.0849,
+   "dur": 8.8,
+   "tl": 7.5,
+   "rect": [
+    320,
+    542,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.1,
+    1.0
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 16.5,
+   "frames": 264,
+   "id": 2
+  },
+  {
+   "view": "3710",
+   "src": "3710",
+   "file": "IMG_3710.MOV",
+   "hdr": false,
+   "lut": "3710",
+   "src_in": 15.8849,
+   "dur": 5.0,
+   "tl": 16.3,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 25.3,
+   "frames": 150,
+   "id": 3
+  },
+  {
+   "view": "3710_A",
+   "src": "3710",
+   "file": "IMG_3710.MOV",
+   "hdr": false,
+   "lut": "3710",
+   "src_in": 20.8849,
+   "dur": 3.3,
+   "tl": 21.3,
+   "rect": [
+    1508,
+    582,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.06
+   ],
+   "fade_in": 0,
+   "fade_out": 0.3,
+   "master_T": 30.3,
+   "frames": 99,
+   "id": 4
+  },
+  {
+   "view": "BLACK",
+   "tl": 24.6,
+   "dur": 0.35,
+   "frames": 10,
+   "id": 5
+  },
+  {
+   "view": "3709",
+   "src": "3709",
+   "file": "IMG_3709.MOV",
+   "hdr": false,
+   "lut": "3709",
+   "src_in": 0.0065,
+   "dur": 7.74,
+   "tl": 24.95,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1.07
+   ],
+   "fade_in": 0.3,
+   "fade_out": 0,
+   "master_T": 0.06,
+   "frames": 233,
+   "id": 6
+  },
+  {
+   "view": "3709_A",
+   "src": "3709",
+   "file": "IMG_3709.MOV",
+   "hdr": false,
+   "lut": "3709",
+   "src_in": 7.7465,
+   "dur": 5.35,
+   "tl": 32.69,
+   "rect": [
+    1468,
+    600,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.08,
+    1.0
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 7.8,
+   "frames": 160,
+   "id": 7
+  },
+  {
+   "view": "3709",
+   "src": "3709",
+   "file": "IMG_3709.MOV",
+   "hdr": false,
+   "lut": "3709",
+   "src_in": 13.0965,
+   "dur": 4.75,
+   "tl": 38.04,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1.05
+   ],
+   "fade_in": 0,
+   "fade_out": 0.3,
+   "master_T": 13.15,
+   "frames": 143,
+   "id": 8
+  },
+  {
+   "view": "BLACK",
+   "tl": 42.79,
+   "dur": 0.35,
+   "frames": 10,
+   "id": 9
+  },
+  {
+   "view": "3717",
+   "src": "3717",
+   "file": "IMG_3717.MOV",
+   "hdr": false,
+   "lut": "3717",
+   "src_in": 2.2381,
+   "dur": 5.0,
+   "tl": 43.14,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1.08
+   ],
+   "fade_in": 0.35,
+   "fade_out": 0,
+   "master_T": 11.95,
+   "frames": 150,
+   "id": 10
+  },
+  {
+   "view": "CU_H",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 5.132,
+   "dur": 10.2,
+   "tl": 48.14,
+   "rect": [
+    1000,
+    672,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 16.95,
+   "frames": 306,
+   "id": 11,
+   "face": [
+    2310,
+    1101
+   ]
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 16.592,
+   "dur": 5.5,
+   "tl": 58.34,
+   "rect": [
+    64,
+    724,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 28.41,
+   "frames": 165,
+   "id": 12,
+   "face": [
+    867,
+    1152
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 22.092,
+   "dur": 7.29,
+   "tl": 63.84,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.15,
+    1.15
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 33.91,
+   "frames": 219,
+   "id": 13
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 29.382,
+   "dur": 9.0,
+   "tl": 71.13,
+   "rect": [
+    0,
+    718,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 41.2,
+   "frames": 270,
+   "id": 14,
+   "face": [
+    705,
+    1147
+   ]
+  },
+  {
+   "view": "3718",
+   "src": "3718",
+   "file": "IMG_3718.MOV",
+   "hdr": false,
+   "lut": "3718",
+   "src_in": 6.1159,
+   "dur": 2.77,
+   "tl": 80.13,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 50.2,
+   "frames": 83,
+   "id": 15
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 42.072,
+   "dur": 7.54,
+   "tl": 82.9,
+   "rect": [
+    0,
+    702,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 53.89,
+   "frames": 226,
+   "id": 16,
+   "face": [
+    768,
+    1130
+   ]
+  },
+  {
+   "view": "3718",
+   "src": "3718",
+   "file": "IMG_3718.MOV",
+   "hdr": false,
+   "lut": "3718",
+   "src_in": 18.5459,
+   "dur": 2.77,
+   "tl": 90.44,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.18,
+    1.18
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 62.63,
+   "frames": 83,
+   "id": 17
+  },
+  {
+   "view": "CU_H",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 53.582,
+   "dur": 2.5,
+   "tl": 93.21,
+   "rect": [
+    990,
+    742,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 65.4,
+   "frames": 75,
+   "id": 18
+  },
+  {
+   "view": "3718",
+   "src": "3718",
+   "file": "IMG_3718.MOV",
+   "hdr": false,
+   "lut": "3718",
+   "src_in": 23.8159,
+   "dur": 4.47,
+   "tl": 95.71,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 67.9,
+   "frames": 134,
+   "id": 19
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 63.232,
+   "dur": 6.5,
+   "tl": 100.18,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.12,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 75.05,
+   "frames": 195,
+   "id": 20
+  },
+  {
+   "view": "CU_H",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 69.732,
+   "dur": 2.6,
+   "tl": 106.68,
+   "rect": [
+    1038,
+    702,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 81.55,
+   "frames": 78,
+   "id": 21,
+   "face": [
+    2349,
+    1131
+   ]
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 72.332,
+   "dur": 5.5,
+   "tl": 109.28,
+   "rect": [
+    0,
+    712,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 84.15,
+   "frames": 165,
+   "id": 22,
+   "face": [
+    771,
+    1140
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 77.832,
+   "dur": 5.75,
+   "tl": 114.78,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 89.65,
+   "frames": 173,
+   "id": 23
+  },
+  {
+   "view": "CU_H",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 83.582,
+   "dur": 4.7,
+   "tl": 120.53,
+   "rect": [
+    990,
+    742,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 95.4,
+   "frames": 141,
+   "id": 24
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 88.282,
+   "dur": 6.3,
+   "tl": 125.23,
+   "rect": [
+    0,
+    706,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 100.1,
+   "frames": 189,
+   "id": 25,
+   "face": [
+    789,
+    1135
+   ]
+  },
+  {
+   "view": "3720",
+   "src": "3720",
+   "file": "IMG_3720.MOV",
+   "hdr": false,
+   "lut": "3720",
+   "src_in": 2.2246,
+   "dur": 5.1,
+   "tl": 131.53,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1.08
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 106.4,
+   "frames": 153,
+   "id": 26
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 99.682,
+   "dur": 5.5,
+   "tl": 136.63,
+   "rect": [
+    0,
+    720,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 111.5,
+   "frames": 165,
+   "id": 27,
+   "face": [
+    766,
+    1148
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 105.182,
+   "dur": 7.0,
+   "tl": 142.13,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.12,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 117.0,
+   "frames": 210,
+   "id": 28
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 112.182,
+   "dur": 9.0,
+   "tl": 149.13,
+   "rect": [
+    0,
+    712,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 124.0,
+   "frames": 270,
+   "id": 29,
+   "face": [
+    784,
+    1141
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 121.182,
+   "dur": 5.95,
+   "tl": 158.13,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1.12
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 133.0,
+   "frames": 178,
+   "id": 30
+  },
+  {
+   "view": "3721",
+   "src": "3721",
+   "file": "IMG_3721.MOV",
+   "hdr": false,
+   "lut": "3721",
+   "src_in": 5.0396,
+   "dur": 8.0,
+   "tl": 164.08,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 139.93,
+   "frames": 240,
+   "id": 31
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 136.112,
+   "dur": 5.5,
+   "tl": 172.08,
+   "rect": [
+    0,
+    718,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 147.93,
+   "frames": 165,
+   "id": 32,
+   "face": [
+    774,
+    1147
+   ]
+  },
+  {
+   "view": "3721",
+   "src": "3721",
+   "file": "IMG_3721.MOV",
+   "hdr": false,
+   "lut": "3721",
+   "src_in": 18.5396,
+   "dur": 4.6764,
+   "tl": 177.58,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.18,
+    1.18
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 153.43,
+   "frames": 141,
+   "id": 33
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 146.2884,
+   "dur": 6.7936,
+   "tl": 182.2564,
+   "rect": [
+    0,
+    718,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 158.106,
+   "frames": 204,
+   "id": 34,
+   "face": [
+    795,
+    1146
+   ]
+  },
+  {
+   "view": "CU_H",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 153.082,
+   "dur": 8.5,
+   "tl": 189.05,
+   "rect": [
+    1024,
+    696,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 164.9,
+   "frames": 254,
+   "id": 35,
+   "face": [
+    2334,
+    1125
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 161.582,
+   "dur": 8.0,
+   "tl": 197.55,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.12,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 173.4,
+   "frames": 240,
+   "id": 36
+  },
+  {
+   "view": "CU_H",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 169.582,
+   "dur": 2.6,
+   "tl": 205.55,
+   "rect": [
+    990,
+    742,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 181.4,
+   "frames": 78,
+   "id": 37
+  },
+  {
+   "view": "3722",
+   "src": "3722",
+   "file": "IMG_3722.MOV",
+   "hdr": false,
+   "lut": "3722",
+   "src_in": 10.4897,
+   "dur": 7.0,
+   "tl": 208.15,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1.08
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 184.0,
+   "frames": 210,
+   "id": 38
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 179.182,
+   "dur": 9.0,
+   "tl": 215.15,
+   "rect": [
+    6,
+    712,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 191.0,
+   "frames": 270,
+   "id": 39,
+   "face": [
+    810,
+    1140
+   ]
+  },
+  {
+   "view": "3722",
+   "src": "3722",
+   "file": "IMG_3722.MOV",
+   "hdr": false,
+   "lut": "3722",
+   "src_in": 26.4897,
+   "dur": 6.5,
+   "tl": 224.15,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 200.0,
+   "frames": 196,
+   "id": 40
+  },
+  {
+   "view": "CU_A",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 194.682,
+   "dur": 2.6,
+   "tl": 230.65,
+   "rect": [
+    1728,
+    742,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 206.5,
+   "frames": 78,
+   "id": 41
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 197.282,
+   "dur": 5.5,
+   "tl": 233.25,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1.12
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 209.1,
+   "frames": 164,
+   "id": 42
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 202.782,
+   "dur": 7.0,
+   "tl": 238.75,
+   "rect": [
+    0,
+    716,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 214.6,
+   "frames": 210,
+   "id": 43,
+   "face": [
+    796,
+    1144
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 209.782,
+   "dur": 6.95,
+   "tl": 245.75,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.12,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 221.6,
+   "frames": 209,
+   "id": 44
+  },
+  {
+   "view": "CU_H",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 218.152,
+   "dur": 4.5,
+   "tl": 252.7,
+   "rect": [
+    1108,
+    722,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 229.97,
+   "frames": 135,
+   "id": 45,
+   "face": [
+    2418,
+    1151
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 222.652,
+   "dur": 4.13,
+   "tl": 257.2,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1.12
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 234.47,
+   "frames": 124,
+   "id": 46
+  },
+  {
+   "view": "CU_A",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 226.782,
+   "dur": 6.0,
+   "tl": 261.33,
+   "rect": [
+    1728,
+    742,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 238.6,
+   "frames": 180,
+   "id": 47
+  },
+  {
+   "view": "3724",
+   "src": "3724",
+   "file": "IMG_3724.MOV",
+   "hdr": false,
+   "lut": "3724",
+   "src_in": 5.0455,
+   "dur": 4.69,
+   "tl": 267.33,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 244.6,
+   "frames": 141,
+   "id": 48
+  },
+  {
+   "view": "CU_A",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 239.792,
+   "dur": 6.0,
+   "tl": 272.02,
+   "rect": [
+    1728,
+    742,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 251.61,
+   "frames": 180,
+   "id": 49
+  },
+  {
+   "view": "CU_H",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 245.792,
+   "dur": 7.09,
+   "tl": 278.02,
+   "rect": [
+    990,
+    742,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 257.61,
+   "frames": 212,
+   "id": 50
+  },
+  {
+   "view": "3725",
+   "src": "3725",
+   "file": "IMG_3725.MOV",
+   "hdr": false,
+   "lut": "3725",
+   "src_in": 1.596,
+   "dur": 8.0,
+   "tl": 285.11,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 264.7,
+   "frames": 240,
+   "id": 51
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 260.882,
+   "dur": 5.5,
+   "tl": 293.11,
+   "rect": [
+    0,
+    726,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 272.7,
+   "frames": 165,
+   "id": 52,
+   "face": [
+    802,
+    1155
+   ]
+  },
+  {
+   "view": "3725",
+   "src": "3725",
+   "file": "IMG_3725.MOV",
+   "hdr": false,
+   "lut": "3725",
+   "src_in": 15.096,
+   "dur": 7.0,
+   "tl": 298.61,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.18,
+    1.18
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 278.2,
+   "frames": 210,
+   "id": 53
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 273.382,
+   "dur": 9.0,
+   "tl": 305.61,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1.12
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 285.2,
+   "frames": 270,
+   "id": 54
+  },
+  {
+   "view": "3725",
+   "src": "3725",
+   "file": "IMG_3725.MOV",
+   "hdr": false,
+   "lut": "3725",
+   "src_in": 31.096,
+   "dur": 9.55,
+   "tl": 314.61,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 294.2,
+   "frames": 287,
+   "id": 55
+  },
+  {
+   "view": "CU_H",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 293.512,
+   "dur": 6.5,
+   "tl": 324.16,
+   "rect": [
+    972,
+    670,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 305.33,
+   "frames": 195,
+   "id": 56,
+   "face": [
+    2281,
+    1099
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 300.012,
+   "dur": 4.5,
+   "tl": 330.66,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.15,
+    1.15
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 311.83,
+   "frames": 135,
+   "id": 57
+  },
+  {
+   "view": "CU_H",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 304.512,
+   "dur": 6.57,
+   "tl": 335.16,
+   "rect": [
+    1090,
+    654,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 316.33,
+   "frames": 197,
+   "id": 58,
+   "face": [
+    2400,
+    1082
+   ]
+  },
+  {
+   "view": "CU_A",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 311.082,
+   "dur": 6.0,
+   "tl": 341.73,
+   "rect": [
+    1728,
+    704,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 322.9,
+   "frames": 180,
+   "id": 59,
+   "face": [
+    3127,
+    1132
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 317.082,
+   "dur": 5.0,
+   "tl": 347.73,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.12,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 328.9,
+   "frames": 150,
+   "id": 60
+  },
+  {
+   "view": "CU_A",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 322.082,
+   "dur": 6.0,
+   "tl": 352.73,
+   "rect": [
+    1728,
+    722,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 333.9,
+   "frames": 180,
+   "id": 61,
+   "face": [
+    3073,
+    1150
+   ]
+  },
+  {
+   "view": "3726",
+   "src": "3726",
+   "file": "IMG_3726.MOV",
+   "hdr": false,
+   "lut": "3726",
+   "src_in": 2.8084,
+   "dur": 5.0,
+   "tl": 358.73,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1.08
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 339.9,
+   "frames": 150,
+   "id": 62
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 333.082,
+   "dur": 6.0,
+   "tl": 363.73,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 344.9,
+   "frames": 180,
+   "id": 63
+  },
+  {
+   "view": "3726",
+   "src": "3726",
+   "file": "IMG_3726.MOV",
+   "hdr": false,
+   "lut": "3726",
+   "src_in": 13.8084,
+   "dur": 4.0,
+   "tl": 369.73,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 350.9,
+   "frames": 120,
+   "id": 64
+  },
+  {
+   "view": "CU_H",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 343.082,
+   "dur": 6.5,
+   "tl": 373.73,
+   "rect": [
+    1030,
+    686,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 354.9,
+   "frames": 195,
+   "id": 65,
+   "face": [
+    2340,
+    1113
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 349.582,
+   "dur": 4.5,
+   "tl": 380.23,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1.12
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 361.4,
+   "frames": 135,
+   "id": 66
+  },
+  {
+   "view": "3726",
+   "src": "3726",
+   "file": "IMG_3726.MOV",
+   "hdr": false,
+   "lut": "3726",
+   "src_in": 28.8084,
+   "dur": 5.0,
+   "tl": 384.73,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 365.9,
+   "frames": 150,
+   "id": 67
+  },
+  {
+   "view": "CU_H",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 359.082,
+   "dur": 6.0,
+   "tl": 389.73,
+   "rect": [
+    1008,
+    644,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 370.9,
+   "frames": 180,
+   "id": 68,
+   "face": [
+    2317,
+    1072
+   ]
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 365.082,
+   "dur": 4.45,
+   "tl": 395.73,
+   "rect": [
+    0,
+    718,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 376.9,
+   "frames": 133,
+   "id": 69,
+   "face": [
+    799,
+    1146
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 370.952,
+   "dur": 6.5,
+   "tl": 400.18,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1.12
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 382.77,
+   "frames": 195,
+   "id": 70
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 377.452,
+   "dur": 8.0,
+   "tl": 406.68,
+   "rect": [
+    0,
+    744,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 389.27,
+   "frames": 240,
+   "id": 71,
+   "face": [
+    804,
+    1173
+   ]
+  },
+  {
+   "view": "3728",
+   "src": "3728",
+   "file": "IMG_3728.MOV",
+   "hdr": false,
+   "lut": "3728",
+   "src_in": 2.1755,
+   "dur": 5.5,
+   "tl": 414.68,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 397.27,
+   "frames": 165,
+   "id": 72
+  },
+  {
+   "view": "CU_A",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 390.952,
+   "dur": 2.6,
+   "tl": 420.18,
+   "rect": [
+    1728,
+    742,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 402.77,
+   "frames": 78,
+   "id": 73
+  },
+  {
+   "view": "3728",
+   "src": "3728",
+   "file": "IMG_3728.MOV",
+   "hdr": false,
+   "lut": "3728",
+   "src_in": 10.2755,
+   "dur": 9.0,
+   "tl": 422.78,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1.08
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 405.37,
+   "frames": 270,
+   "id": 74
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 402.552,
+   "dur": 6.5,
+   "tl": 431.78,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 414.37,
+   "frames": 195,
+   "id": 75
+  },
+  {
+   "view": "3728",
+   "src": "3728",
+   "file": "IMG_3728.MOV",
+   "hdr": false,
+   "lut": "3728",
+   "src_in": 25.7755,
+   "dur": 4.92,
+   "tl": 438.28,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 420.87,
+   "frames": 148,
+   "id": 76
+  },
+  {
+   "view": "CU_H",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 415.632,
+   "dur": 2.6,
+   "tl": 443.2,
+   "rect": [
+    990,
+    742,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 427.45,
+   "frames": 78,
+   "id": 77
+  },
+  {
+   "view": "3728",
+   "src": "3728",
+   "file": "IMG_3728.MOV",
+   "hdr": false,
+   "lut": "3728",
+   "src_in": 34.9555,
+   "dur": 7.0,
+   "tl": 445.8,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1.08
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 430.05,
+   "frames": 210,
+   "id": 78
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 425.232,
+   "dur": 9.0,
+   "tl": 452.8,
+   "rect": [
+    0,
+    718,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 437.05,
+   "frames": 270,
+   "id": 79,
+   "face": [
+    780,
+    1146
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 434.232,
+   "dur": 6.5,
+   "tl": 461.8,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.12,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 446.05,
+   "frames": 195,
+   "id": 80
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 440.732,
+   "dur": 8.0,
+   "tl": 468.3,
+   "rect": [
+    2,
+    718,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 452.55,
+   "frames": 240,
+   "id": 81,
+   "face": [
+    805,
+    1147
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 448.732,
+   "dur": 5.5,
+   "tl": 476.3,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1.12
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 460.55,
+   "frames": 165,
+   "id": 82
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 454.232,
+   "dur": 7.0,
+   "tl": 481.8,
+   "rect": [
+    10,
+    718,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 466.05,
+   "frames": 210,
+   "id": 83,
+   "face": [
+    813,
+    1146
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 461.232,
+   "dur": 9.0,
+   "tl": 488.8,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.12,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 473.05,
+   "frames": 270,
+   "id": 84
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 470.232,
+   "dur": 6.5,
+   "tl": 497.8,
+   "rect": [
+    0,
+    724,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 482.05,
+   "frames": 195,
+   "id": 85,
+   "face": [
+    802,
+    1152
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 476.732,
+   "dur": 6.96,
+   "tl": 504.3,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1.12
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 488.55,
+   "frames": 209,
+   "id": 86
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 485.632,
+   "dur": 5.5,
+   "tl": 511.26,
+   "rect": [
+    0,
+    706,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 497.45,
+   "frames": 165,
+   "id": 87,
+   "face": [
+    778,
+    1135
+   ]
+  },
+  {
+   "view": "3730",
+   "src": "3730",
+   "file": "IMG_3730.MOV",
+   "hdr": false,
+   "lut": "3730",
+   "src_in": 9.4321,
+   "dur": 7.0,
+   "tl": 516.76,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 502.95,
+   "frames": 210,
+   "id": 88
+  },
+  {
+   "view": "CU_A",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 498.132,
+   "dur": 2.6,
+   "tl": 523.76,
+   "rect": [
+    1728,
+    742,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 509.95,
+   "frames": 78,
+   "id": 89
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 500.732,
+   "dur": 6.5,
+   "tl": 526.36,
+   "rect": [
+    0,
+    714,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 512.55,
+   "frames": 195,
+   "id": 90,
+   "face": [
+    801,
+    1143
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 507.232,
+   "dur": 8.0,
+   "tl": 532.86,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 519.05,
+   "frames": 240,
+   "id": 91
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 515.232,
+   "dur": 5.5,
+   "tl": 540.86,
+   "rect": [
+    0,
+    720,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 527.05,
+   "frames": 165,
+   "id": 92,
+   "face": [
+    756,
+    1148
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 520.732,
+   "dur": 7.0,
+   "tl": 546.36,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.15,
+    1.15
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 532.55,
+   "frames": 210,
+   "id": 93
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 527.732,
+   "dur": 9.0,
+   "tl": 553.36,
+   "rect": [
+    0,
+    720,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 539.55,
+   "frames": 270,
+   "id": 94,
+   "face": [
+    789,
+    1149
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 536.732,
+   "dur": 6.5,
+   "tl": 562.36,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 548.55,
+   "frames": 195,
+   "id": 95
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 543.232,
+   "dur": 8.0,
+   "tl": 568.86,
+   "rect": [
+    0,
+    712,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 555.05,
+   "frames": 240,
+   "id": 96,
+   "face": [
+    781,
+    1141
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 551.232,
+   "dur": 5.5,
+   "tl": 576.86,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.15,
+    1.15
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 563.05,
+   "frames": 165,
+   "id": 97
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 556.732,
+   "dur": 7.0,
+   "tl": 582.36,
+   "rect": [
+    0,
+    714,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 568.55,
+   "frames": 210,
+   "id": 98,
+   "face": [
+    796,
+    1143
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 563.732,
+   "dur": 9.0,
+   "tl": 589.36,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 575.55,
+   "frames": 270,
+   "id": 99
+  },
+  {
+   "view": "CU_D",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 572.732,
+   "dur": 6.5,
+   "tl": 598.36,
+   "rect": [
+    0,
+    724,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 584.55,
+   "frames": 195,
+   "id": 100,
+   "face": [
+    778,
+    1153
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 579.232,
+   "dur": 8.45,
+   "tl": 604.86,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.15,
+    1.15
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 591.05,
+   "frames": 253,
+   "id": 101
+  },
+  {
+   "view": "CU_A",
+   "src": "main",
+   "file": "IMG_2836.mov",
+   "hdr": true,
+   "lut": "main",
+   "src_in": 587.682,
+   "dur": 4.95,
+   "tl": 613.31,
+   "rect": [
+    1710,
+    700,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 599.5,
+   "frames": 149,
+   "id": 102,
+   "face": [
+    3019,
+    1129
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 50.173,
+   "dur": 4.5,
+   "tl": 618.26,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 661.95,
+   "frames": 135,
+   "id": 103
+  },
+  {
+   "view": "CU_H",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 54.673,
+   "dur": 6.32,
+   "tl": 622.76,
+   "rect": [
+    906,
+    706,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 666.45,
+   "frames": 189,
+   "id": 104,
+   "face": [
+    2215,
+    1135
+   ]
+  },
+  {
+   "view": "CU_D",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 62.153,
+   "dur": 6.5,
+   "tl": 629.08,
+   "rect": [
+    0,
+    708,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 673.93,
+   "frames": 195,
+   "id": 105,
+   "face": [
+    771,
+    1137
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 68.653,
+   "dur": 8.0,
+   "tl": 635.58,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1.12
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 680.43,
+   "frames": 240,
+   "id": 106
+  },
+  {
+   "view": "3731",
+   "src": "3731",
+   "file": "IMG_3731.MOV",
+   "hdr": false,
+   "lut": "3731",
+   "src_in": 7.9805,
+   "dur": 5.5,
+   "tl": 643.58,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 688.43,
+   "frames": 165,
+   "id": 107
+  },
+  {
+   "view": "CU_D",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 82.153,
+   "dur": 7.0,
+   "tl": 649.08,
+   "rect": [
+    0,
+    706,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 693.93,
+   "frames": 210,
+   "id": 108,
+   "face": [
+    783,
+    1134
+   ]
+  },
+  {
+   "view": "3731",
+   "src": "3731",
+   "file": "IMG_3731.MOV",
+   "hdr": false,
+   "lut": "3731",
+   "src_in": 20.4805,
+   "dur": 9.0,
+   "tl": 656.08,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.18,
+    1.18
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 700.93,
+   "frames": 270,
+   "id": 109
+  },
+  {
+   "view": "CU_D",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 98.153,
+   "dur": 6.5,
+   "tl": 665.08,
+   "rect": [
+    0,
+    726,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 709.93,
+   "frames": 195,
+   "id": 110,
+   "face": [
+    762,
+    1154
+   ]
+  },
+  {
+   "view": "3731",
+   "src": "3731",
+   "file": "IMG_3731.MOV",
+   "hdr": false,
+   "lut": "3731",
+   "src_in": 35.9805,
+   "dur": 8.0,
+   "tl": 671.58,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 716.43,
+   "frames": 240,
+   "id": 111
+  },
+  {
+   "view": "CU_D",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 112.653,
+   "dur": 5.5,
+   "tl": 679.58,
+   "rect": [
+    0,
+    732,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 724.43,
+   "frames": 165,
+   "id": 112,
+   "face": [
+    759,
+    1161
+   ]
+  },
+  {
+   "view": "3731",
+   "src": "3731",
+   "file": "IMG_3731.MOV",
+   "hdr": false,
+   "lut": "3731",
+   "src_in": 49.4805,
+   "dur": 7.0,
+   "tl": 685.08,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.18,
+    1.18
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 729.93,
+   "frames": 210,
+   "id": 113
+  },
+  {
+   "view": "CU_D",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 125.153,
+   "dur": 5.57,
+   "tl": 692.08,
+   "rect": [
+    0,
+    742,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 736.93,
+   "frames": 168,
+   "id": 114,
+   "face": [
+    742,
+    1170
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 130.723,
+   "dur": 6.4,
+   "tl": 697.65,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 742.5,
+   "frames": 192,
+   "id": 115
+  },
+  {
+   "view": "CU_D",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 137.123,
+   "dur": 8.0,
+   "tl": 704.05,
+   "rect": [
+    0,
+    712,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 748.9,
+   "frames": 240,
+   "id": 116,
+   "face": [
+    725,
+    1141
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 145.123,
+   "dur": 5.5,
+   "tl": 712.05,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.15,
+    1.15
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 756.9,
+   "frames": 164,
+   "id": 117
+  },
+  {
+   "view": "CU_D",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 150.623,
+   "dur": 3.9,
+   "tl": 717.55,
+   "rect": [
+    0,
+    726,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 762.4,
+   "frames": 118,
+   "id": 118,
+   "face": [
+    786,
+    1155
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 193.423,
+   "dur": 4.5,
+   "tl": 721.45,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 805.2,
+   "frames": 134,
+   "id": 119
+  },
+  {
+   "view": "CU_H",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 197.923,
+   "dur": 4.5,
+   "tl": 725.95,
+   "rect": [
+    990,
+    742,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 809.7,
+   "frames": 136,
+   "id": 120
+  },
+  {
+   "view": "WIDE",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 202.423,
+   "dur": 5.0,
+   "tl": 730.45,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.15,
+    1.15
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 814.2,
+   "frames": 150,
+   "id": 121
+  },
+  {
+   "view": "CU_H",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 207.423,
+   "dur": 6.5,
+   "tl": 735.45,
+   "rect": [
+    1106,
+    656,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 819.2,
+   "frames": 194,
+   "id": 122,
+   "face": [
+    2416,
+    1084
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 213.923,
+   "dur": 4.5,
+   "tl": 741.95,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 825.7,
+   "frames": 136,
+   "id": 123
+  },
+  {
+   "view": "CU_H",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 218.423,
+   "dur": 5.3,
+   "tl": 746.45,
+   "rect": [
+    990,
+    742,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 830.2,
+   "frames": 158,
+   "id": 124
+  },
+  {
+   "view": "3733",
+   "src": "3733",
+   "file": "IMG_3733.MOV",
+   "hdr": false,
+   "lut": "3733",
+   "src_in": 0.7392,
+   "dur": 6.5,
+   "tl": 751.75,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.18,
+    1.18
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 835.5,
+   "frames": 196,
+   "id": 125
+  },
+  {
+   "view": "CU_D",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 230.223,
+   "dur": 8.0,
+   "tl": 758.25,
+   "rect": [
+    0,
+    712,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 842.0,
+   "frames": 240,
+   "id": 126,
+   "face": [
+    775,
+    1140
+   ]
+  },
+  {
+   "view": "3733",
+   "src": "3733",
+   "file": "IMG_3733.MOV",
+   "hdr": false,
+   "lut": "3733",
+   "src_in": 15.2392,
+   "dur": 5.5,
+   "tl": 766.25,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 850.0,
+   "frames": 164,
+   "id": 127
+  },
+  {
+   "view": "WIDE",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 243.723,
+   "dur": 7.0,
+   "tl": 771.75,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.12,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 855.5,
+   "frames": 210,
+   "id": 128
+  },
+  {
+   "view": "CU_A",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 250.723,
+   "dur": 2.6,
+   "tl": 778.75,
+   "rect": [
+    1680,
+    760,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 862.5,
+   "frames": 78,
+   "id": 129,
+   "face": [
+    2991,
+    1188
+   ]
+  },
+  {
+   "view": "3733",
+   "src": "3733",
+   "file": "IMG_3733.MOV",
+   "hdr": false,
+   "lut": "3733",
+   "src_in": 30.3392,
+   "dur": 6.5,
+   "tl": 781.35,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1.08
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 865.1,
+   "frames": 196,
+   "id": 130
+  },
+  {
+   "view": "CU_D",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 259.823,
+   "dur": 8.0,
+   "tl": 787.85,
+   "rect": [
+    0,
+    716,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 871.6,
+   "frames": 240,
+   "id": 131,
+   "face": [
+    761,
+    1145
+   ]
+  },
+  {
+   "view": "3733",
+   "src": "3733",
+   "file": "IMG_3733.MOV",
+   "hdr": false,
+   "lut": "3733",
+   "src_in": 44.8392,
+   "dur": 5.5,
+   "tl": 795.85,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 879.6,
+   "frames": 164,
+   "id": 132
+  },
+  {
+   "view": "CU_D",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 273.323,
+   "dur": 3.26,
+   "tl": 801.35,
+   "rect": [
+    0,
+    712,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 885.1,
+   "frames": 98,
+   "id": 133,
+   "face": [
+    799,
+    1140
+   ]
+  },
+  {
+   "view": "3733",
+   "src": "3733",
+   "file": "IMG_3733.MOV",
+   "hdr": false,
+   "lut": "3733",
+   "src_in": 54.7792,
+   "dur": 9.0,
+   "tl": 804.61,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1.08
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 889.54,
+   "frames": 270,
+   "id": 134
+  },
+  {
+   "view": "WIDE",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 286.763,
+   "dur": 6.5,
+   "tl": 813.61,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 898.54,
+   "frames": 195,
+   "id": 135
+  },
+  {
+   "view": "3733",
+   "src": "3733",
+   "file": "IMG_3733.MOV",
+   "hdr": false,
+   "lut": "3733",
+   "src_in": 70.2792,
+   "dur": 8.0,
+   "tl": 820.11,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 905.04,
+   "frames": 240,
+   "id": 136
+  },
+  {
+   "view": "CU_D",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 301.263,
+   "dur": 5.5,
+   "tl": 828.11,
+   "rect": [
+    0,
+    722,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 913.04,
+   "frames": 165,
+   "id": 137,
+   "face": [
+    763,
+    1150
+   ]
+  },
+  {
+   "view": "3733",
+   "src": "3733",
+   "file": "IMG_3733.MOV",
+   "hdr": false,
+   "lut": "3733",
+   "src_in": 83.7792,
+   "dur": 7.0,
+   "tl": 833.61,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1.08
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 918.54,
+   "frames": 210,
+   "id": 138
+  },
+  {
+   "view": "CU_D",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 313.763,
+   "dur": 9.0,
+   "tl": 840.61,
+   "rect": [
+    0,
+    724,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 925.54,
+   "frames": 270,
+   "id": 139,
+   "face": [
+    775,
+    1152
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 322.763,
+   "dur": 6.5,
+   "tl": 849.61,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.12,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 934.54,
+   "frames": 195,
+   "id": 140
+  },
+  {
+   "view": "CU_D",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 329.263,
+   "dur": 7.66,
+   "tl": 856.11,
+   "rect": [
+    0,
+    720,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 941.04,
+   "frames": 230,
+   "id": 141,
+   "face": [
+    789,
+    1149
+   ]
+  },
+  {
+   "view": "CU_H",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 336.923,
+   "dur": 5.0,
+   "tl": 863.77,
+   "rect": [
+    1078,
+    694,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 948.7,
+   "frames": 150,
+   "id": 142,
+   "face": [
+    2388,
+    1122
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 341.923,
+   "dur": 2.66,
+   "tl": 868.77,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 953.7,
+   "frames": 80,
+   "id": 143
+  },
+  {
+   "view": "WIDE",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 346.083,
+   "dur": 4.5,
+   "tl": 871.43,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.12,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 957.86,
+   "frames": 135,
+   "id": 144
+  },
+  {
+   "view": "CU_H",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 350.583,
+   "dur": 5.0,
+   "tl": 875.93,
+   "rect": [
+    932,
+    700,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 962.36,
+   "frames": 150,
+   "id": 145,
+   "face": [
+    2243,
+    1128
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 355.583,
+   "dur": 6.5,
+   "tl": 880.93,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1.12
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 967.36,
+   "frames": 195,
+   "id": 146
+  },
+  {
+   "view": "CU_H",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 362.083,
+   "dur": 2.78,
+   "tl": 887.43,
+   "rect": [
+    990,
+    742,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 973.86,
+   "frames": 83,
+   "id": 147
+  },
+  {
+   "view": "CU_H",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 366.723,
+   "dur": 2.8,
+   "tl": 890.21,
+   "rect": [
+    990,
+    742,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 978.5,
+   "frames": 84,
+   "id": 148
+  },
+  {
+   "view": "3734",
+   "src": "3734",
+   "file": "IMG_3734.MOV",
+   "hdr": false,
+   "lut": "3734",
+   "src_in": 1.8975,
+   "dur": 6.5,
+   "tl": 893.01,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.18,
+    1.18
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 981.3,
+   "frames": 195,
+   "id": 149
+  },
+  {
+   "view": "CU_D",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 376.023,
+   "dur": 8.0,
+   "tl": 899.51,
+   "rect": [
+    0,
+    710,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 987.8,
+   "frames": 240,
+   "id": 150,
+   "face": [
+    774,
+    1138
+   ]
+  },
+  {
+   "view": "3734",
+   "src": "3734",
+   "file": "IMG_3734.MOV",
+   "hdr": false,
+   "lut": "3734",
+   "src_in": 16.3975,
+   "dur": 5.5,
+   "tl": 907.51,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 995.8,
+   "frames": 165,
+   "id": 151
+  },
+  {
+   "view": "WIDE",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 389.523,
+   "dur": 5.54,
+   "tl": 913.01,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.12,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1001.3,
+   "frames": 166,
+   "id": 152
+  },
+  {
+   "view": "3734",
+   "src": "3734",
+   "file": "IMG_3734.MOV",
+   "hdr": false,
+   "lut": "3734",
+   "src_in": 29.0775,
+   "dur": 9.0,
+   "tl": 918.55,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.18,
+    1.18
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1008.48,
+   "frames": 270,
+   "id": 153
+  },
+  {
+   "view": "CU_D",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 405.703,
+   "dur": 6.5,
+   "tl": 927.55,
+   "rect": [
+    0,
+    722,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1017.48,
+   "frames": 196,
+   "id": 154,
+   "face": [
+    763,
+    1150
+   ]
+  },
+  {
+   "view": "3734",
+   "src": "3734",
+   "file": "IMG_3734.MOV",
+   "hdr": false,
+   "lut": "3734",
+   "src_in": 44.5775,
+   "dur": 8.0,
+   "tl": 934.05,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1023.98,
+   "frames": 240,
+   "id": 155
+  },
+  {
+   "view": "CU_D",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 420.203,
+   "dur": 5.5,
+   "tl": 942.05,
+   "rect": [
+    0,
+    712,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1031.98,
+   "frames": 164,
+   "id": 156,
+   "face": [
+    768,
+    1141
+   ]
+  },
+  {
+   "view": "3734",
+   "src": "3734",
+   "file": "IMG_3734.MOV",
+   "hdr": false,
+   "lut": "3734",
+   "src_in": 58.0775,
+   "dur": 8.27,
+   "tl": 947.55,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.18,
+    1.18
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1037.48,
+   "frames": 249,
+   "id": 157
+  },
+  {
+   "view": "CU_D",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 435.533,
+   "dur": 9.0,
+   "tl": 955.82,
+   "rect": [
+    0,
+    710,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1047.31,
+   "frames": 270,
+   "id": 158,
+   "face": [
+    793,
+    1138
+   ]
+  },
+  {
+   "view": "3734",
+   "src": "3734",
+   "file": "IMG_3734.MOV",
+   "hdr": false,
+   "lut": "3734",
+   "src_in": 76.9075,
+   "dur": 6.5,
+   "tl": 964.82,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1056.31,
+   "frames": 195,
+   "id": 159
+  },
+  {
+   "view": "CU_D",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 451.033,
+   "dur": 8.0,
+   "tl": 971.32,
+   "rect": [
+    0,
+    734,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1062.81,
+   "frames": 240,
+   "id": 160,
+   "face": [
+    784,
+    1162
+   ]
+  },
+  {
+   "view": "3734",
+   "src": "3734",
+   "file": "IMG_3734.MOV",
+   "hdr": false,
+   "lut": "3734",
+   "src_in": 91.4075,
+   "dur": 5.5,
+   "tl": 979.32,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.18,
+    1.18
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1070.81,
+   "frames": 165,
+   "id": 161
+  },
+  {
+   "view": "CU_D",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 464.533,
+   "dur": 7.0,
+   "tl": 984.82,
+   "rect": [
+    0,
+    726,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1076.31,
+   "frames": 210,
+   "id": 162,
+   "face": [
+    786,
+    1155
+   ]
+  },
+  {
+   "view": "3734",
+   "src": "3734",
+   "file": "IMG_3734.MOV",
+   "hdr": false,
+   "lut": "3734",
+   "src_in": 103.9075,
+   "dur": 8.3113,
+   "tl": 991.82,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1083.31,
+   "frames": 249,
+   "id": 163
+  },
+  {
+   "view": "WIDE",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 479.8443,
+   "dur": 3.7887,
+   "tl": 1000.1313,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.12,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1091.621,
+   "frames": 114,
+   "id": 164
+  },
+  {
+   "view": "CU_D",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 486.133,
+   "dur": 8.0,
+   "tl": 1003.92,
+   "rect": [
+    0,
+    710,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1097.91,
+   "frames": 240,
+   "id": 165,
+   "face": [
+    789,
+    1138
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 494.133,
+   "dur": 6.19,
+   "tl": 1011.92,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1.12
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1105.91,
+   "frames": 185,
+   "id": 166
+  },
+  {
+   "view": "CU_H",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 500.323,
+   "dur": 4.5,
+   "tl": 1018.11,
+   "rect": [
+    882,
+    644,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1112.1,
+   "frames": 135,
+   "id": 167,
+   "face": [
+    2191,
+    1072
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 504.823,
+   "dur": 4.5,
+   "tl": 1022.61,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.12,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1116.6,
+   "frames": 135,
+   "id": 168
+  },
+  {
+   "view": "CU_H",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 509.323,
+   "dur": 4.2,
+   "tl": 1027.11,
+   "rect": [
+    1130,
+    698,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1121.1,
+   "frames": 126,
+   "id": 169,
+   "face": [
+    2440,
+    1126
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 543.423,
+   "dur": 4.5,
+   "tl": 1031.31,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1.12
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1155.2,
+   "frames": 135,
+   "id": 170
+  },
+  {
+   "view": "CU_H",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 547.923,
+   "dur": 5.21,
+   "tl": 1035.81,
+   "rect": [
+    990,
+    742,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1159.7,
+   "frames": 157,
+   "id": 171
+  },
+  {
+   "view": "3735",
+   "src": "3735",
+   "file": "IMG_3735.MOV",
+   "hdr": false,
+   "lut": "3735",
+   "src_in": 33.2318,
+   "dur": 7.0,
+   "tl": 1041.02,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1167.19,
+   "frames": 210,
+   "id": 172
+  },
+  {
+   "view": "CU_D",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 562.413,
+   "dur": 9.0,
+   "tl": 1048.02,
+   "rect": [
+    8,
+    706,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1174.19,
+   "frames": 270,
+   "id": 173,
+   "face": [
+    811,
+    1135
+   ]
+  },
+  {
+   "view": "3735",
+   "src": "3735",
+   "file": "IMG_3735.MOV",
+   "hdr": false,
+   "lut": "3735",
+   "src_in": 49.2318,
+   "dur": 6.5,
+   "tl": 1057.02,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1.08
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1183.19,
+   "frames": 195,
+   "id": 174
+  },
+  {
+   "view": "CU_D",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 577.913,
+   "dur": 8.0,
+   "tl": 1063.52,
+   "rect": [
+    20,
+    712,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1189.69,
+   "frames": 240,
+   "id": 175,
+   "face": [
+    823,
+    1141
+   ]
+  },
+  {
+   "view": "3735",
+   "src": "3735",
+   "file": "IMG_3735.MOV",
+   "hdr": false,
+   "lut": "3735",
+   "src_in": 63.7318,
+   "dur": 5.5,
+   "tl": 1071.52,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1197.69,
+   "frames": 165,
+   "id": 176
+  },
+  {
+   "view": "CU_D",
+   "src": "main2",
+   "file": "main2.mov",
+   "hdr": true,
+   "lut": "main2",
+   "src_in": 591.413,
+   "dur": 3.98,
+   "tl": 1077.02,
+   "rect": [
+    0,
+    734,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1203.19,
+   "frames": 119,
+   "id": 177,
+   "face": [
+    804,
+    1162
+   ]
+  },
+  {
+   "view": "3735",
+   "src": "3735",
+   "file": "IMG_3735.MOV",
+   "hdr": false,
+   "lut": "3735",
+   "src_in": 74.3118,
+   "dur": 9.0,
+   "tl": 1081.0,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1.08
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1208.27,
+   "frames": 270,
+   "id": 178
+  },
+  {
+   "view": "WIDE",
+   "src": "main3a",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 5.894,
+   "dur": 6.5,
+   "tl": 1090.0,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1217.27,
+   "frames": 195,
+   "id": 179
+  },
+  {
+   "view": "CU_H",
+   "src": "main3a",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 12.394,
+   "dur": 2.6,
+   "tl": 1096.5,
+   "rect": [
+    990,
+    742,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1223.77,
+   "frames": 78,
+   "id": 180
+  },
+  {
+   "view": "3735",
+   "src": "3735",
+   "file": "IMG_3735.MOV",
+   "hdr": false,
+   "lut": "3735",
+   "src_in": 92.4118,
+   "dur": 5.5,
+   "tl": 1099.1,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.18,
+    1.18
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1226.37,
+   "frames": 165,
+   "id": 181
+  },
+  {
+   "view": "CU_D",
+   "src": "main3a",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 20.494,
+   "dur": 7.0,
+   "tl": 1104.6,
+   "rect": [
+    0,
+    706,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1231.87,
+   "frames": 210,
+   "id": 182,
+   "face": [
+    768,
+    1134
+   ]
+  },
+  {
+   "view": "3735",
+   "src": "3735",
+   "file": "IMG_3735.MOV",
+   "hdr": false,
+   "lut": "3735",
+   "src_in": 104.9118,
+   "dur": 9.0,
+   "tl": 1111.6,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1238.87,
+   "frames": 270,
+   "id": 183
+  },
+  {
+   "view": "CU_D",
+   "src": "main3a",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 36.494,
+   "dur": 6.5,
+   "tl": 1120.6,
+   "rect": [
+    4,
+    716,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1247.87,
+   "frames": 195,
+   "id": 184,
+   "face": [
+    808,
+    1144
+   ]
+  },
+  {
+   "view": "3735",
+   "src": "3735",
+   "file": "IMG_3735.MOV",
+   "hdr": false,
+   "lut": "3735",
+   "src_in": 120.4118,
+   "dur": 5.98,
+   "tl": 1127.1,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.18,
+    1.18
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1254.37,
+   "frames": 179,
+   "id": 185
+  },
+  {
+   "view": "CU_D",
+   "src": "main3a",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 50.814,
+   "dur": 5.5,
+   "tl": 1133.08,
+   "rect": [
+    24,
+    714,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1262.19,
+   "frames": 165,
+   "id": 186,
+   "face": [
+    828,
+    1143
+   ]
+  },
+  {
+   "view": "3735",
+   "src": "3735",
+   "file": "IMG_3735.MOV",
+   "hdr": false,
+   "lut": "3735",
+   "src_in": 133.7318,
+   "dur": 4.21,
+   "tl": 1138.58,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1267.69,
+   "frames": 127,
+   "id": 187
+  },
+  {
+   "view": "WIDE",
+   "src": "main3a",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 60.524,
+   "dur": 4.5,
+   "tl": 1142.79,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.12,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1271.9,
+   "frames": 135,
+   "id": 188
+  },
+  {
+   "view": "CU_H",
+   "src": "main3a",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 65.024,
+   "dur": 5.0,
+   "tl": 1147.29,
+   "rect": [
+    1052,
+    750,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1276.4,
+   "frames": 150,
+   "id": 189,
+   "face": [
+    2361,
+    1179
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main3a",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 70.024,
+   "dur": 3.75,
+   "tl": 1152.29,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1.12
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1281.4,
+   "frames": 112,
+   "id": 190
+  },
+  {
+   "view": "CU_H",
+   "src": "main3a",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 83.864,
+   "dur": 4.5,
+   "tl": 1156.04,
+   "rect": [
+    1022,
+    710,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1295.24,
+   "frames": 135,
+   "id": 191,
+   "face": [
+    2332,
+    1138
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main3a",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 88.364,
+   "dur": 5.0,
+   "tl": 1160.54,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.12,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1299.74,
+   "frames": 150,
+   "id": 192
+  },
+  {
+   "view": "CU_H",
+   "src": "main3a",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 93.364,
+   "dur": 4.06,
+   "tl": 1165.54,
+   "rect": [
+    1134,
+    732,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1304.74,
+   "frames": 122,
+   "id": 193,
+   "face": [
+    2445,
+    1161
+   ]
+  },
+  {
+   "view": "CU_D",
+   "src": "main3a",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 103.074,
+   "dur": 9.18,
+   "tl": 1169.6,
+   "rect": [
+    0,
+    710,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1314.45,
+   "frames": 275,
+   "id": 194,
+   "face": [
+    799,
+    1138
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main3a",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 114.294,
+   "dur": 7.63,
+   "tl": 1178.78,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1325.67,
+   "frames": 229,
+   "id": 195
+  },
+  {
+   "view": "WIDE",
+   "src": "main3a",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 158.074,
+   "dur": 6.56,
+   "tl": 1186.41,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.12,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1369.45,
+   "frames": 197,
+   "id": 196
+  },
+  {
+   "view": "CU_D",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 165.552,
+   "dur": 7.05,
+   "tl": 1192.97,
+   "rect": [
+    0,
+    720,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1376.98,
+   "frames": 212,
+   "id": 197,
+   "face": [
+    717,
+    1149
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 173.642,
+   "dur": 6.5,
+   "tl": 1200.02,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1.12
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1385.07,
+   "frames": 195,
+   "id": 198
+  },
+  {
+   "view": "CU_A",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 180.142,
+   "dur": 2.6,
+   "tl": 1206.52,
+   "rect": [
+    1728,
+    742,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1391.57,
+   "frames": 78,
+   "id": 199
+  },
+  {
+   "view": "3737",
+   "src": "3737",
+   "file": "IMG_3737.MOV",
+   "hdr": false,
+   "lut": "3737",
+   "src_in": 3.1299,
+   "dur": 5.5,
+   "tl": 1209.12,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1394.17,
+   "frames": 165,
+   "id": 200
+  },
+  {
+   "view": "CU_D",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 188.242,
+   "dur": 7.0,
+   "tl": 1214.62,
+   "rect": [
+    0,
+    714,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1399.67,
+   "frames": 210,
+   "id": 201,
+   "face": [
+    799,
+    1143
+   ]
+  },
+  {
+   "view": "3737",
+   "src": "3737",
+   "file": "IMG_3737.MOV",
+   "hdr": false,
+   "lut": "3737",
+   "src_in": 15.6299,
+   "dur": 9.0,
+   "tl": 1221.62,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1.08
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1406.67,
+   "frames": 270,
+   "id": 202
+  },
+  {
+   "view": "CU_H",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 204.242,
+   "dur": 2.6,
+   "tl": 1230.62,
+   "rect": [
+    990,
+    742,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1415.67,
+   "frames": 78,
+   "id": 203
+  },
+  {
+   "view": "WIDE",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 206.842,
+   "dur": 8.0,
+   "tl": 1233.22,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.12,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1418.27,
+   "frames": 240,
+   "id": 204
+  },
+  {
+   "view": "3737",
+   "src": "3737",
+   "file": "IMG_3737.MOV",
+   "hdr": false,
+   "lut": "3737",
+   "src_in": 35.2299,
+   "dur": 5.5,
+   "tl": 1241.22,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.18,
+    1.18
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1426.27,
+   "frames": 165,
+   "id": 205
+  },
+  {
+   "view": "CU_D",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 220.342,
+   "dur": 7.0,
+   "tl": 1246.72,
+   "rect": [
+    0,
+    706,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1431.77,
+   "frames": 210,
+   "id": 206,
+   "face": [
+    718,
+    1135
+   ]
+  },
+  {
+   "view": "3737",
+   "src": "3737",
+   "file": "IMG_3737.MOV",
+   "hdr": false,
+   "lut": "3737",
+   "src_in": 47.7299,
+   "dur": 9.0,
+   "tl": 1253.72,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1438.77,
+   "frames": 270,
+   "id": 207
+  },
+  {
+   "view": "CU_D",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 236.342,
+   "dur": 6.5,
+   "tl": 1262.72,
+   "rect": [
+    0,
+    708,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1447.77,
+   "frames": 195,
+   "id": 208,
+   "face": [
+    786,
+    1137
+   ]
+  },
+  {
+   "view": "3737",
+   "src": "3737",
+   "file": "IMG_3737.MOV",
+   "hdr": false,
+   "lut": "3737",
+   "src_in": 63.2299,
+   "dur": 8.0,
+   "tl": 1269.22,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.18,
+    1.18
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1454.27,
+   "frames": 240,
+   "id": 209
+  },
+  {
+   "view": "CU_D",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 250.842,
+   "dur": 5.5,
+   "tl": 1277.22,
+   "rect": [
+    0,
+    704,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1462.27,
+   "frames": 165,
+   "id": 210,
+   "face": [
+    781,
+    1132
+   ]
+  },
+  {
+   "view": "3737",
+   "src": "3737",
+   "file": "IMG_3737.MOV",
+   "hdr": false,
+   "lut": "3737",
+   "src_in": 76.7299,
+   "dur": 7.0,
+   "tl": 1282.72,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1467.77,
+   "frames": 210,
+   "id": 211
+  },
+  {
+   "view": "CU_D",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 263.342,
+   "dur": 7.02,
+   "tl": 1289.72,
+   "rect": [
+    0,
+    718,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1474.77,
+   "frames": 210,
+   "id": 212,
+   "face": [
+    760,
+    1147
+   ]
+  },
+  {
+   "view": "3737",
+   "src": "3737",
+   "file": "IMG_3737.MOV",
+   "hdr": false,
+   "lut": "3737",
+   "src_in": 92.4099,
+   "dur": 6.5,
+   "tl": 1296.74,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.18,
+    1.18
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1483.45,
+   "frames": 195,
+   "id": 213
+  },
+  {
+   "view": "CU_D",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 278.522,
+   "dur": 8.0,
+   "tl": 1303.24,
+   "rect": [
+    0,
+    712,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1489.95,
+   "frames": 240,
+   "id": 214,
+   "face": [
+    703,
+    1140
+   ]
+  },
+  {
+   "view": "3737",
+   "src": "3737",
+   "file": "IMG_3737.MOV",
+   "hdr": false,
+   "lut": "3737",
+   "src_in": 106.9099,
+   "dur": 7.02,
+   "tl": 1311.24,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1497.95,
+   "frames": 211,
+   "id": 215
+  },
+  {
+   "view": "CU_D",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 295.642,
+   "dur": 7.0,
+   "tl": 1318.26,
+   "rect": [
+    0,
+    696,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1507.07,
+   "frames": 210,
+   "id": 216,
+   "face": [
+    738,
+    1125
+   ]
+  },
+  {
+   "view": "3737",
+   "src": "3737",
+   "file": "IMG_3737.MOV",
+   "hdr": false,
+   "lut": "3737",
+   "src_in": 123.0299,
+   "dur": 9.0,
+   "tl": 1325.26,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "angle",
+   "zoom": [
+    1.18,
+    1.18
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1514.07,
+   "frames": 270,
+   "id": 217
+  },
+  {
+   "view": "CU_D",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 311.642,
+   "dur": 8.63,
+   "tl": 1334.26,
+   "rect": [
+    0,
+    718,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1.1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1523.07,
+   "frames": 259,
+   "id": 218,
+   "face": [
+    786,
+    1146
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 330.872,
+   "dur": 4.5,
+   "tl": 1342.89,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1542.3,
+   "frames": 135,
+   "id": 219
+  },
+  {
+   "view": "CU_H",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 335.372,
+   "dur": 4.6,
+   "tl": 1347.39,
+   "rect": [
+    1082,
+    590,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1.1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1546.8,
+   "frames": 138,
+   "id": 220,
+   "face": [
+    2391,
+    1017
+   ]
+  },
+  {
+   "view": "CU_D",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 339.972,
+   "dur": 7.75,
+   "tl": 1351.99,
+   "rect": [
+    0,
+    726,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1551.4,
+   "frames": 232,
+   "id": 221,
+   "face": [
+    762,
+    1155
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 349.962,
+   "dur": 9.0,
+   "tl": 1359.74,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1.12
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1561.39,
+   "frames": 270,
+   "id": 222
+  },
+  {
+   "view": "CU_D",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 358.962,
+   "dur": 3.78,
+   "tl": 1368.74,
+   "rect": [
+    0,
+    716,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1570.39,
+   "frames": 114,
+   "id": 223,
+   "face": [
+    771,
+    1144
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 363.9095,
+   "dur": 3.5015,
+   "tl": 1372.52,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.12,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1575.338,
+   "frames": 105,
+   "id": 224
+  },
+  {
+   "view": "CU_H",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 368.912,
+   "dur": 6.5,
+   "tl": 1376.0215,
+   "rect": [
+    876,
+    760,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1580.34,
+   "frames": 195,
+   "id": 225,
+   "face": [
+    2185,
+    1188
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 375.412,
+   "dur": 4.5,
+   "tl": 1382.5215,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1.12
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1586.84,
+   "frames": 135,
+   "id": 226
+  },
+  {
+   "view": "CU_H",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 379.912,
+   "dur": 5.0,
+   "tl": 1387.0215,
+   "rect": [
+    906,
+    626,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1591.34,
+   "frames": 150,
+   "id": 227,
+   "face": [
+    2215,
+    1054
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 384.912,
+   "dur": 6.5,
+   "tl": 1392.0215,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.12,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1596.34,
+   "frames": 195,
+   "id": 228
+  },
+  {
+   "view": "CU_H",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 391.412,
+   "dur": 4.5,
+   "tl": 1398.5215,
+   "rect": [
+    788,
+    638,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1602.84,
+   "frames": 135,
+   "id": 229,
+   "face": [
+    2098,
+    1066
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 395.912,
+   "dur": 5.0,
+   "tl": 1403.0215,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1,
+    1.12
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1607.34,
+   "frames": 150,
+   "id": 230
+  },
+  {
+   "view": "CU_H",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 400.912,
+   "dur": 6.5,
+   "tl": 1408.0215,
+   "rect": [
+    670,
+    650,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1612.34,
+   "frames": 195,
+   "id": 231,
+   "face": [
+    1980,
+    1078
+   ]
+  },
+  {
+   "view": "WIDE",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 407.412,
+   "dur": 4.5,
+   "tl": 1414.5215,
+   "rect": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "kind": "wide",
+   "zoom": [
+    1.12,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 0,
+   "master_T": 1618.84,
+   "frames": 135,
+   "id": 232
+  },
+  {
+   "view": "CU_H",
+   "src": "main3b",
+   "file": "main3.mov",
+   "hdr": true,
+   "lut": "main3",
+   "src_in": 411.912,
+   "dur": 2.96,
+   "tl": 1419.0215,
+   "rect": [
+    1126,
+    648,
+    2112,
+    1188
+   ],
+   "kind": "cu",
+   "zoom": [
+    1,
+    1
+   ],
+   "fade_in": 0,
+   "fade_out": 1.5,
+   "master_T": 1623.34,
+   "frames": 88,
+   "id": 233,
+   "face": [
+    2436,
+    1077
+   ]
+  },
+  {
+   "view": "BLACK",
+   "tl": 1421.9815,
+   "dur": 4.5,
+   "frames": 135,
+   "id": 234
+  }
+ ],
+ "color": {
+  "hdr_to_sdr_main": "zscale=tin=arib-std-b67:pin=bt2020:min=bt2020nc:rin=tv:t=linear:npl=203,format=gbrpf32le,zscale=p=bt709,tonemap=hable:desat=2,zscale=t=bt709:m=bt709:r=tv,format=yuv420p",
+  "per_camera_lut_params": {
+   "main": {
+    "gainR": 0.987,
+    "gainB": 0.958,
+    "gamma": 0.75
+   },
+   "3709": {
+    "gainR": 0.971,
+    "gainB": 1.062,
+    "gamma": 0.891
+   },
+   "3710": {
+    "gainR": 0.983,
+    "gainB": 1.045,
+    "gamma": 0.873
+   },
+   "3717": {
+    "gainR": 1.006,
+    "gainB": 1.016,
+    "gamma": 0.83
+   },
+   "3718": {
+    "gainR": 0.987,
+    "gainB": 1.008,
+    "gamma": 0.774
+   },
+   "3719": {
+    "gainR": 1.018,
+    "gainB": 0.984,
+    "gamma": 0.986
+   },
+   "3720": {
+    "gainR": 0.977,
+    "gainB": 1.023,
+    "gamma": 0.751
+   },
+   "3721": {
+    "gainR": 1.02,
+    "gainB": 0.977,
+    "gamma": 0.891
+   },
+   "3722": {
+    "gainR": 0.996,
+    "gainB": 0.99,
+    "gamma": 0.913
+   },
+   "3724": {
+    "gainR": 0.974,
+    "gainB": 1.056,
+    "gamma": 1.099
+   },
+   "3725": {
+    "gainR": 1.016,
+    "gainB": 0.999,
+    "gamma": 0.771
+   },
+   "3726": {
+    "gainR": 0.986,
+    "gainB": 1.023,
+    "gamma": 0.75
+   },
+   "3727": {
+    "gainR": 0.992,
+    "gainB": 1.0,
+    "gamma": 1.016
+   },
+   "3728": {
+    "gainR": 0.989,
+    "gainB": 1.016,
+    "gamma": 0.873
+   },
+   "3730": {
+    "gainR": 1.014,
+    "gainB": 0.984,
+    "gamma": 0.911
+   },
+   "main2": {
+    "gainR": 0.988,
+    "gainB": 0.918,
+    "gamma": 0.75
+   },
+   "main3": {
+    "gainR": 1.005,
+    "gainB": 0.97,
+    "gamma": 0.75
+   },
+   "3731": {
+    "gainR": 0.991,
+    "gainB": 1.02,
+    "gamma": 0.852
+   },
+   "3732": {
+    "gainR": 0.981,
+    "gainB": 0.988,
+    "gamma": 0.851
+   },
+   "3733": {
+    "gainR": 0.963,
+    "gainB": 1.01,
+    "gamma": 0.818
+   },
+   "3734": {
+    "gainR": 0.988,
+    "gainB": 1.023,
+    "gamma": 0.87
+   },
+   "3735": {
+    "gainR": 0.99,
+    "gainB": 1.001,
+    "gamma": 0.876
+   },
+   "3737": {
+    "gainR": 0.989,
+    "gainB": 1.001,
+    "gamma": 0.831
+   }
+  },
+  "look": "soft S-curve (pivot 0.45, k=0.10) + highlight shoulder >0.82; blacks lifted to 3%, whites 97.5%; warm mids (+1.2% R, -1.0% B); saturation 0.96 with skin-hue protection; vignette angle 0.42 in final pass"
+ },
+ "audio": {
+  "chain": "39 segments, 12 ms fades; -8 dB pre-gain; HPF 80 Hz; EQ -2 dB @300 Hz, +1.5 dB @3.5 kHz; LPF 16 kHz; afftdn nr=8; compressor 2.5:1 @ -24 dB; +8.8 dB; true-peak limiter -1.5 dBTP; AAC 192k 48 kHz",
+  "av_shift_ms": -33
+ }
+}
