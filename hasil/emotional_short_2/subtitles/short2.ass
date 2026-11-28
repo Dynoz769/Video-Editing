@@ -1,0 +1,76 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Kin,Inter SemiBold,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,0,0,1,0,2.5,8,0,0,0,1
+Style: KinBig,Inter SemiBold,74,&H00FFFFFF,&H00FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,0,0,1,0,3,8,0,0,0,1
+Style: Ask,Inter Light,150,&H00FFFFFF,&H00FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,2,0,1,0,3,5,0,0,0,1
+Style: Answer,Inter SemiBold,76,&H00FFFFFF,&H00FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,0,0,1,0,3,8,0,0,0,1
+Style: EndL,Inter SemiBold,70,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,8,0,0,0,1
+Style: Small,Inter Medium,30,&H00C8C8C8,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,1,0,1,0,0,8,0,0,0,1
+Style: Gfx,Inter,20,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:51.23,Gfx,,0,0,0,,{\an7\pos(0,0)\fad(500,900)\p1\c&H000000&\alpha&H5C&\blur70\bord0\shad0}m 0 1160 l 1080 1160 l 1080 1560 l 0 1560
+Dialogue: 3,0:00:00.14,0:00:02.58,KinBig,,0,0,0,,{\an8\move(540,1250,540,1240,0,380)\fad(0,240)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}Kadang {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(319,619,\alpha&H00&)}luapan {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(839,1139,\alpha&H00&)}itu
+Dialogue: 3,0:00:01.24,0:00:02.58,KinBig,,0,0,0,,{\an8\move(540,1354,540,1344,0,380)\fad(0,240)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}tak {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(160,460,\alpha&H00&)}perlu {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(339,639,\alpha&H00&)}kita {\alpha&HFF&\c&H4FB6F2&\3c&H4FB6F2&\bord2\blur6\t(660,960,\alpha&H00&)}ucapkan…
+Dialogue: 2,0:00:02.80,0:00:24.13,Gfx,,0,0,0,,{\an7\move(730,250,700,250,0,700)\fad(600,700)\p1\c&HFFFFFF&\alpha&H70&\bord0\shad0}m 28 0 l 202 0 b 230 0 230 0 230 28 l 230 402 b 230 430 230 430 202 430 l 28 430 b 0 430 0 430 0 402 l 0 28 b 0 0 0 0 28 0 m 4 32 l 4 398 b 4 422 8 426 32 426 l 198 426 b 222 426 226 422 226 398 l 226 32 b 226 8 222 4 198 4 l 32 4 b 8 4 4 8 4 32
+Dialogue: 1,0:00:02.80,0:00:24.13,Gfx,,0,0,0,,{\an7\move(730,250,700,250,0,700)\fad(600,700)\p1\c&HE8C7A9&\alpha&HC8&\bord0\shad0}m 24 0 l 198 0 b 222 0 222 0 222 24 l 222 398 b 222 422 222 422 198 422 l 24 422 b 0 422 0 422 0 398 l 0 24 b 0 0 0 0 24 0
+Dialogue: 3,0:00:02.88,0:00:06.18,Kin,,0,0,0,,{\an8\move(540,1260,540,1250,0,380)\fad(0,240)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}Dia {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(200,500,\alpha&H00&)}tengok {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(1000,1300,\alpha&H00&)}di
+Dialogue: 3,0:00:04.94,0:00:06.18,Kin,,0,0,0,,{\an8\move(540,1352,540,1342,0,380)\fad(0,240)}{\alpha&HFF&\c&HE8C7A9&\bord0\blur0.4\t(0,300,\alpha&H00&)}media {\alpha&HFF&\c&HE8C7A9&\bord0\blur0.4\t(319,619,\alpha&H00&)}sosial,
+Dialogue: 3,0:00:06.20,0:00:09.15,Kin,,0,0,0,,{\an8\move(540,1260,540,1250,0,380)\fad(0,240)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}orang {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(240,540,\alpha&H00&)}memberikan {\alpha&HFF&\c&HE8C7A9&\bord0\blur0.4\t(1159,1459,\alpha&H00&)}bunga,
+Dialogue: 3,0:00:07.42,0:00:24.13,Gfx,,0,0,0,,{\an7\pos(790,400)\fad(400,600)\p1\c&HE8C7A9&\bord0\shad0\fscx120\fscy120}m 38 24 b 50 32 50 16 38 24 m 28 37 b 24 51 40 46 28 37 m 13 32 b -2 33 8 46 13 32 m 13 16 b 8 2 -2 15 13 16 m 28 11 b 40 2 24 -3 28 11 m 24 18 b 32 18 32 30 24 30 b 16 30 16 18 24 18
+Dialogue: 3,0:00:09.14,0:00:11.00,Kin,,0,0,0,,{\an8\move(540,1260,540,1250,0,380)\fad(0,240)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}dia {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(200,500,\alpha&H00&)}akan {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(519,819,\alpha&H00&)}mengikuti
+Dialogue: 3,0:00:10.56,0:00:11.00,Kin,,0,0,0,,{\an8\move(540,1352,540,1342,0,380)\fad(0,240)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}orang {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(200,500,\alpha&H00&)}itu.
+Dialogue: 3,0:00:10.96,0:00:12.02,Kin,,0,0,0,,{\an8\move(540,1260,540,1250,0,380)\fad(0,240)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}Padahal {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(259,559,\alpha&H00&)}itu
+Dialogue: 3,0:00:11.42,0:00:12.02,Kin,,0,0,0,,{\an8\move(540,1352,540,1342,0,380)\fad(0,240)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}bukan {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(239,539,\alpha&H00&)}romantis.
+Dialogue: 3,0:00:12.05,0:00:13.45,Kin,,0,0,0,,{\an8\move(540,1260,540,1250,0,380)\fad(0,240)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}Banyak {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(500,800,\alpha&H00&)}orang
+Dialogue: 3,0:00:12.81,0:00:13.45,Kin,,0,0,0,,{\an8\move(540,1352,540,1342,0,380)\fad(0,240)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}yang {\alpha&HFF&\c&HE8C7A9&\bord0\blur0.4\t(160,460,\alpha&H00&)}meniru,
+Dialogue: 2,0:00:12.81,0:00:13.45,Kin,,0,0,0,,{\an8\move(540,1342,554,1346,0,1400)\fad(0,240)}{\alpha&HFF&}yang {\alpha&HFF&\c&HE8C7A9&\t(160,460,\alpha&HA0&)\t(460,1560,\alpha&HFF&)}meniru,
+Dialogue: 2,0:00:12.81,0:00:13.45,Kin,,0,0,0,,{\an8\move(540,1342,568,1351,0,1400)\fad(0,240)}{\alpha&HFF&}yang {\alpha&HFF&\c&HE8C7A9&\t(160,460,\alpha&HD0&)\t(460,1560,\alpha&HFF&)}meniru,
+Dialogue: 3,0:00:13.03,0:00:24.13,Gfx,,0,0,0,,{\an7\move(791,570,791,550,0,900)\fad(300,600)\p1\c&HE8C7A9&\alpha&H40&\bord0\shad0\fscx70\fscy70}m 24 46 b 12 36 0 28 0 16 b 0 6 8 0 15 0 b 20 0 23 4 24 6 b 25 4 28 0 33 0 b 40 0 48 6 48 16 b 48 28 36 36 24 46
+Dialogue: 3,0:00:13.15,0:00:24.13,Gfx,,0,0,0,,{\an7\move(791,570,731,480,0,1000)\fad(300,600)\p1\c&HE8C7A9&\alpha&H40&\bord0\shad0\fscx70\fscy70}m 24 46 b 12 36 0 28 0 16 b 0 6 8 0 15 0 b 20 0 23 4 24 6 b 25 4 28 0 33 0 b 40 0 48 6 48 16 b 48 28 36 36 24 46
+Dialogue: 3,0:00:13.27,0:00:24.13,Gfx,,0,0,0,,{\an7\move(791,570,851,480,0,1100)\fad(300,600)\p1\c&HE8C7A9&\alpha&H40&\bord0\shad0\fscx70\fscy70}m 24 46 b 12 36 0 28 0 16 b 0 6 8 0 15 0 b 20 0 23 4 24 6 b 25 4 28 0 33 0 b 40 0 48 6 48 16 b 48 28 36 36 24 46
+Dialogue: 3,0:00:13.39,0:00:24.13,Gfx,,0,0,0,,{\an7\move(791,570,761,400,0,1200)\fad(300,600)\p1\c&HE8C7A9&\alpha&H40&\bord0\shad0\fscx70\fscy70}m 24 46 b 12 36 0 28 0 16 b 0 6 8 0 15 0 b 20 0 23 4 24 6 b 25 4 28 0 33 0 b 40 0 48 6 48 16 b 48 28 36 36 24 46
+Dialogue: 3,0:00:13.41,0:00:17.11,Kin,,0,0,0,,{\an8\move(540,1260,540,1250,0,380)\fad(0,240)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}padahal {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(600,900,\alpha&H00&)}itu {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(840,1140,\alpha&H00&)}bukan
+Dialogue: 3,0:00:13.51,0:00:24.13,Gfx,,0,0,0,,{\an7\move(791,570,831,390,0,1300)\fad(300,600)\p1\c&HE8C7A9&\alpha&H40&\bord0\shad0\fscx70\fscy70}m 24 46 b 12 36 0 28 0 16 b 0 6 8 0 15 0 b 20 0 23 4 24 6 b 25 4 28 0 33 0 b 40 0 48 6 48 16 b 48 28 36 36 24 46
+Dialogue: 3,0:00:13.63,0:00:24.13,Gfx,,0,0,0,,{\an7\move(791,570,791,320,0,1400)\fad(300,600)\p1\c&HE8C7A9&\alpha&H40&\bord0\shad0\fscx70\fscy70}m 24 46 b 12 36 0 28 0 16 b 0 6 8 0 15 0 b 20 0 23 4 24 6 b 25 4 28 0 33 0 b 40 0 48 6 48 16 b 48 28 36 36 24 46
+Dialogue: 3,0:00:14.55,0:00:17.11,Kin,,0,0,0,,{\an8\move(540,1352,540,1342,0,380)\fad(0,240)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}luapan {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(420,720,\alpha&H00&)}emosional
+Dialogue: 3,0:00:17.08,0:00:20.14,Kin,,0,0,0,,{\an8\move(540,1260,540,1250,0,380)\fad(0,240)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}diri {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(779,1079,\alpha&H00&)}dia {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(980,1280,\alpha&H00&)}sendiri,
+Dialogue: 3,0:00:18.46,0:00:20.14,Kin,,0,0,0,,{\an8\move(540,1352,540,1342,0,380)\fad(0,240)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}tetapi {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(720,1020,\alpha&H00&)}hanya {\alpha&HFF&\c&HE8C7A9&\bord0\blur0.4\t(1189,1489,\alpha&H00&)}mencontoh.
+Dialogue: 2,0:00:18.46,0:00:20.14,Kin,,0,0,0,,{\an8\move(540,1342,554,1346,0,1400)\fad(0,240)}{\alpha&HFF&}tetapi {\alpha&HFF&}hanya {\alpha&HFF&\c&HE8C7A9&\t(1189,1489,\alpha&HA0&)\t(1489,2589,\alpha&HFF&)}mencontoh.
+Dialogue: 2,0:00:18.46,0:00:20.14,Kin,,0,0,0,,{\an8\move(540,1342,568,1351,0,1400)\fad(0,240)}{\alpha&HFF&}tetapi {\alpha&HFF&}hanya {\alpha&HFF&\c&HE8C7A9&\t(1189,1489,\alpha&HD0&)\t(1489,2589,\alpha&HFF&)}mencontoh.
+Dialogue: 3,0:00:20.10,0:00:23.30,Kin,,0,0,0,,{\an8\move(540,1260,540,1250,0,380)\fad(0,500)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}Itu {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(360,660,\alpha&H00&)}adalah {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(1240,1540,\alpha&H00&)}suatu
+Dialogue: 3,0:00:21.66,0:00:23.30,Kin,,0,0,0,,{\an8\move(540,1352,540,1342,0,380)\fad(0,500)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}nilai {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(940,1240,\alpha&H00&)}yang {\alpha&HFF&\c&HE8C7A9&\bord0\blur0.4\t(1180,1480,\alpha&H00&)}semu.
+Dialogue: 2,0:00:21.66,0:00:23.30,Kin,,0,0,0,,{\an8\move(540,1342,554,1346,0,1400)\fad(0,500)}{\alpha&HFF&}nilai {\alpha&HFF&}yang {\alpha&HFF&\c&HE8C7A9&\t(1180,1480,\alpha&HA0&)\t(1480,2580,\alpha&HFF&)}semu.
+Dialogue: 2,0:00:21.66,0:00:23.30,Kin,,0,0,0,,{\an8\move(540,1342,568,1351,0,1400)\fad(0,500)}{\alpha&HFF&}nilai {\alpha&HFF&}yang {\alpha&HFF&\c&HE8C7A9&\t(1180,1480,\alpha&HD0&)\t(1480,2580,\alpha&HFF&)}semu.
+Dialogue: 4,0:00:22.90,0:00:24.13,Gfx,,0,0,0,,{\an7\pos(700,250)\fad(200,600)\p1\c&H000000&\alpha&H60&\bord0\shad0}m 28 0 l 202 0 b 230 0 230 0 230 28 l 230 402 b 230 430 230 430 202 430 l 28 430 b 0 430 0 430 0 402 l 0 28 b 0 0 0 0 28 0
+Dialogue: 3,0:00:23.45,0:00:26.41,Kin,,0,0,0,,{\an8\move(540,1260,540,1250,0,380)\fad(0,240)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}Kadang {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(759,1059,\alpha&H00&)}hal {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(1460,1760,\alpha&H00&)}tersebut
+Dialogue: 3,0:00:25.49,0:00:26.41,Kin,,0,0,0,,{\an8\move(540,1352,540,1342,0,380)\fad(0,240)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}mungkin {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(380,680,\alpha&H00&)}orang {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(620,920,\alpha&H00&)}melihat
+Dialogue: 3,0:00:26.37,0:00:28.21,Kin,,0,0,0,,{\an8\move(540,1260,540,1250,0,380)\fad(0,240)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}tidak {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(879,1179,\alpha&H00&)}romantis,
+Dialogue: 3,0:00:28.17,0:00:30.09,Kin,,0,0,0,,{\an8\move(540,1260,540,1250,0,380)\fad(0,240)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}tapi {\alpha&HFF&\c&H4FB6F2&\3c&H4FB6F2&\bord2\blur6\t(200,500,\alpha&H00&)}pasangan {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(1039,1339,\alpha&H00&)}dia
+Dialogue: 3,0:00:29.43,0:00:30.09,Kin,,0,0,0,,{\an8\move(540,1352,540,1342,0,380)\fad(0,240)}{\alpha&HFF&\c&H4FB6F2&\3c&H4FB6F2&\bord2\blur6\t(0,300,\alpha&H00&)}merasakan
+Dialogue: 3,0:00:30.37,0:00:33.48,Kin,,0,0,0,,{\an8\move(540,1260,540,1250,0,380)\fad(0,450)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}itulah {\alpha&HFF&\c&H4FB6F2&\3c&H4FB6F2&\bord2\blur6\t(19,319,\alpha&H00&)}keromantisan
+Dialogue: 3,0:00:32.37,0:00:33.48,Kin,,0,0,0,,{\an8\move(540,1352,540,1342,0,380)\fad(0,450)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}pada {\alpha&HFF&\c&H4FB6F2&\3c&H4FB6F2&\bord2\blur6\t(399,699,\alpha&H00&)}dirinya.
+Dialogue: 3,0:00:33.52,0:00:37.72,Kin,,0,0,0,,{\an8\move(540,1260,540,1250,0,380)\fad(0,240)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}Tapi {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(160,460,\alpha&H00&)}kita
+Dialogue: 3,0:00:34.86,0:00:37.72,Kin,,0,0,0,,{\an8\move(540,1352,540,1342,0,380)\fad(0,240)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}memberikan {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(939,1239,\alpha&H00&)}sebuah…
+Dialogue: 4,0:00:37.82,0:00:39.20,Ask,,0,0,0,,{\an5\pos(540,1330)\fad(350,250)\t(0,1200,\fscx106\fscy106)}…apa?
+Dialogue: 4,0:00:39.35,0:00:41.70,Answer,,0,0,0,,{\an8\move(540,1258,540,1246,0,450)\fad(350,350)\c&H4FB6F2&\3c&H4FB6F2&\bord2\blur7}Sebuah perbuatan lah.
+Dialogue: 4,0:00:39.80,0:00:41.70,Gfx,,0,0,0,,{\an7\pos(300,1352)\p1\c&H4FB6F2&\bord0\shad0\fad(0,350)\clip(300,1348,300,1360)\t(0,800,0.5,\clip(300,1348,780,1360))}m 0 0 l 480 0 l 480 3 l 0 3
+Dialogue: 3,0:00:41.69,0:00:44.10,Kin,,0,0,0,,{\an8\move(540,1260,540,1250,0,380)\fad(0,240)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}Memberikan {\alpha&HFF&\c&H4FB6F2&\3c&H4FB6F2&\bord2\blur6\t(650,950,\alpha&H00&)}perbuatan.
+Dialogue: 4,0:00:44.22,0:00:44.82,KinBig,,0,0,0,,{\an8\pos(540,1252)\fad(150,200)\t(0,300,\fscx108\fscy108)}Betul.
+Dialogue: 3,0:00:44.88,0:00:47.40,Kin,,0,0,0,,{\an8\move(540,1260,540,1250,0,380)\fad(0,240)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}Romantis {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(500,800,\alpha&H00&)}tidak {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(759,1059,\alpha&H00&)}harus
+Dialogue: 3,0:00:45.96,0:00:47.40,Kin,,0,0,0,,{\an8\move(540,1352,540,1342,0,380)\fad(0,240)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}dengan {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(299,599,\alpha&H00&)}selalu {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(720,1020,\alpha&H00&)}berpuisi,
+Dialogue: 3,0:00:47.36,0:00:51.17,Kin,,0,0,0,,{\an8\move(540,1260,540,1250,0,380)\fad(0,600)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}tetapi {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(480,780,\alpha&H00&)}dengan {\alpha&HFF&\c&H4FB6F2&\3c&H4FB6F2&\bord2\blur6\t(759,1059,\alpha&H00&)}perbuatan
+Dialogue: 3,0:00:48.72,0:00:51.17,Kin,,0,0,0,,{\an8\move(540,1352,540,1342,0,380)\fad(0,600)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,300,\alpha&H00&)}dia {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(620,920,\alpha&H00&)}boleh {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(1180,1480,\alpha&H00&)}dilakukan…
+Dialogue: 3,0:00:51.48,0:00:54.03,EndL,,0,0,0,,{\an8\pos(540,840)\fad(700,0)}Romantis tidak harus
+Dialogue: 3,0:00:51.83,0:00:54.03,EndL,,0,0,0,,{\an8\pos(540,920)\fad(700,0)}selalu berpuisi,
+Dialogue: 3,0:00:52.48,0:00:54.03,EndL,,0,0,0,,{\an8\pos(540,1030)\fad(800,0)\c&H4FB6F2&\3c&H4FB6F2&\bord2\blur8\t(0,1600,\fscx104\fscy104)}tetapi dengan perbuatan.
+Dialogue: 3,0:00:53.18,0:00:54.03,Small,,0,0,0,,{\an8\pos(540,1160)\fad(600,0)}Dr. Satria Abadi · Podcast Romantisisme

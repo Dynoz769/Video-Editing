@@ -1,0 +1,1747 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><script src="assets/gsap.min.js"></script><style>
+html,body{margin:0;background:transparent}
+#main{position:relative;width:1920px;height:1080px;overflow:hidden;font-family:Inter,sans-serif;color:#fff}
+.clip{position:absolute;left:0;top:0;width:1920px;height:1080px}
+.full{inset:0}
+.dim{position:absolute;inset:0;background:rgba(0,0,0,.45)}
+.kick{position:absolute;left:0;right:0;top:420px;text-align:center;color:#F2B64F;font-weight:700;font-size:28px;letter-spacing:10px}
+.title{position:absolute;left:0;right:0;top:468px;text-align:center;font-weight:700;font-size:104px;letter-spacing:1px;text-shadow:0 6px 40px rgba(0,0,0,.5)}
+.tline{position:absolute;left:900px;top:600px;width:120px;height:3px;background:#F2B64F;transform-origin:center}
+.tline.e{top:478px}
+.tsub{position:absolute;left:0;right:0;top:626px;text-align:center;color:#F2B64F;font-weight:400;font-size:30px;letter-spacing:3px}
+.bug{position:absolute;left:44px;top:38px;padding:14px 22px 22px;border-radius:12px;background:rgba(16,20,26,.55);backdrop-filter:blur(10px);font-weight:700;font-size:20px;letter-spacing:3px;min-width:240px}
+.bn{color:#F2B64F;margin-right:14px} .bt{color:rgba(255,255,255,.85)}
+.prog{position:absolute;left:66px;top:92px;width:240px;height:3px;background:rgba(255,255,255,.22);border-radius:2px;overflow:hidden}
+.pfill{width:100%;height:100%;background:#F2B64F;transform-origin:left center}
+.chband{position:absolute;left:360px;top:70px;width:1200px;height:280px;background:radial-gradient(ellipse at center,rgba(0,0,0,.5),rgba(0,0,0,0) 70%)}
+.chn{position:absolute;left:0;right:0;top:150px;text-align:center;color:#F2B64F;font-weight:700;font-size:24px;letter-spacing:8px}
+.chl{position:absolute;left:900px;top:196px;width:120px;height:3px;background:#F2B64F}
+.cht{position:absolute;left:0;right:0;top:214px;text-align:center;font-weight:700;font-size:64px;text-shadow:0 4px 30px rgba(0,0,0,.6)}
+.l3{position:absolute;left:90px;padding:16px 36px 18px 34px;border-radius:14px;background:rgba(16,20,26,.62);backdrop-filter:blur(12px)}
+.acc{position:absolute;left:0;top:14px;bottom:14px;width:5px;background:#F2B64F;border-radius:3px;transform-origin:center top}
+.l3n{font-weight:700;font-size:40px} .l3r{color:#F2B64F;font-weight:700;font-size:22px;letter-spacing:3px;margin-top:6px}
+.card{position:absolute;right:80px;top:130px;display:flex;gap:22px;align-items:center;padding:22px 34px 24px 30px;border-radius:16px;background:rgba(16,20,26,.60);backdrop-filter:blur(14px);border-left:5px solid #F2B64F;box-shadow:0 18px 50px rgba(0,0,0,.35)}
+.lab{color:#F2B64F;font-weight:700;font-size:20px;letter-spacing:3px}
+.body{font-weight:700;font-size:38px;line-height:1.22;margin-top:8px} .body.s{font-size:31px}
+.quote{flex-direction:column;align-items:flex-start;gap:10px} .qb{font-weight:700;font-size:38px;line-height:1.25} .qw{color:#F2B64F;font-size:20px;letter-spacing:2px}
+.steps,.cmp{flex-direction:column;align-items:stretch;gap:0}
+.rule{height:1px;background:rgba(255,255,255,.45);margin:12px 0 14px;transform-origin:left center}
+.stl{position:relative;padding-left:4px} .vline{position:absolute;left:9px;top:12px;bottom:30px;width:2px;background:rgba(242,182,79,.5);transform-origin:center top}
+.st{display:flex;gap:20px;align-items:flex-start;margin:6px 0 14px} .dot{width:12px;height:12px;border-radius:6px;background:#F2B64F;margin-top:8px;flex:none;position:relative;left:4px}
+.cols{display:flex;gap:30px} .col{min-width:250px} .col .ic{display:block;margin-bottom:6px} .div{width:2px;background:rgba(242,182,79,.55);transform-origin:center top}
+.end{position:absolute;inset:0;text-align:center} .et{position:absolute;left:0;right:0;top:380px;font-weight:700;font-size:64px}
+.ec{position:relative;top:520px;color:#F2B64F;font-weight:700;font-size:24px;letter-spacing:3px;margin-bottom:18px} .ek{position:relative;top:560px;color:#ddd;font-size:22px;letter-spacing:6px}
+.pt{position:absolute} .pd{position:absolute;width:6px;height:6px;border-radius:3px;background:#F2B64F;opacity:0;filter:blur(1px)}
+.band{position:absolute;left:0;right:0;bottom:0;height:260px;background:linear-gradient(to top,rgba(0,0,0,.45),rgba(0,0,0,0))}
+.sub{display:flex;align-items:flex-end;justify-content:center;z-index:40}
+.sub span{display:inline-block;margin-bottom:64px;max-width:1500px;text-align:center;font-weight:700;font-size:48px;letter-spacing:.3px;
+  text-shadow:0 0 6px rgba(0,0,0,.85),0 2px 14px rgba(0,0,0,.75)}
+.sub b{color:#F2B64F;font-weight:700}
+</style></head>
+<body>
+<div id="main" data-composition-id="main" data-start="0" data-duration="1426.467" data-width="1920" data-height="1080">
+<div id="bandc" class="clip" data-start="0" data-duration="1426.467" data-track-index="1" style="z-index:3"><div class="band"></div></div>
+<div id="c1" class="clip full" data-start="0.000" data-duration="4.900" data-track-index="1" style="z-index:30;"><div class="dim"></div><div class="kick" id="tk">PODCAST</div><div class="title" id="tt">Romantisisme</div><div class="tline" id="tln"></div><div class="tsub" id="ts">Antara akal dan perasaan</div></div>
+<div id="c3" class="clip pt" data-start="0.200" data-duration="4.600" data-track-index="1" style="z-index:5;left:560px;top:380px;width:800px;height:320px;"><i class="pd" id="pt2d0"></i><i class="pd" id="pt2d1"></i><i class="pd" id="pt2d2"></i><i class="pd" id="pt2d3"></i><i class="pd" id="pt2d4"></i><i class="pd" id="pt2d5"></i><i class="pd" id="pt2d6"></i><i class="pd" id="pt2d7"></i><i class="pd" id="pt2d8"></i><i class="pd" id="pt2d9"></i><i class="pd" id="pt2d10"></i><i class="pd" id="pt2d11"></i><i class="pd" id="pt2d12"></i><i class="pd" id="pt2d13"></i></div>
+<div id="c4" class="clip " data-start="46.940" data-duration="285.890" data-track-index="1" style="z-index:20;"><div class="bug"><span class="bn">01</span><span class="bt">MENGENALI TETAMU</span></div></div>
+<div id="c5" class="clip " data-start="336.630" data-duration="281.630" data-track-index="1" style="z-index:20;"><div class="bug"><span class="bn">02</span><span class="bt">APA ITU ROMANTISISME?</span></div></div>
+<div id="c6" class="clip " data-start="622.060" data-duration="99.390" data-track-index="1" style="z-index:20;"><div class="bug"><span class="bn">03</span><span class="bt">AKAL &amp; PERASAAN</span></div></div>
+<div id="c7" class="clip " data-start="725.250" data-duration="146.320" data-track-index="1" style="z-index:20;"><div class="bug"><span class="bn">04</span><span class="bt">MANUSIA &amp; ALAM</span></div></div>
+<div id="c8" class="clip " data-start="875.370" data-duration="147.140" data-track-index="1" style="z-index:20;"><div class="bug"><span class="bn">05</span><span class="bt">BERANI MENJADI DIRI SENDIRI</span></div></div>
+<div id="c9" class="clip " data-start="1026.310" data-duration="160.100" data-track-index="1" style="z-index:20;"><div class="bug"><span class="bn">06</span><span class="bt">ROMANTISISME MASA KINI</span></div></div>
+<div id="c10" class="clip " data-start="1190.210" data-duration="152.680" data-track-index="1" style="z-index:20;"><div class="bug"><span class="bn">07</span><span class="bt">EMPATI</span></div></div>
+<div id="c11" class="clip " data-start="1346.690" data-duration="74.792" data-track-index="1" style="z-index:20;"><div class="bug"><span class="bn">08</span><span class="bt">PENUTUP</span></div></div>
+<div id="c12" class="clip " data-start="5.000" data-duration="1416.482" data-track-index="1" style="z-index:20;"><div class="prog"><div class="pfill" id="pf"></div></div></div>
+<div id="c13" class="clip full" data-start="43.540" data-duration="3.600" data-track-index="1" style="z-index:25;"><div class="chband"></div><div class="chn">BAB 01</div><div class="chl"></div><div class="cht">Mengenali Tetamu</div></div>
+<div id="c15" class="clip pt" data-start="43.540" data-duration="3.600" data-track-index="1" style="z-index:5;left:660px;top:190px;width:600px;height:140px;"><i class="pd" id="pt14d0"></i><i class="pd" id="pt14d1"></i><i class="pd" id="pt14d2"></i><i class="pd" id="pt14d3"></i><i class="pd" id="pt14d4"></i><i class="pd" id="pt14d5"></i><i class="pd" id="pt14d6"></i><i class="pd" id="pt14d7"></i></div>
+<div id="c16" class="clip full" data-start="333.430" data-duration="3.600" data-track-index="1" style="z-index:25;"><div class="chband"></div><div class="chn">BAB 02</div><div class="chl"></div><div class="cht">Apa Itu Romantisisme?</div></div>
+<div id="c18" class="clip pt" data-start="333.430" data-duration="3.600" data-track-index="1" style="z-index:5;left:660px;top:190px;width:600px;height:140px;"><i class="pd" id="pt17d0"></i><i class="pd" id="pt17d1"></i><i class="pd" id="pt17d2"></i><i class="pd" id="pt17d3"></i><i class="pd" id="pt17d4"></i><i class="pd" id="pt17d5"></i><i class="pd" id="pt17d6"></i><i class="pd" id="pt17d7"></i></div>
+<div id="c19" class="clip full" data-start="618.860" data-duration="3.600" data-track-index="1" style="z-index:25;"><div class="chband"></div><div class="chn">BAB 03</div><div class="chl"></div><div class="cht">Akal &amp; Perasaan</div></div>
+<div id="c21" class="clip pt" data-start="618.860" data-duration="3.600" data-track-index="1" style="z-index:5;left:660px;top:190px;width:600px;height:140px;"><i class="pd" id="pt20d0"></i><i class="pd" id="pt20d1"></i><i class="pd" id="pt20d2"></i><i class="pd" id="pt20d3"></i><i class="pd" id="pt20d4"></i><i class="pd" id="pt20d5"></i><i class="pd" id="pt20d6"></i><i class="pd" id="pt20d7"></i></div>
+<div id="c22" class="clip full" data-start="722.050" data-duration="3.600" data-track-index="1" style="z-index:25;"><div class="chband"></div><div class="chn">BAB 04</div><div class="chl"></div><div class="cht">Manusia &amp; Alam</div></div>
+<div id="c24" class="clip pt" data-start="722.050" data-duration="3.600" data-track-index="1" style="z-index:5;left:660px;top:190px;width:600px;height:140px;"><i class="pd" id="pt23d0"></i><i class="pd" id="pt23d1"></i><i class="pd" id="pt23d2"></i><i class="pd" id="pt23d3"></i><i class="pd" id="pt23d4"></i><i class="pd" id="pt23d5"></i><i class="pd" id="pt23d6"></i><i class="pd" id="pt23d7"></i></div>
+<div id="c25" class="clip full" data-start="872.170" data-duration="3.600" data-track-index="1" style="z-index:25;"><div class="chband"></div><div class="chn">BAB 05</div><div class="chl"></div><div class="cht">Berani Menjadi Diri Sendiri</div></div>
+<div id="c27" class="clip pt" data-start="872.170" data-duration="3.600" data-track-index="1" style="z-index:5;left:660px;top:190px;width:600px;height:140px;"><i class="pd" id="pt26d0"></i><i class="pd" id="pt26d1"></i><i class="pd" id="pt26d2"></i><i class="pd" id="pt26d3"></i><i class="pd" id="pt26d4"></i><i class="pd" id="pt26d5"></i><i class="pd" id="pt26d6"></i><i class="pd" id="pt26d7"></i></div>
+<div id="c28" class="clip full" data-start="1023.110" data-duration="3.600" data-track-index="1" style="z-index:25;"><div class="chband"></div><div class="chn">BAB 06</div><div class="chl"></div><div class="cht">Romantisisme Masa Kini</div></div>
+<div id="c30" class="clip pt" data-start="1023.110" data-duration="3.600" data-track-index="1" style="z-index:5;left:660px;top:190px;width:600px;height:140px;"><i class="pd" id="pt29d0"></i><i class="pd" id="pt29d1"></i><i class="pd" id="pt29d2"></i><i class="pd" id="pt29d3"></i><i class="pd" id="pt29d4"></i><i class="pd" id="pt29d5"></i><i class="pd" id="pt29d6"></i><i class="pd" id="pt29d7"></i></div>
+<div id="c31" class="clip full" data-start="1187.010" data-duration="3.600" data-track-index="1" style="z-index:25;"><div class="chband"></div><div class="chn">BAB 07</div><div class="chl"></div><div class="cht">Empati</div></div>
+<div id="c33" class="clip pt" data-start="1187.010" data-duration="3.600" data-track-index="1" style="z-index:5;left:660px;top:190px;width:600px;height:140px;"><i class="pd" id="pt32d0"></i><i class="pd" id="pt32d1"></i><i class="pd" id="pt32d2"></i><i class="pd" id="pt32d3"></i><i class="pd" id="pt32d4"></i><i class="pd" id="pt32d5"></i><i class="pd" id="pt32d6"></i><i class="pd" id="pt32d7"></i></div>
+<div id="c34" class="clip full" data-start="1343.490" data-duration="3.600" data-track-index="1" style="z-index:25;"><div class="chband"></div><div class="chn">BAB 08</div><div class="chl"></div><div class="cht">Penutup</div></div>
+<div id="c36" class="clip pt" data-start="1343.490" data-duration="3.600" data-track-index="1" style="z-index:5;left:660px;top:190px;width:600px;height:140px;"><i class="pd" id="pt35d0"></i><i class="pd" id="pt35d1"></i><i class="pd" id="pt35d2"></i><i class="pd" id="pt35d3"></i><i class="pd" id="pt35d4"></i><i class="pd" id="pt35d5"></i><i class="pd" id="pt35d6"></i><i class="pd" id="pt35d7"></i></div>
+<div id="c37" class="clip " data-start="36.840" data-duration="4.650" data-track-index="1" style="z-index:22;"><div class="l3" style="top:690px"><div class="acc"></div><div class="l3n">Alice Catherine</div><div class="l3r">PENGACARA</div></div></div>
+<div id="c38" class="clip " data-start="38.240" data-duration="4.250" data-track-index="1" style="z-index:22;"><div class="l3" style="top:815px"><div class="acc"></div><div class="l3n">Muhammad Hasid</div><div class="l3r">PENGACARA</div></div></div>
+<div id="c39" class="clip " data-start="71.530" data-duration="6.400" data-track-index="1" style="z-index:22;"><div class="l3" style="top:780px"><div class="acc"></div><div class="l3n">Dr. Satria Abadi</div><div class="l3r">TETAMU UNDANGAN</div></div></div>
+<div id="c40" class="clip " data-start="79.430" data-duration="7.080" data-track-index="1" style="z-index:22;"><div class="card"><svg class="ic" width="44" height="44" viewBox="-2 -2 52 60"><path d="M24 0 C37 0 46 9 46 21 C46 34 30 46 24 56 C18 46 2 34 2 21 C2 9 11 0 24 0 M24 12 C19 12 15 16 15 21 C15 26 19 30 24 30 C29 30 33 26 33 21 C33 16 29 12 24 12 Z" fill="#F2B64F" fill-rule="evenodd"/></svg><div><div class="lab">ASAL</div><div class="body">Bogor, Indonesia</div></div></div></div>
+<div id="c42" class="clip pt" data-start="79.430" data-duration="7.080" data-track-index="1" style="z-index:5;left:1240px;top:330px;width:600px;height:220px;"><i class="pd" id="pt41d0"></i><i class="pd" id="pt41d1"></i><i class="pd" id="pt41d2"></i><i class="pd" id="pt41d3"></i><i class="pd" id="pt41d4"></i><i class="pd" id="pt41d5"></i></div>
+<div id="c43" class="clip " data-start="142.130" data-duration="46.520" data-track-index="1" style="z-index:22;"><div class="card steps"><div class="lab">PERJALANAN KERJAYA</div><div class="rule"></div><div class="stl"><div class="vline"></div><div class="st" id="c43s0"><div class="dot"></div><div><div class="lab">2004</div><div class="body s">Pensyarah di Indonesia</div></div></div><div class="st" id="c43s1"><div class="dot"></div><div><div class="lab">PENGAJIAN</div><div class="body s">PhD</div></div></div><div class="st" id="c43s2"><div class="dot"></div><div><div class="lab">PASCADOKTORAL</div><div class="body s">Finland · Brunei · Malaysia</div></div></div><div class="st" id="c43s3"><div class="dot"></div><div><div class="lab">KINI</div><div class="body s">Pensyarah di Malaysia</div></div></div></div></div></div>
+<div id="c44" class="clip " data-start="215.350" data-duration="8.300" data-track-index="1" style="z-index:22;"><div class="card"><svg class="ic" width="44" height="44" viewBox="-2 -2 52 60"><path d="M2 8 L22 4 L24 6 L26 4 L46 8 L46 46 L26 42 L24 44 L22 42 L2 46 M6 12 L6 41 L21 38 L21 9 M27 9 L27 38 L42 41 L42 12 Z" fill="#F2B64F" fill-rule="evenodd"/></svg><div><div class="lab">CITA-CITA SEJAK KECIL</div><div class="body">Menjadi pendidik</div></div></div></div>
+<div id="c46" class="clip pt" data-start="215.350" data-duration="8.300" data-track-index="1" style="z-index:5;left:1240px;top:330px;width:600px;height:220px;"><i class="pd" id="pt45d0"></i><i class="pd" id="pt45d1"></i><i class="pd" id="pt45d2"></i><i class="pd" id="pt45d3"></i><i class="pd" id="pt45d4"></i><i class="pd" id="pt45d5"></i></div>
+<div id="c47" class="clip " data-start="294.310" data-duration="10.600" data-track-index="1" style="z-index:22;"><div class="card quote"><svg class="ic" width="40" height="40" viewBox="-2 -2 52 60"><path d="M2 24 C2 10 8 2 20 0 L21 4 C13 7 10 12 10 18 L20 18 L20 38 L2 38 M28 24 C28 10 34 2 46 0 L47 4 C39 7 36 12 36 18 L46 18 L46 38 L28 38 Z" fill="#F2B64F" fill-rule="evenodd"/></svg><div class="qb">Tiada batasan untuk<br>mengejar cita-cita.</div><div class="qw">— Dr. Satria Abadi</div></div></div>
+<div id="c48" class="clip " data-start="405.410" data-duration="8.800" data-track-index="1" style="z-index:22;"><div class="card"><svg class="ic" width="44" height="44" viewBox="-2 -2 52 60"><path d="M24 46 C12 36 0 28 0 16 C0 6 8 0 15 0 C20 0 23 4 24 6 C25 4 28 0 33 0 C40 0 48 6 48 16 C48 28 36 36 24 46 Z" fill="#F2B64F" fill-rule="evenodd"/></svg><div><div class="lab">ROMANTISISME</div><div class="body">Luapan perasaan<br>dari dalam diri</div></div></div></div>
+<div id="c50" class="clip pt" data-start="405.410" data-duration="8.800" data-track-index="1" style="z-index:5;left:1240px;top:330px;width:600px;height:220px;"><i class="pd" id="pt49d0"></i><i class="pd" id="pt49d1"></i><i class="pd" id="pt49d2"></i><i class="pd" id="pt49d3"></i><i class="pd" id="pt49d4"></i><i class="pd" id="pt49d5"></i></div>
+<div id="c51" class="clip " data-start="471.750" data-duration="41.560" data-track-index="1" style="z-index:22;"><div class="card cmp"><div class="lab">DUA CARA MELIHAT ALAM</div><div class="rule"></div><div class="cols"><div class="col"><svg class="ic" width="34" height="34" viewBox="-2 -2 52 60"><path d="M24 0 L28 20 L48 24 L28 28 L24 48 L20 28 L0 24 L20 20 Z" fill="#F2B64F" fill-rule="evenodd"/></svg><div class="lab">SAINTIS</div><div class="body s">Alam bergerak<br>seperti mesin</div></div><div class="div"></div><div class="col"><svg class="ic" width="34" height="34" viewBox="-2 -2 52 60"><path d="M24 46 C12 36 0 28 0 16 C0 6 8 0 15 0 C20 0 23 4 24 6 C25 4 28 0 33 0 C40 0 48 6 48 16 C48 28 36 36 24 46 Z" fill="#F2B64F" fill-rule="evenodd"/></svg><div class="lab">SUFI / ROMANTIS</div><div class="body s">Alam dirasai<br>dengan jiwa</div></div></div></div></div>
+<div id="c52" class="clip " data-start="532.810" data-duration="62.500" data-track-index="1" style="z-index:22;"><div class="card steps"><div class="lab">PENYAIR &amp; PEMIKIR DISEBUT</div><div class="rule"></div><div class="stl"><div class="vline"></div><div class="st" id="c52s0"><div class="dot"></div><div><div class="lab">PENYAIR SUFI</div><div class="body s">Jalaluddin Ar-Rumi</div></div></div><div class="st" id="c52s1"><div class="dot"></div><div><div class="lab">PENYAIR SUFI</div><div class="body s">Rabiatul Adawiyah</div></div></div><div class="st" id="c52s2"><div class="dot"></div><div><div class="lab">SASTERAWAN</div><div class="body s">Hamka</div></div></div></div></div></div>
+<div id="c53" class="clip " data-start="630.150" data-duration="66.500" data-track-index="1" style="z-index:22;"><div class="card cmp"><div class="lab">KESEIMBANGAN</div><div class="rule"></div><div class="cols"><div class="col"><svg class="ic" width="34" height="34" viewBox="-2 -2 52 60"><path d="M23 4 L25 4 L25 44 L34 44 L34 48 L14 48 L14 44 L23 44 M4 12 L44 12 L44 15 L4 15 M4 15 L0 30 C2 34 10 34 12 30 L8 15 M40 15 L36 30 C38 34 46 34 48 30 L44 15 Z" fill="#F2B64F" fill-rule="evenodd"/></svg><div class="lab">AKAL</div><div class="body s">Menimbang<br>dengan rasional</div></div><div class="div"></div><div class="col"><svg class="ic" width="34" height="34" viewBox="-2 -2 52 60"><path d="M24 46 C12 36 0 28 0 16 C0 6 8 0 15 0 C20 0 23 4 24 6 C25 4 28 0 33 0 C40 0 48 6 48 16 C48 28 36 36 24 46 Z" fill="#F2B64F" fill-rule="evenodd"/></svg><div class="lab">PERASAAN</div><div class="body s">Tanpa akal,<br>menjadi egois</div></div></div></div></div>
+<div id="c54" class="clip " data-start="782.250" data-duration="24.320" data-track-index="1" style="z-index:22;"><div class="card cmp"><div class="lab">MELIHAT DAUN YANG GUGUR</div><div class="rule"></div><div class="cols"><div class="col"><svg class="ic" width="34" height="34" viewBox="-2 -2 52 60"><path d="M24 0 L28 20 L48 24 L28 28 L24 48 L20 28 L0 24 L20 20 Z" fill="#F2B64F" fill-rule="evenodd"/></svg><div class="lab">SAINTIS</div><div class="body s">Fotosintesis</div></div><div class="div"></div><div class="col"><svg class="ic" width="34" height="34" viewBox="-2 -2 52 60"><path d="M4 44 C4 20 20 4 46 2 C44 28 30 44 6 44 M8 42 C18 30 28 20 38 10 L36 8 C26 18 16 28 6 40 Z" fill="#F2B64F" fill-rule="evenodd"/></svg><div class="lab">ROMANTIS</div><div class="body s">Daun berterbangan,<br>menggugurkan rasa</div></div></div></div></div>
+<div id="c55" class="clip " data-start="823.070" data-duration="17.500" data-track-index="1" style="z-index:22;"><div class="card"><svg class="ic" width="44" height="44" viewBox="-2 -2 52 60"><path d="M4 44 C4 20 20 4 46 2 C44 28 30 44 6 44 M8 42 C18 30 28 20 38 10 L36 8 C26 18 16 28 6 40 Z" fill="#F2B64F" fill-rule="evenodd"/></svg><div><div class="lab">PEPATAH</div><div class="body">Seperti air di daun keladi</div></div></div></div>
+<div id="c57" class="clip pt" data-start="823.070" data-duration="17.500" data-track-index="1" style="z-index:5;left:1240px;top:330px;width:600px;height:220px;"><i class="pd" id="pt56d0"></i><i class="pd" id="pt56d1"></i><i class="pd" id="pt56d2"></i><i class="pd" id="pt56d3"></i><i class="pd" id="pt56d4"></i><i class="pd" id="pt56d5"></i></div>
+<div id="c58" class="clip " data-start="896.210" data-duration="16.000" data-track-index="1" style="z-index:22;"><div class="card cmp"><div class="lab">BERANI MENJADI DIRI SENDIRI</div><div class="rule"></div><div class="cols"><div class="col"><svg class="ic" width="34" height="34" viewBox="-2 -2 52 60"><path d="M14 10 C19 10 22 14 22 18 C22 23 19 26 14 26 C9 26 6 23 6 18 C6 14 9 10 14 10 M0 46 C0 34 6 29 14 29 C22 29 28 34 28 46 M34 12 C38 12 41 15 41 19 C41 23 38 26 34 26 C30 26 27 23 27 19 C27 15 30 12 34 12 M30 46 C30 38 32 30 36 30 C44 30 48 36 48 46 Z" fill="#F2B64F" fill-rule="evenodd"/></svg><div class="lab">DIRI</div><div class="body s">Pendirian sendiri</div></div><div class="div"></div><div class="col"><svg class="ic" width="34" height="34" viewBox="-2 -2 52 60"><path d="M14 10 C19 10 22 14 22 18 C22 23 19 26 14 26 C9 26 6 23 6 18 C6 14 9 10 14 10 M0 46 C0 34 6 29 14 29 C22 29 28 34 28 46 M34 12 C38 12 41 15 41 19 C41 23 38 26 34 26 C30 26 27 23 27 19 C27 15 30 12 34 12 M30 46 C30 38 32 30 36 30 C44 30 48 36 48 46 Z" fill="#F2B64F" fill-rule="evenodd"/></svg><div class="lab">MASYARAKAT</div><div class="body s">Aturan &amp; regulasi</div></div></div></div></div>
+<div id="c59" class="clip " data-start="929.570" data-duration="40.940" data-track-index="1" style="z-index:22;"><div class="card steps"><div class="lab">MELUAHKAN RASA MELALUI KARYA</div><div class="rule"></div><div class="stl"><div class="vline"></div><div class="st" id="c59s0"><div class="dot"></div><div><div class="lab">PUISI</div><div class="body s">Jalaluddin Ar-Rumi</div></div></div><div class="st" id="c59s1"><div class="dot"></div><div><div class="lab">DARI PENJARA</div><div class="body s">Hamka</div></div></div><div class="st" id="c59s2"><div class="dot"></div><div><div class="lab">SYAIR</div><div class="body s">Rabiatul Adawiyah</div></div></div></div></div></div>
+<div id="c60" class="clip " data-start="973.510" data-duration="24.500" data-track-index="1" style="z-index:22;"><div class="card quote"><svg class="ic" width="40" height="40" viewBox="-2 -2 52 60"><path d="M2 24 C2 10 8 2 20 0 L21 4 C13 7 10 12 10 18 L20 18 L20 38 L2 38 M28 24 C28 10 34 2 46 0 L47 4 C39 7 36 12 36 18 L46 18 L46 38 L28 38 Z" fill="#F2B64F" fill-rule="evenodd"/></svg><div class="qb">Jika syurga itu untukku,<br>berikan saja kepada<br>orang yang Kau cintai.</div><div class="qw">— Rabiatul Adawiyah (diceritakan Dr. Satria)</div></div></div>
+<div id="c61" class="clip " data-start="1041.020" data-duration="47.210" data-track-index="1" style="z-index:22;"><div class="card cmp"><div class="lab">ROMANTIS DI ERA TEKNOLOGI</div><div class="rule"></div><div class="cols"><div class="col"><svg class="ic" width="34" height="34" viewBox="-2 -2 52 60"><path d="M12 0 L36 0 C40 0 42 2 42 6 L42 50 C42 54 40 56 36 56 L12 56 C8 56 6 54 6 50 L6 6 C6 2 8 0 12 0 M10 8 L10 46 L38 46 L38 8 M21 50 L27 50 L27 52 L21 52 Z" fill="#F2B64F" fill-rule="evenodd"/></svg><div class="lab">MEDIA SOSIAL</div><div class="body s">Meniru orang lain</div></div><div class="div"></div><div class="col"><svg class="ic" width="34" height="34" viewBox="-2 -2 52 60"><path d="M24 46 C12 36 0 28 0 16 C0 6 8 0 15 0 C20 0 23 4 24 6 C25 4 28 0 33 0 C40 0 48 6 48 16 C48 28 36 36 24 46 Z" fill="#F2B64F" fill-rule="evenodd"/></svg><div class="lab">ROMANTIS SEBENAR</div><div class="body s">Luapan emosi<br>diri sendiri</div></div></div></div></div>
+<div id="c62" class="clip " data-start="1111.230" data-duration="30.160" data-track-index="1" style="z-index:22;"><div class="card"><svg class="ic" width="44" height="44" viewBox="-2 -2 52 60"><path d="M24 46 C12 36 0 28 0 16 C0 6 8 0 15 0 C20 0 23 4 24 6 C25 4 28 0 33 0 C40 0 48 6 48 16 C48 28 36 36 24 46 Z" fill="#F2B64F" fill-rule="evenodd"/></svg><div><div class="lab">INTI PANDANGAN</div><div class="body">Romantis ditunjukkan<br>melalui perbuatan</div></div></div></div>
+<div id="c64" class="clip pt" data-start="1111.230" data-duration="30.160" data-track-index="1" style="z-index:5;left:1240px;top:330px;width:600px;height:220px;"><i class="pd" id="pt63d0"></i><i class="pd" id="pt63d1"></i><i class="pd" id="pt63d2"></i><i class="pd" id="pt63d3"></i><i class="pd" id="pt63d4"></i><i class="pd" id="pt63d5"></i></div>
+<div id="c65" class="clip " data-start="1178.780" data-duration="7.530" data-track-index="1" style="z-index:22;"><div class="card"><svg class="ic" width="44" height="44" viewBox="-2 -2 52 60"><path d="M24 0 L28 20 L48 24 L28 28 L24 48 L20 28 L0 24 L20 20 Z" fill="#F2B64F" fill-rule="evenodd"/></svg><div><div class="lab">ROMANTIS</div><div class="body">Tak perlu selalu berpuisi</div></div></div></div>
+<div id="c67" class="clip pt" data-start="1178.780" data-duration="7.530" data-track-index="1" style="z-index:5;left:1240px;top:330px;width:600px;height:220px;"><i class="pd" id="pt66d0"></i><i class="pd" id="pt66d1"></i><i class="pd" id="pt66d2"></i><i class="pd" id="pt66d3"></i><i class="pd" id="pt66d4"></i><i class="pd" id="pt66d5"></i></div>
+<div id="c68" class="clip " data-start="1254.950" data-duration="86.740" data-track-index="1" style="z-index:22;"><div class="card steps"><div class="lab">TIGA RASA YANG BERBEZA</div><div class="rule"></div><div class="stl"><div class="vline"></div><div class="st" id="c68s0"><div class="dot"></div><div><div class="lab">EMPATI</div><div class="body s">Merasakan situasi orang lain</div></div></div><div class="st" id="c68s1"><div class="dot"></div><div><div class="lab">BELAS KASIHAN</div><div class="body s">Muncul pada orang yang dekat</div></div></div><div class="st" id="c68s2"><div class="dot"></div><div><div class="lab">SIMPATI</div><div class="body s">Sekadar rasa suka</div></div></div></div></div></div>
+<div id="c69" class="clip " data-start="1347.090" data-duration="27.592" data-track-index="1" style="z-index:22;"><div class="card"><svg class="ic" width="44" height="44" viewBox="-2 -2 52 60"><path d="M4 18 L44 18 L44 28 L4 28 M7 30 L41 30 L41 50 L7 50 M22 18 L26 18 L26 50 L22 50 M24 18 C14 18 8 8 16 6 C20 5 24 12 24 18 C24 12 28 5 32 6 C40 8 34 18 24 18 Z" fill="#F2B64F" fill-rule="evenodd"/></svg><div><div class="lab">BUAH TANGAN</div><div class="body">Kenang-kenangan untuk tetamu</div></div></div></div>
+<div id="c71" class="clip pt" data-start="1347.090" data-duration="27.592" data-track-index="1" style="z-index:5;left:1240px;top:330px;width:600px;height:220px;"><i class="pd" id="pt70d0"></i><i class="pd" id="pt70d1"></i><i class="pd" id="pt70d2"></i><i class="pd" id="pt70d3"></i><i class="pd" id="pt70d4"></i><i class="pd" id="pt70d5"></i></div>
+<div id="c72" class="clip full" data-start="1422.567" data-duration="3.900" data-track-index="1" style="z-index:30;"><div class="end"><div class="et">Terima kasih</div><div class="tline e"></div><div class="ec">TETAMU · DR. SATRIA ABADI</div><div class="ec">PENGACARA · ALICE CATHERINE &amp; MUHAMMAD HASID</div><div class="ek">PODCAST · ROMANTISISME</div></div></div>
+<div id="c74" class="clip pt" data-start="1422.567" data-duration="3.900" data-track-index="1" style="z-index:5;left:560px;top:380px;width:800px;height:320px;"><i class="pd" id="pt73d0"></i><i class="pd" id="pt73d1"></i><i class="pd" id="pt73d2"></i><i class="pd" id="pt73d3"></i><i class="pd" id="pt73d4"></i><i class="pd" id="pt73d5"></i><i class="pd" id="pt73d6"></i><i class="pd" id="pt73d7"></i><i class="pd" id="pt73d8"></i><i class="pd" id="pt73d9"></i><i class="pd" id="pt73d10"></i><i class="pd" id="pt73d11"></i></div>
+<div id="s75" class="clip sub" data-start="0.170" data-duration="1.590" data-track-index="2"><span>Terdapat saat-saat dalam kehidupan</span></div>
+<div id="s76" class="clip sub" data-start="1.650" data-duration="1.650" data-track-index="2"><span>kita yang tak dapat dijelaskan dengan</span></div>
+<div id="s77" class="clip sub" data-start="3.190" data-duration="2.456" data-track-index="2"><span>kata-kata ataupun fakta semata-mata.</span></div>
+<div id="s78" class="clip sub" data-start="5.576" data-duration="2.734" data-track-index="2"><span>Saat memandang langit yang penuh bintang,</span></div>
+<div id="s79" class="clip sub" data-start="8.330" data-duration="2.550" data-track-index="2"><span>merasai angin yang menyapu di tepi hutan.</span></div>
+<div id="s80" class="clip sub" data-start="11.290" data-duration="2.450" data-track-index="2"><span>Ataupun seakan mendengarkan lagu yang</span></div>
+<div id="s81" class="clip sub" data-start="13.720" data-duration="1.900" data-track-index="2"><span>seakan-akan bercakap terus ke dalam <b>jiwa</b></span></div>
+<div id="s82" class="clip sub" data-start="15.510" data-duration="0.890" data-track-index="2"><span>kita.</span></div>
+<div id="s83" class="clip sub" data-start="16.290" data-duration="2.770" data-track-index="2"><span>Jadi Alice, adakah itu ayat-ayat sesuai</span></div>
+<div id="s84" class="clip sub" data-start="18.950" data-duration="2.500" data-track-index="2"><span>untuk kita punya intro pada podcast ini?</span></div>
+<div id="s85" class="clip sub" data-start="21.470" data-duration="1.770" data-track-index="2"><span>Ya, sangat sesuai untuk kita punya podcast</span></div>
+<div id="s86" class="clip sub" data-start="23.130" data-duration="1.350" data-track-index="2"><span>pada pagi ini.</span></div>
+<div id="s87" class="clip sub" data-start="24.890" data-duration="1.690" data-track-index="2"><span>Tanpa melengahkan masa,</span></div>
+<div id="s88" class="clip sub" data-start="26.670" data-duration="2.290" data-track-index="2"><span>Alice, mari kita memperkenalkanlah diri</span></div>
+<div id="s89" class="clip sub" data-start="28.850" data-duration="2.610" data-track-index="2"><span>kita, siapa sebenarnya untuk pengacara</span></div>
+<div id="s90" class="clip sub" data-start="31.350" data-duration="1.490" data-track-index="2"><span>pada podcast pagi ini.</span></div>
+<div id="s91" class="clip sub" data-start="32.860" data-duration="1.420" data-track-index="2"><span>Okey baik.</span></div>
+<div id="s92" class="clip sub" data-start="34.470" data-duration="1.948" data-track-index="2"><span>Selamat sejahtera dan salam mesra.</span></div>
+<div id="s93" class="clip sub" data-start="36.410" data-duration="1.510" data-track-index="2"><span>Saya Alice Catherine.</span></div>
+<div id="s94" class="clip sub" data-start="37.810" data-duration="0.690" data-track-index="2"><span>Dan saya Muhammad Hasid.</span></div>
+<div id="s95" class="clip sub" data-start="39.190" data-duration="3.110" data-track-index="2"><span>Kami merupakan pengacara podcast pada pagi ini.</span></div>
+<div id="s96" class="clip sub" data-start="43.330" data-duration="2.320" data-track-index="2"><span>Assalamualaikum dan salam sejahtera.</span></div>
+<div id="s97" class="clip sub" data-start="45.670" data-duration="1.160" data-track-index="2"><span>Tanpa kita melengahkan,</span></div>
+<div id="s98" class="clip sub" data-start="46.850" data-duration="2.150" data-track-index="2"><span>mari kita menjemputlah kita punya tetamu</span></div>
+<div id="s99" class="clip sub" data-start="48.890" data-duration="2.042" data-track-index="2"><span>undangan kita, iaitu Dr. <b>Satria Abadi</b>.</span></div>
+<div id="s100" class="clip sub" data-start="52.500" data-duration="1.000" data-track-index="2"><span>Okay, doktor,</span></div>
+<div id="s101" class="clip sub" data-start="53.490" data-duration="2.130" data-track-index="2"><span>terima kasih kerana datang masuk kita</span></div>
+<div id="s102" class="clip sub" data-start="55.510" data-duration="1.720" data-track-index="2"><span>punya podcast untuk hari ini.</span></div>
+<div id="s103" class="clip sub" data-start="57.250" data-duration="1.190" data-track-index="2"><span>Terima kasih.</span></div>
+<div id="s104" class="clip sub" data-start="58.530" data-duration="3.430" data-track-index="2"><span>Okay doktor, jadi untuk penonton-penonton</span></div>
+<div id="s105" class="clip sub" data-start="61.850" data-duration="3.110" data-track-index="2"><span>kita, mungkin mereka akan tertanya, siapa</span></div>
+<div id="s106" class="clip sub" data-start="64.850" data-duration="3.350" data-track-index="2"><span>doktor sebenarnya. Jadi apa kata doktor</span></div>
+<div id="s107" class="clip sub" data-start="68.130" data-duration="3.510" data-track-index="2"><span>perkenalkan doktor kepada penonton kita.</span></div>
+<div id="s108" class="clip sub" data-start="72.530" data-duration="3.440" data-track-index="2"><span>Nama saya Dr. Satria,</span></div>
+<div id="s109" class="clip sub" data-start="75.990" data-duration="4.170" data-track-index="2"><span><b>Satria Abadi</b> yang panjangnya. Saya</span></div>
+<div id="s110" class="clip sub" data-start="80.050" data-duration="2.950" data-track-index="2"><span>berasal dari <b>Indonesia</b>,</span></div>
+<div id="s111" class="clip sub" data-start="83.090" data-duration="1.230" data-track-index="2"><span>di wilayah <b>Bogor</b>,</span></div>
+<div id="s112" class="clip sub" data-start="84.710" data-duration="2.850" data-track-index="2"><span>di <b>Indonesia</b>. Kalau di <b>Bogor</b> itu, dia macam</span></div>
+<div id="s113" class="clip sub" data-start="87.450" data-duration="6.150" data-track-index="2"><span>dingin, macam dingin, macam di sini kalau di...</span></div>
+<div id="s114" class="clip sub" data-start="93.490" data-duration="2.400" data-track-index="2"><span>Kalau di sini, macam Cameron?</span></div>
+<div id="s115" class="clip sub" data-start="95.910" data-duration="3.060" data-track-index="2"><span>Macam Cameron, dia dingin macam itu,</span></div>
+<div id="s116" class="clip sub" data-start="98.990" data-duration="1.290" data-track-index="2"><span>dia ke puncak.</span></div>
+<div id="s117" class="clip sub" data-start="100.370" data-duration="4.058" data-track-index="2"><span>Saya, hobinya... hobi saya itu,</span></div>
+<div id="s118" class="clip sub" data-start="104.590" data-duration="2.570" data-track-index="2"><span>hobinya kalau sesuai dengan badan.</span></div>
+<div id="s119" class="clip sub" data-start="107.050" data-duration="2.370" data-track-index="2"><span>Sesuai dengan badan? Hobi saya makan.</span></div>
+<div id="s120" class="clip sub" data-start="110.130" data-duration="3.610" data-track-index="2"><span>Tapi saya membatasi untuk sekarang, jadi</span></div>
+<div id="s121" class="clip sub" data-start="113.630" data-duration="1.950" data-track-index="2"><span>tidak terlalu.</span></div>
+<div id="s122" class="clip sub" data-start="115.790" data-duration="2.310" data-track-index="2"><span>Kalau dulu memang banyaklah hal-hal yang,</span></div>
+<div id="s123" class="clip sub" data-start="117.990" data-duration="1.710" data-track-index="2"><span>misalnya makan bakso,</span></div>
+<div id="s124" class="clip sub" data-start="119.590" data-duration="1.190" data-track-index="2"><span>makan apa, macam-macam.</span></div>
+<div id="s125" class="clip sub" data-start="120.670" data-duration="3.577" data-track-index="2"><span>Memang doktor ni jenis yang memang</span></div>
+<div id="s126" class="clip sub" data-start="124.165" data-duration="1.225" data-track-index="2"><span>food hunter, macam tu lah.</span></div>
+<div id="s127" class="clip sub" data-start="125.410" data-duration="1.942" data-track-index="2"><span>Tapi memang sekarang memang dah dibatasi</span></div>
+<div id="s128" class="clip sub" data-start="127.260" data-duration="2.580" data-track-index="2"><span>kerana usia lah, kerana umur.</span></div>
+<div id="s129" class="clip sub" data-start="131.630" data-duration="3.590" data-track-index="2"><span>So jadi untuk pengalaman doktor, ke apa, macam</span></div>
+<div id="s130" class="clip sub" data-start="135.110" data-duration="0.850" data-track-index="2"><span>mana ke?</span></div>
+<div id="s131" class="clip sub" data-start="136.730" data-duration="5.540" data-track-index="2"><span>Saya boleh datang ke <b>Malaysia</b> di UPSI ini.</span></div>
+<div id="s132" class="clip sub" data-start="142.290" data-duration="4.050" data-track-index="2"><span>Saya dulu mulai bekerja setelah degree, itu</span></div>
+<div id="s133" class="clip sub" data-start="146.230" data-duration="1.110" data-track-index="2"><span>2004.</span></div>
+<div id="s134" class="clip sub" data-start="147.570" data-duration="1.810" data-track-index="2"><span>Saya mulai bekerja jadi lecturer, memang</span></div>
+<div id="s135" class="clip sub" data-start="149.270" data-duration="2.990" data-track-index="2"><span>jadi lecturer di <b>Indonesia</b>.</span></div>
+<div id="s136" class="clip sub" data-start="152.530" data-duration="1.530" data-track-index="2"><span>Saya study,</span></div>
+<div id="s137" class="clip sub" data-start="154.530" data-duration="5.250" data-track-index="2"><span>saya PhD, kemudian saya apply untuk jadi</span></div>
+<div id="s138" class="clip sub" data-start="159.670" data-duration="2.670" data-track-index="2"><span>postdoctoral. Postdoctoral itu dia yang</span></div>
+<div id="s139" class="clip sub" data-start="162.230" data-duration="3.170" data-track-index="2"><span>bekerja di bidang research. Jadi kalau saya</span></div>
+<div id="s140" class="clip sub" data-start="165.290" data-duration="2.810" data-track-index="2"><span>apply di beberapa tempat, di beberapa</span></div>
+<div id="s141" class="clip sub" data-start="167.990" data-duration="1.510" data-track-index="2"><span>universiti,</span></div>
+<div id="s142" class="clip sub" data-start="170.350" data-duration="3.750" data-track-index="2"><span>di Finlandia, Brunei Darussalam dan <b>Malaysia</b></span></div>
+<div id="s143" class="clip sub" data-start="173.990" data-duration="0.870" data-track-index="2"><span>lah.</span></div>
+<div id="s144" class="clip sub" data-start="175.510" data-duration="3.450" data-track-index="2"><span>Kemudian yang saya diterima lah di</span></div>
+<div id="s145" class="clip sub" data-start="178.850" data-duration="2.790" data-track-index="2"><span><b>Malaysia</b> lah, seperti itu. Mulai dari</span></div>
+<div id="s146" class="clip sub" data-start="181.530" data-duration="4.190" data-track-index="2"><span>research, kemudian sampai saya ditawarkan</span></div>
+<div id="s147" class="clip sub" data-start="185.610" data-duration="2.729" data-track-index="2"><span>untuk menjadi lecturer di sini lah. Macam</span></div>
+<div id="s148" class="clip sub" data-start="188.262" data-duration="1.778" data-track-index="2"><span>tu.</span></div>
+<div id="s149" class="clip sub" data-start="190.060" data-duration="5.260" data-track-index="2"><span>So jadi doktor, kalau doktor tak jadi lecturer, apa</span></div>
+<div id="s150" class="clip sub" data-start="195.210" data-duration="1.690" data-track-index="2"><span>cerita-cerita doktor dahulu?</span></div>
+<div id="s151" class="clip sub" data-start="197.690" data-duration="5.250" data-track-index="2"><span>Menarik. Jadi saya dulu memang dari kecil</span></div>
+<div id="s152" class="clip sub" data-start="202.890" data-duration="2.850" data-track-index="2"><span>tu saya sudah menuliskan di depan nama</span></div>
+<div id="s153" class="clip sub" data-start="205.630" data-duration="3.210" data-track-index="2"><span>saya tu &quot;Doktor&quot;. Jadi memang saya dari</span></div>
+<div id="s154" class="clip sub" data-start="208.730" data-duration="2.090" data-track-index="2"><span>kecil, dari sekolah rendah tu saya telah</span></div>
+<div id="s155" class="clip sub" data-start="210.710" data-duration="2.842" data-track-index="2"><span>menuliskan nama saya Profesor Doktor</span></div>
+<div id="s156" class="clip sub" data-start="213.496" data-duration="3.485" data-track-index="2"><span><b>Satria Abadi</b>. Memang <b>cita-cita</b> masa tu</span></div>
+<div id="s157" class="clip sub" data-start="216.880" data-duration="4.925" data-track-index="2"><span>memang nak jadi <b>pendidik</b>. Jadi</span></div>
+<div id="s158" class="clip sub" data-start="221.825" data-duration="3.415" data-track-index="2"><span>kerana kakek saya seorang guru, saya</span></div>
+<div id="s159" class="clip sub" data-start="225.130" data-duration="1.270" data-track-index="2"><span>melihat dia</span></div>
+<div id="s160" class="clip sub" data-start="226.510" data-duration="4.730" data-track-index="2"><span>sering membaca, kemudian sering menilai</span></div>
+<div id="s161" class="clip sub" data-start="231.130" data-duration="3.410" data-track-index="2"><span>kerja-kerja siswa. Jadi saya dari kecil</span></div>
+<div id="s162" class="clip sub" data-start="234.430" data-duration="2.510" data-track-index="2"><span>melihat itu, tertarik untuk menjadi guru.</span></div>
+<div id="s163" class="clip sub" data-start="236.830" data-duration="3.660" data-track-index="2"><span>Dan saya tengok banyak orang menempatkan</span></div>
+<div id="s164" class="clip sub" data-start="240.510" data-duration="2.010" data-track-index="2"><span>namanya profesor. Walaupun dulu masa kecil</span></div>
+<div id="s165" class="clip sub" data-start="242.410" data-duration="1.710" data-track-index="2"><span>saya pun tak tahu,</span></div>
+<div id="s166" class="clip sub" data-start="244.810" data-duration="3.150" data-track-index="2"><span>belum tahu apa itu, yang penting saya letak</span></div>
+<div id="s167" class="clip sub" data-start="247.850" data-duration="2.032" data-track-index="2"><span>dulu nama dulu, profesor doktor,</span></div>
+<div id="s168" class="clip sub" data-start="249.814" data-duration="2.986" data-track-index="2"><span>macam-macam lah. Intinya seperti itu.</span></div>
+<div id="s169" class="clip sub" data-start="252.890" data-duration="3.390" data-track-index="2"><span>Okay Alice, bagi pendapat awak,</span></div>
+<div id="s170" class="clip sub" data-start="256.170" data-duration="2.850" data-track-index="2"><span>adakah pengalaman doktor ataupun</span></div>
+<div id="s171" class="clip sub" data-start="258.910" data-duration="1.630" data-track-index="2"><span>pengenalan diri doktor ini agak menarik</span></div>
+<div id="s172" class="clip sub" data-start="260.430" data-duration="0.980" data-track-index="2"><span>bagi awak?</span></div>
+<div id="s173" class="clip sub" data-start="261.430" data-duration="1.810" data-track-index="2"><span>Bagi saya, pengalaman doktor sangat</span></div>
+<div id="s174" class="clip sub" data-start="263.130" data-duration="3.590" data-track-index="2"><span>menarik. Terima kasih. Dan juga dia...</span></div>
+<div id="s175" class="clip sub" data-start="267.110" data-duration="1.010" data-track-index="2"><span>Ya, begitulah.</span></div>
+<div id="s176" class="clip sub" data-start="268.870" data-duration="3.250" data-track-index="2"><span>Saya tak tahu ni, maknanya begitulah itu.</span></div>
+<div id="s177" class="clip sub" data-start="272.210" data-duration="3.450" data-track-index="2"><span>Tapi okey lah, untuk pengalaman doktor tu</span></div>
+<div id="s178" class="clip sub" data-start="275.550" data-duration="2.070" data-track-index="2"><span>boleh memberi semangat.</span></div>
+<div id="s179" class="clip sub" data-start="277.777" data-duration="2.563" data-track-index="2"><span>Terima kasih.</span></div>
+<div id="s180" class="clip sub" data-start="280.610" data-duration="2.290" data-track-index="2"><span>Jangan merendahkan diri mereka lah. Jadi</span></div>
+<div id="s181" class="clip sub" data-start="282.885" data-duration="1.455" data-track-index="2"><span>mereka punya <b>cita-cita</b> boleh juga</span></div>
+<div id="s182" class="clip sub" data-start="284.230" data-duration="2.074" data-track-index="2"><span>tercapai. Betul.</span></div>
+<div id="s183" class="clip sub" data-start="286.410" data-duration="3.790" data-track-index="2"><span>Satu hal yang mungkin saya sampaikan pada</span></div>
+<div id="s184" class="clip sub" data-start="290.090" data-duration="2.790" data-track-index="2"><span>student-student saya di <b>Indonesia</b> pun, di</span></div>
+<div id="s185" class="clip sub" data-start="292.770" data-duration="0.930" data-track-index="2"><span><b>Malaysia</b>:</span></div>
+<div id="s186" class="clip sub" data-start="294.250" data-duration="5.710" data-track-index="2"><span>tidak ada batasan antara manusia ini untuk</span></div>
+<div id="s187" class="clip sub" data-start="299.850" data-duration="1.720" data-track-index="2"><span>mengejar <b>cita-cita</b> dia,</span></div>
+<div id="s188" class="clip sub" data-start="301.590" data-duration="1.650" data-track-index="2"><span>selagi dia punya kemampuan,</span></div>
+<div id="s189" class="clip sub" data-start="303.130" data-duration="3.400" data-track-index="2"><span>kemauan, kemudian tekad yang keras,</span></div>
+<div id="s190" class="clip sub" data-start="306.550" data-duration="5.930" data-track-index="2"><span>kemudian dia boleh fokus, kemudian dia</span></div>
+<div id="s191" class="clip sub" data-start="312.370" data-duration="5.490" data-track-index="2"><span>boleh mempunyai kepedulian dengan diri dia</span></div>
+<div id="s192" class="clip sub" data-start="317.750" data-duration="3.390" data-track-index="2"><span>sendiri, jadi insya-Allah dia akan</span></div>
+<div id="s193" class="clip sub" data-start="321.030" data-duration="1.770" data-track-index="2"><span>mencapai <b>cita-cita</b> dia.</span></div>
+<div id="s194" class="clip sub" data-start="323.270" data-duration="0.990" data-track-index="2"><span>Saya setuju.</span></div>
+<div id="s195" class="clip sub" data-start="324.350" data-duration="1.410" data-track-index="2"><span>Terima kasih.</span></div>
+<div id="s196" class="clip sub" data-start="326.910" data-duration="3.310" data-track-index="2"><span>Okay, kalau macam tu disebabkan kita dah</span></div>
+<div id="s197" class="clip sub" data-start="330.110" data-duration="2.560" data-track-index="2"><span>mengenali siapa kita punya tetamu,</span></div>
+<div id="s198" class="clip sub" data-start="332.690" data-duration="3.890" data-track-index="2"><span>marilah kita memulakan kita punya tajuk</span></div>
+<div id="s199" class="clip sub" data-start="336.470" data-duration="2.660" data-track-index="2"><span>podcast untuk kali ni. So jadi Alice,</span></div>
+<div id="s200" class="clip sub" data-start="339.150" data-duration="2.630" data-track-index="2"><span>sebenarnya apa kita punya tajuk untuk hari</span></div>
+<div id="s201" class="clip sub" data-start="341.710" data-duration="0.600" data-track-index="2"><span>ni ya?</span></div>
+<div id="s202" class="clip sub" data-start="341.990" data-duration="1.090" data-track-index="2"><span>Okay,</span></div>
+<div id="s203" class="clip sub" data-start="343.530" data-duration="3.320" data-track-index="2"><span>tajuk untuk podcast... Tajuk untuk podcast</span></div>
+<div id="s204" class="clip sub" data-start="346.870" data-duration="3.470" data-track-index="2"><span>kita pada pagi ni kita akan menyentuh</span></div>
+<div id="s205" class="clip sub" data-start="350.850" data-duration="4.345" data-track-index="2"><span>sedikit pasal <b>romantisisme</b>. Apa itu</span></div>
+<div id="s206" class="clip sub" data-start="355.215" data-duration="1.015" data-track-index="2"><span><b>romantisisme</b>?</span></div>
+<div id="s207" class="clip sub" data-start="356.250" data-duration="2.910" data-track-index="2"><span>Ia bukan sekadar belajar tentang pandangan</span></div>
+<div id="s208" class="clip sub" data-start="359.050" data-duration="1.100" data-track-index="2"><span>hidup.</span></div>
+<div id="s209" class="clip sub" data-start="360.170" data-duration="2.330" data-track-index="2"><span>Ia juga</span></div>
+<div id="s210" class="clip sub" data-start="363.370" data-duration="4.970" data-track-index="2"><span>mengenali atau memahami bagaimana kita</span></div>
+<div id="s211" class="clip sub" data-start="368.230" data-duration="5.706" data-track-index="2"><span>untuk menyentuh pandangan hidup lah.</span></div>
+<div id="s212" class="clip sub" data-start="374.030" data-duration="3.430" data-track-index="2"><span>Oh, saya ingatkan <b>romantisme</b> ni just macam</span></div>
+<div id="s213" class="clip sub" data-start="377.350" data-duration="2.950" data-track-index="2"><span>kita punya <b>perasaan</b> kat orang ke macam tu</span></div>
+<div id="s214" class="clip sub" data-start="380.190" data-duration="0.600" data-track-index="2"><span>ke.</span></div>
+<div id="s215" class="clip sub" data-start="380.510" data-duration="1.120" data-track-index="2"><span>Eh, bukan eh?</span></div>
+<div id="s216" class="clip sub" data-start="381.650" data-duration="2.450" data-track-index="2"><span>Ya, lebih kepada macam tu jugalah, dia</span></div>
+<div id="s217" class="clip sub" data-start="383.990" data-duration="4.160" data-track-index="2"><span>termasuk dalam <b>romantisisme</b> juga. Oh, okay okay.</span></div>
+<div id="s218" class="clip sub" data-start="388.170" data-duration="3.050" data-track-index="2"><span>Oh, tu okay lah kalau macam tu.</span></div>
+<div id="s219" class="clip sub" data-start="392.170" data-duration="2.410" data-track-index="2"><span>Kalau macam tu, pandangan doktor macam mana</span></div>
+<div id="s220" class="clip sub" data-start="394.470" data-duration="1.090" data-track-index="2"><span><b>romantisme</b>?</span></div>
+<div id="s221" class="clip sub" data-start="395.930" data-duration="2.710" data-track-index="2"><span>Saya, menurut pandangan saya, saya tu tak</span></div>
+<div id="s222" class="clip sub" data-start="398.530" data-duration="1.750" data-track-index="2"><span>tahu saya ni <b>romantis</b> sangat,</span></div>
+<div id="s223" class="clip sub" data-start="400.370" data-duration="2.390" data-track-index="2"><span>sehingga kalian undang saya untuk jadi</span></div>
+<div id="s224" class="clip sub" data-start="402.650" data-duration="4.530" data-track-index="2"><span>pembicara. Okay, tak apa. Menurut pandangan</span></div>
+<div id="s225" class="clip sub" data-start="407.070" data-duration="3.390" data-track-index="2"><span>saya <b>romantis</b> ni kan suatu <b>luapan</b> atau</span></div>
+<div id="s226" class="clip sub" data-start="410.350" data-duration="2.970" data-track-index="2"><span>suatu ungkapan <b>perasaan</b> yang memang ada</span></div>
+<div id="s227" class="clip sub" data-start="413.210" data-duration="1.220" data-track-index="2"><span>daripada kita.</span></div>
+<div id="s228" class="clip sub" data-start="414.450" data-duration="4.110" data-track-index="2"><span>Jadi menurut filosofi-filosofi terdahulu,</span></div>
+<div id="s229" class="clip sub" data-start="418.770" data-duration="2.830" data-track-index="2"><span>banyak hal-hal yang mereka luapkan dengan</span></div>
+<div id="s230" class="clip sub" data-start="421.490" data-duration="1.115" data-track-index="2"><span>dengan <b>perasaan</b>.</span></div>
+<div id="s231" class="clip sub" data-start="422.625" data-duration="3.335" data-track-index="2"><span>Contohnya, saya sangat mengagumi filosof</span></div>
+<div id="s232" class="clip sub" data-start="425.850" data-duration="1.653" data-track-index="2"><span>Al-Qidri.</span></div>
+<div id="s233" class="clip sub" data-start="427.490" data-duration="1.286" data-track-index="2"><span>Kemudian,</span></div>
+<div id="s234" class="clip sub" data-start="428.950" data-duration="6.390" data-track-index="2"><span>kemudian apa, saya lupa satu lagi, dia</span></div>
+<div id="s235" class="clip sub" data-start="435.230" data-duration="2.470" data-track-index="2"><span><b>penyair</b> yang memang, memang saya suka</span></div>
+<div id="s236" class="clip sub" data-start="437.590" data-duration="2.050" data-track-index="2"><span>dengan syair-syair dia, yang</span></div>
+<div id="s237" class="clip sub" data-start="439.530" data-duration="3.770" data-track-index="2"><span>menambahkan <b>romantis</b> dalam kehidupan.</span></div>
+<div id="s238" class="clip sub" data-start="443.390" data-duration="3.520" data-track-index="2"><span>Jadi macam <b>romantisme</b> ni pun kita luahkan</span></div>
+<div id="s239" class="clip sub" data-start="446.930" data-duration="2.972" data-track-index="2"><span>daripada seni jugalah. Betul. Daripada</span></div>
+<div id="s240" class="clip sub" data-start="449.849" data-duration="5.871" data-track-index="2"><span>ayat-ayat manis. Betul. Jadi dia akan</span></div>
+<div id="s241" class="clip sub" data-start="455.610" data-duration="2.430" data-track-index="2"><span>meluapkan <b>perasaan</b> itu sehingga <b>perasaan</b></span></div>
+<div id="s242" class="clip sub" data-start="457.930" data-duration="3.180" data-track-index="2"><span>itu menimbulkan <b>empati</b> kepada orang</span></div>
+<div id="s243" class="clip sub" data-start="461.130" data-duration="6.950" data-track-index="2"><span>menimbulkan <b>perasaan</b> yang menyebabkan kita</span></div>
+<div id="s244" class="clip sub" data-start="467.970" data-duration="4.810" data-track-index="2"><span>mempunyai <b>simpati</b> pada orang. Berbeda kalau</span></div>
+<div id="s245" class="clip sub" data-start="472.670" data-duration="2.230" data-track-index="2"><span>pandangan seorang <b>saintis</b>,</span></div>
+<div id="s246" class="clip sub" data-start="474.870" data-duration="3.050" data-track-index="2"><span>kalau <b>saintis</b> ini dia akan membuat sebuah</span></div>
+<div id="s247" class="clip sub" data-start="477.810" data-duration="6.150" data-track-index="2"><span><b>filosofi</b>. <b>Filosofi</b> itu, dia adalah <b>alam</b> ini</span></div>
+<div id="s248" class="clip sub" data-start="483.850" data-duration="1.730" data-track-index="2"><span>bergerak seolah mesin.</span></div>
+<div id="s249" class="clip sub" data-start="486.350" data-duration="3.770" data-track-index="2"><span>Jadi memang seperti kalau orang <b>saintis</b>,</span></div>
+<div id="s250" class="clip sub" data-start="490.470" data-duration="4.282" data-track-index="2"><span>ada siang dan malam, seperti itu sainsnya,</span></div>
+<div id="s251" class="clip sub" data-start="494.870" data-duration="4.550" data-track-index="2"><span>bahawa kalau malam itu, matahari posisinya</span></div>
+<div id="s252" class="clip sub" data-start="499.310" data-duration="3.820" data-track-index="2"><span>seperti apa. Berbeda kalau orang <b>sufi</b>,</span></div>
+<div id="s253" class="clip sub" data-start="503.150" data-duration="2.582" data-track-index="2"><span>orang-orang, dia</span></div>
+<div id="s254" class="clip sub" data-start="505.910" data-duration="2.120" data-track-index="2"><span>mempunyai <b>jiwa</b> <b>romantis</b>, dia akan</span></div>
+<div id="s255" class="clip sub" data-start="508.050" data-duration="3.310" data-track-index="2"><span>menyebutkan, &quot;Ketika malammu sudah berakhir,</span></div>
+<div id="s256" class="clip sub" data-start="511.450" data-duration="2.930" data-track-index="2"><span>siangmu akan menambah <b>kebahagiaan</b></span></div>
+<div id="s257" class="clip sub" data-start="514.270" data-duration="2.530" data-track-index="2"><span>disebabkan perjumpaan saya dengan kekasih</span></div>
+<div id="s258" class="clip sub" data-start="516.820" data-duration="4.180" data-track-index="2"><span>hati.&quot; Itu kan sebuah filosofi-filosofi di</span></div>
+<div id="s259" class="clip sub" data-start="520.890" data-duration="2.070" data-track-index="2"><span>mana <b>romantis</b> itu hadir.</span></div>
+<div id="s260" class="clip sub" data-start="523.250" data-duration="2.150" data-track-index="2"><span>Jadi memang ada <b>luapan</b> <b>perasaan</b>, bahawa dia</span></div>
+<div id="s261" class="clip sub" data-start="525.290" data-duration="1.930" data-track-index="2"><span>gembira pada saat siang, bahawa dia akan</span></div>
+<div id="s262" class="clip sub" data-start="527.110" data-duration="3.970" data-track-index="2"><span>berjumpa dengan kekasih dia. Itu mungkin</span></div>
+<div id="s263" class="clip sub" data-start="531.200" data-duration="1.364" data-track-index="2"><span>pandangan.</span></div>
+<div id="s264" class="clip sub" data-start="532.790" data-duration="2.610" data-track-index="2"><span>Jadi kalau <b>Jalaluddin Ar-Rumi</b> itu, saya</span></div>
+<div id="s265" class="clip sub" data-start="535.290" data-duration="4.710" data-track-index="2"><span>suka dengan puisi-puisi Jalaluddin,</span></div>
+<div id="s266" class="clip sub" data-start="539.890" data-duration="1.830" data-track-index="2"><span>tentang</span></div>
+<div id="s267" class="clip sub" data-start="541.915" data-duration="1.499" data-track-index="2"><span>ketuhanan.</span></div>
+<div id="s268" class="clip sub" data-start="543.730" data-duration="4.046" data-track-index="2"><span>Memang dia kecintaan, puisi-puisi</span></div>
+<div id="s269" class="clip sub" data-start="547.930" data-duration="1.027" data-track-index="2"><span>dia tentang apa, syair-syair dia tentang</span></div>
+<div id="s270" class="clip sub" data-start="548.854" data-duration="3.046" data-track-index="2"><span>ketuhanan. Kemudian ada juga Rabiatul</span></div>
+<div id="s271" class="clip sub" data-start="551.790" data-duration="3.050" data-track-index="2"><span>Adawiyah. Kalau <b>Rabiatul Adawiyah</b> itu, kalau</span></div>
+<div id="s272" class="clip sub" data-start="554.730" data-duration="6.230" data-track-index="2"><span>kita dengar apa <b>syair</b> dia, kadang kita pun</span></div>
+<div id="s273" class="clip sub" data-start="560.850" data-duration="1.110" data-track-index="2"><span>tak takut.</span></div>
+<div id="s274" class="clip sub" data-start="562.850" data-duration="3.330" data-track-index="2"><span>Kata dia, &quot;Seandainya syurga itu memang Kau</span></div>
+<div id="s275" class="clip sub" data-start="566.070" data-duration="3.270" data-track-index="2"><span>hadirkan untukku, maka aku tidak</span></div>
+<div id="s276" class="clip sub" data-start="569.230" data-duration="1.190" data-track-index="2"><span>menyukainya.</span></div>
+<div id="s277" class="clip sub" data-start="570.730" data-duration="2.690" data-track-index="2"><span>Berikan saja,&quot; kata dia, &quot;syurga itu untuk</span></div>
+<div id="s278" class="clip sub" data-start="573.420" data-duration="1.180" data-track-index="2"><span>kekasih-Mu yang lain.&quot;</span></div>
+<div id="s279" class="clip sub" data-start="575.390" data-duration="2.490" data-track-index="2"><span>Itu <b>Rabiatul Adawiyah</b>, memang orang</span></div>
+<div id="s280" class="clip sub" data-start="577.770" data-duration="2.650" data-track-index="2"><span><b>filosofi</b>, yang memang</span></div>
+<div id="s281" class="clip sub" data-start="580.310" data-duration="2.050" data-track-index="2"><span>penyair-penyair</span></div>
+<div id="s282" class="clip sub" data-start="582.840" data-duration="2.012" data-track-index="2"><span>terdahulu.</span></div>
+<div id="s283" class="clip sub" data-start="585.510" data-duration="3.270" data-track-index="2"><span>Kalau di <b>Indonesia</b> ada <b>Hamka</b>.</span></div>
+<div id="s284" class="clip sub" data-start="589.710" data-duration="2.350" data-track-index="2"><span>Kalau <b>Hamka</b>, dia akan bercerita tentang,</span></div>
+<div id="s285" class="clip sub" data-start="591.950" data-duration="2.830" data-track-index="2"><span>&quot;Kalau sekadar bekerja, kerbau di ladang pun</span></div>
+<div id="s286" class="clip sub" data-start="594.670" data-duration="1.210" data-track-index="2"><span>bekerja.&quot; Seperti itu kan, kalau saya ingat.</span></div>
+<div id="s287" class="clip sub" data-start="595.770" data-duration="5.680" data-track-index="2"><span>Itu adalah hal-hal yang <b>romantis</b>, yang</span></div>
+<div id="s288" class="clip sub" data-start="601.470" data-duration="3.690" data-track-index="2"><span>mungkin dia menerjemahkan <b>luapan</b> rasa yang</span></div>
+<div id="s289" class="clip sub" data-start="605.050" data-duration="1.300" data-track-index="2"><span>ada pada diri dia,</span></div>
+<div id="s290" class="clip sub" data-start="606.370" data-duration="2.770" data-track-index="2"><span>itulah mungkin tentang <b>romantis</b> lah,</span></div>
+<div id="s291" class="clip sub" data-start="609.030" data-duration="1.390" data-track-index="2"><span>menurut saya.</span></div>
+<div id="s292" class="clip sub" data-start="610.587" data-duration="2.601" data-track-index="2"><span>Okay.</span></div>
+<div id="s293" class="clip sub" data-start="613.470" data-duration="3.386" data-track-index="2"><span>Terima kasih atas pendapat doktor</span></div>
+<div id="s294" class="clip sub" data-start="616.780" data-duration="1.056" data-track-index="2"><span>sebentar sahaja tadi.</span></div>
+<div id="s295" class="clip sub" data-start="620.090" data-duration="1.730" data-track-index="2"><span>Okey doktor, untuk soalan yang kedua,</span></div>
+<div id="s296" class="clip sub" data-start="622.290" data-duration="3.690" data-track-index="2"><span>bagaimana pandangan doktor tentang</span></div>
+<div id="s297" class="clip sub" data-start="625.870" data-duration="3.310" data-track-index="2"><span><b>keseimbangan</b> antara <b>akal</b> dan juga <b>perasaan</b>?</span></div>
+<div id="s298" class="clip sub" data-start="630.470" data-duration="3.670" data-track-index="2"><span>Ya, jadi memang dari segi <b>falsafah</b> sendiri,</span></div>
+<div id="s299" class="clip sub" data-start="634.030" data-duration="4.170" data-track-index="2"><span>bahawa <b>keseimbangan</b> dengan <b>akal</b>,</span></div>
+<div id="s300" class="clip sub" data-start="638.090" data-duration="3.320" data-track-index="2"><span>dengan <b>perasaan</b> itu harus balancing. Kerana</span></div>
+<div id="s301" class="clip sub" data-start="641.430" data-duration="3.930" data-track-index="2"><span>kenapa <b>akal</b> saja tidak menengahkan</span></div>
+<div id="s302" class="clip sub" data-start="645.250" data-duration="1.990" data-track-index="2"><span><b>perasaan</b>, maka dia sangat <b>egois</b></span></div>
+<div id="s303" class="clip sub" data-start="647.810" data-duration="2.710" data-track-index="2"><span>Tetapi kalau kita meluapkan <b>perasaan</b> saja</span></div>
+<div id="s304" class="clip sub" data-start="650.410" data-duration="3.270" data-track-index="2"><span>tanpa <b>akal</b>, kita seperti orang bodoh. Jadi</span></div>
+<div id="s305" class="clip sub" data-start="653.570" data-duration="2.410" data-track-index="2"><span>misalnya seperti ini, dia terlalu <b>mencintai</b></span></div>
+<div id="s306" class="clip sub" data-start="655.870" data-duration="3.290" data-track-index="2"><span>seseorang, dari segi <b>romantisme</b> ini, dia</span></div>
+<div id="s307" class="clip sub" data-start="659.050" data-duration="2.150" data-track-index="2"><span><b>mencintai</b> seorang tapi tanpa menggunakan</span></div>
+<div id="s308" class="clip sub" data-start="661.090" data-duration="3.485" data-track-index="2"><span><b>akal</b>, maka orang tersebut akan seperti</span></div>
+<div id="s309" class="clip sub" data-start="664.595" data-duration="3.225" data-track-index="2"><span>keledai yang dituntun oleh kekasihnya.</span></div>
+<div id="s310" class="clip sub" data-start="668.550" data-duration="2.860" data-track-index="2"><span>Tetapi kalau dia hanya menggunakan <b>akal</b>,</span></div>
+<div id="s311" class="clip sub" data-start="671.430" data-duration="2.660" data-track-index="2"><span>tidak menumbuhkan <b>perasaan</b>,</span></div>
+<div id="s312" class="clip sub" data-start="674.110" data-duration="2.270" data-track-index="2"><span>maka yang ada hanya di diri dia, <b>egois</b></span></div>
+<div id="s313" class="clip sub" data-start="676.270" data-duration="0.710" data-track-index="2"><span>saja.</span></div>
+<div id="s314" class="clip sub" data-start="677.370" data-duration="2.810" data-track-index="2"><span>Apa yang dia mahu, dia harus turuti,</span></div>
+<div id="s315" class="clip sub" data-start="680.770" data-duration="4.290" data-track-index="2"><span>tanpa memberikan... apakah orang ini suka</span></div>
+<div id="s316" class="clip sub" data-start="684.950" data-duration="6.330" data-track-index="2"><span>atau tak. Jadi memang secara <b>falsafah</b>,</span></div>
+<div id="s317" class="clip sub" data-start="691.590" data-duration="2.920" data-track-index="2"><span>secara basic, sebagai dasarnya, ada</span></div>
+<div id="s318" class="clip sub" data-start="694.530" data-duration="3.110" data-track-index="2"><span><b>keseimbangan</b> antara <b>akal</b> dengan rasa,</span></div>
+<div id="s319" class="clip sub" data-start="697.530" data-duration="0.890" data-track-index="2"><span><b>perasaan</b>.</span></div>
+<div id="s320" class="clip sub" data-start="698.310" data-duration="3.150" data-track-index="2"><span>Jadi kalau contoh, macam kalau kita</span></div>
+<div id="s321" class="clip sub" data-start="701.350" data-duration="2.810" data-track-index="2"><span>ikutkan <b>perasaan</b> tanpa <b>akal</b>?</span></div>
+<div id="s322" class="clip sub" data-start="704.650" data-duration="1.490" data-track-index="2"><span>Membawa buruk lah juga.</span></div>
+<div id="s323" class="clip sub" data-start="706.450" data-duration="4.210" data-track-index="2"><span>Pasti dia akan seperti keledai yang</span></div>
+<div id="s324" class="clip sub" data-start="710.550" data-duration="6.195" data-track-index="2"><span>ditambang, dia nurut, ikut je, dia ikut-ikut</span></div>
+<div id="s325" class="clip sub" data-start="716.765" data-duration="4.735" data-track-index="2"><span>je. Nah, itu yang jadi pandangan saya.</span></div>
+<div id="s326" class="clip sub" data-start="721.680" data-duration="2.910" data-track-index="2"><span>Okay doktor, tadi kita dah bertanyakan kan</span></div>
+<div id="s327" class="clip sub" data-start="724.480" data-duration="3.270" data-track-index="2"><span>pasal pandangan dan juga mengenai <b>akal</b> dan</span></div>
+<div id="s328" class="clip sub" data-start="727.640" data-duration="1.200" data-track-index="2"><span>juga <b>perasaan</b>.</span></div>
+<div id="s329" class="clip sub" data-start="728.860" data-duration="2.280" data-track-index="2"><span>So jadi untuk soalan ketiga pula, saya ada</span></div>
+<div id="s330" class="clip sub" data-start="731.160" data-duration="3.460" data-track-index="2"><span>soalan ni, macam berat sikit jugalah.</span></div>
+<div id="s331" class="clip sub" data-start="734.640" data-duration="3.070" data-track-index="2"><span>Relaks lah eh, relaks lah. Tak adalah</span></div>
+<div id="s332" class="clip sub" data-start="737.600" data-duration="5.690" data-track-index="2"><span>berat, cuma pandangan lah. Pandangan eh. Jadi</span></div>
+<div id="s333" class="clip sub" data-start="743.760" data-duration="3.230" data-track-index="2"><span>untuk doktor, mengapa kita rasa hubungan rapat</span></div>
+<div id="s334" class="clip sub" data-start="746.880" data-duration="2.170" data-track-index="2"><span>dengan <b>alam</b> semula jadi itu begitu penting</span></div>
+<div id="s335" class="clip sub" data-start="748.940" data-duration="2.690" data-track-index="2"><span>kepada <b>jiwa</b> kita sebagai manusia?</span></div>
+<div id="s336" class="clip sub" data-start="752.300" data-duration="2.710" data-track-index="2"><span>Ya, memang pada dasarnya kita ini berasal</span></div>
+<div id="s337" class="clip sub" data-start="754.900" data-duration="1.930" data-track-index="2"><span>dari <b>alam</b>.</span></div>
+<div id="s338" class="clip sub" data-start="757.060" data-duration="3.330" data-track-index="2"><span>Manusia itu diciptakan dia dari tanah.</span></div>
+<div id="s339" class="clip sub" data-start="760.700" data-duration="1.920" data-track-index="2"><span>Memang kita tidak boleh lepas dari <b>alam</b>.</span></div>
+<div id="s340" class="clip sub" data-start="762.640" data-duration="2.890" data-track-index="2"><span>Makan pun kita dari <b>alam</b>, asal dari padi,</span></div>
+<div id="s341" class="clip sub" data-start="765.420" data-duration="1.830" data-track-index="2"><span>kemudian jadi beras,</span></div>
+<div id="s342" class="clip sub" data-start="767.420" data-duration="0.870" data-track-index="2"><span>kemudian kita makan,</span></div>
+<div id="s343" class="clip sub" data-start="768.180" data-duration="2.130" data-track-index="2"><span>minum pun sama. Jadi memang kita ini tidak</span></div>
+<div id="s344" class="clip sub" data-start="770.200" data-duration="2.350" data-track-index="2"><span>boleh lepas dari <b>alam</b>. Nah, kalau</span></div>
+<div id="s345" class="clip sub" data-start="772.440" data-duration="3.050" data-track-index="2"><span>disangkutkan dengan <b>falsafah</b> <b>romantisme</b>,</span></div>
+<div id="s346" class="clip sub" data-start="775.660" data-duration="2.570" data-track-index="2"><span>memang <b>alam</b> ini untuk orang-orang <b>romantis</b></span></div>
+<div id="s347" class="clip sub" data-start="778.120" data-duration="2.640" data-track-index="2"><span>itu sangat-sangat dekat,</span></div>
+<div id="s348" class="clip sub" data-start="780.780" data-duration="2.760" data-track-index="2"><span>sangat erat, sangat rapat. Contoh,</span></div>
+<div id="s349" class="clip sub" data-start="783.560" data-duration="2.750" data-track-index="2"><span>kalau <b>saintis</b>, dia akan menggambarkan</span></div>
+<div id="s350" class="clip sub" data-start="786.200" data-duration="3.740" data-track-index="2"><span>sebuah daun, bahawa ada fotosintesis.</span></div>
+<div id="s351" class="clip sub" data-start="789.960" data-duration="3.620" data-track-index="2"><span>Ini orang <b>saintis</b>. Tapi kalau orang yang</span></div>
+<div id="s352" class="clip sub" data-start="793.600" data-duration="2.670" data-track-index="2"><span>romantik, dia akan menghubungkan daun itu,</span></div>
+<div id="s353" class="clip sub" data-start="796.160" data-duration="4.330" data-track-index="2"><span>dia akan... terbangan apa, daun-daun</span></div>
+<div id="s354" class="clip sub" data-start="800.380" data-duration="3.130" data-track-index="2"><span>berterbangan, seolah-olah menggugurkan rasa</span></div>
+<div id="s355" class="clip sub" data-start="803.400" data-duration="1.310" data-track-index="2"><span>di hati.</span></div>
+<div id="s356" class="clip sub" data-start="804.800" data-duration="2.690" data-track-index="2"><span>Dengan keadaan <b>alam</b> memang, memang gitu,</span></div>
+<div id="s357" class="clip sub" data-start="807.380" data-duration="2.050" data-track-index="2"><span>itu memang sangat-sangat rapat dengan <b>alam</b>.</span></div>
+<div id="s358" class="clip sub" data-start="809.400" data-duration="3.130" data-track-index="2"><span>Kita tak boleh lepas dari <b>alam</b>, dan kadang</span></div>
+<div id="s359" class="clip sub" data-start="812.420" data-duration="4.890" data-track-index="2"><span>memang <b>alam</b> ini menunjukkan sebuah</span></div>
+<div id="s360" class="clip sub" data-start="817.200" data-duration="1.670" data-track-index="2"><span>pelajaran.</span></div>
+<div id="s361" class="clip sub" data-start="819.180" data-duration="8.510" data-track-index="2"><span>Contoh misalnya pada <b>daun keladi</b>, kenapa</span></div>
+<div id="s362" class="clip sub" data-start="827.580" data-duration="3.970" data-track-index="2"><span>orang-orang dulu memberikan nasihat, jangan</span></div>
+<div id="s363" class="clip sub" data-start="831.440" data-duration="3.350" data-track-index="2"><span>sampai kita belajar seperti air di daun</span></div>
+<div id="s364" class="clip sub" data-start="834.680" data-duration="1.250" data-track-index="2"><span>talas.</span></div>
+<div id="s365" class="clip sub" data-start="836.400" data-duration="2.086" data-track-index="2"><span>Pernah dengar tak?</span></div>
+<div id="s366" class="clip sub" data-start="838.520" data-duration="2.970" data-track-index="2"><span>Seperti air di <b>daun keladi</b>.</span></div>
+<div id="s367" class="clip sub" data-start="841.600" data-duration="1.290" data-track-index="2"><span>Saya pernah dengar.</span></div>
+<div id="s368" class="clip sub" data-start="843.545" data-duration="7.019" data-track-index="2"><span>Kemudian apa, merunduklah seperti padi, ilmu</span></div>
+<div id="s369" class="clip sub" data-start="850.571" data-duration="3.506" data-track-index="2"><span>padi. Itu merupakan</span></div>
+<div id="s370" class="clip sub" data-start="854.084" data-duration="1.463" data-track-index="2"><span>kiasan.</span></div>
+<div id="s371" class="clip sub" data-start="855.840" data-duration="2.830" data-track-index="2"><span><b>Alam</b> itu memberikan pelajaran terhadap</span></div>
+<div id="s372" class="clip sub" data-start="858.560" data-duration="1.250" data-track-index="2"><span>kita manusia</span></div>
+<div id="s373" class="clip sub" data-start="860.280" data-duration="0.650" data-track-index="2"><span>semua.</span></div>
+<div id="s374" class="clip sub" data-start="861.155" data-duration="1.553" data-track-index="2"><span>Itulah pandangan saya.</span></div>
+<div id="s375" class="clip sub" data-start="864.200" data-duration="0.750" data-track-index="2"><span>Pandangan doktor.</span></div>
+<div id="s376" class="clip sub" data-start="866.680" data-duration="3.190" data-track-index="2"><span>Pandangan doktor yang ketiga. Alice, boleh</span></div>
+<div id="s377" class="clip sub" data-start="869.760" data-duration="0.890" data-track-index="2"><span>teruskan?</span></div>
+<div id="s378" class="clip sub" data-start="870.760" data-duration="2.766" data-track-index="2"><span>Boleh. Seterusnya, soalan yang saya bagi ini</span></div>
+<div id="s379" class="clip sub" data-start="873.480" data-duration="2.830" data-track-index="2"><span>berkaitan dengan kejujuran</span></div>
+<div id="s380" class="clip sub" data-start="876.485" data-duration="1.463" data-track-index="2"><span>diri.</span></div>
+<div id="s381" class="clip sub" data-start="878.240" data-duration="2.570" data-track-index="2"><span>Untuk soalan yang saya tujukan kepada</span></div>
+<div id="s382" class="clip sub" data-start="880.830" data-duration="2.900" data-track-index="2"><span>doktor, bagaimana pandangan doktor tentang</span></div>
+<div id="s383" class="clip sub" data-start="883.620" data-duration="4.610" data-track-index="2"><span>keberanian untuk menjadi diri sendiri</span></div>
+<div id="s384" class="clip sub" data-start="888.120" data-duration="2.470" data-track-index="2"><span>secara jujur?</span></div>
+<div id="s385" class="clip sub" data-start="890.480" data-duration="2.890" data-track-index="2"><span>Dalam kapasitas kita sebagai manusia, dalam</span></div>
+<div id="s386" class="clip sub" data-start="893.260" data-duration="4.290" data-track-index="2"><span>proses keilmuan <b>falsafah</b>, <b>falsafah</b> yang</span></div>
+<div id="s387" class="clip sub" data-start="897.440" data-duration="1.950" data-track-index="2"><span>menunjukkan bahawa kita mempunyai jati</span></div>
+<div id="s388" class="clip sub" data-start="899.280" data-duration="2.742" data-track-index="2"><span>diri, punya</span></div>
+<div id="s389" class="clip sub" data-start="902.140" data-duration="3.690" data-track-index="2"><span>berdiri, pendirian sendiri. Tetapi kadang</span></div>
+<div id="s390" class="clip sub" data-start="905.720" data-duration="3.590" data-track-index="2"><span>kita punya lingkungan atau masyarakat yang</span></div>
+<div id="s391" class="clip sub" data-start="909.200" data-duration="4.490" data-track-index="2"><span>punya aturan, yang punya regulasi, sehingga</span></div>
+<div id="s392" class="clip sub" data-start="913.580" data-duration="3.230" data-track-index="2"><span>apa yang kita inginkan, apa yang ada pada</span></div>
+<div id="s393" class="clip sub" data-start="916.700" data-duration="2.990" data-track-index="2"><span>diri kita itu punya batasan. Sebenarnya</span></div>
+<div id="s394" class="clip sub" data-start="919.580" data-duration="2.710" data-track-index="2"><span>kalau <b>falsafah</b>, <b>filosofi</b>, dia tidak akan</span></div>
+<div id="s395" class="clip sub" data-start="922.180" data-duration="3.310" data-track-index="2"><span>membatasi diri dengan keadaan. Kita</span></div>
+<div id="s396" class="clip sub" data-start="925.380" data-duration="3.230" data-track-index="2"><span>tengok misalnya</span></div>
+<div id="s397" class="clip sub" data-start="929.048" data-duration="3.634" data-track-index="2"><span>Ar-Rumi,</span></div>
+<div id="s398" class="clip sub" data-start="933.290" data-duration="5.490" data-track-index="2"><span>dia berpuisi, sehingga <b>Hamka</b>. <b>Hamka</b>, dia</span></div>
+<div id="s399" class="clip sub" data-start="938.670" data-duration="6.190" data-track-index="2"><span>membuat sebuah... tentang puisi-puisi</span></div>
+<div id="s400" class="clip sub" data-start="944.750" data-duration="3.010" data-track-index="2"><span>sampai dia ada di penjara. Puisi-puisi</span></div>
+<div id="s401" class="clip sub" data-start="947.650" data-duration="2.915" data-track-index="2"><span>merasakan dia punya pengalaman. Jadi dia</span></div>
+<div id="s402" class="clip sub" data-start="950.585" data-duration="2.345" data-track-index="2"><span>meluapkan sebuah <b>perasaan</b> politik,</span></div>
+<div id="s403" class="clip sub" data-start="952.950" data-duration="1.280" data-track-index="2"><span>seperti itu kan,</span></div>
+<div id="s404" class="clip sub" data-start="954.250" data-duration="1.670" data-track-index="2"><span>kemudian banyak lagi,</span></div>
+<div id="s405" class="clip sub" data-start="956.010" data-duration="1.610" data-track-index="2"><span>seperti <b>Rabiatul Adawiyah</b> yang saya</span></div>
+<div id="s406" class="clip sub" data-start="957.510" data-duration="2.740" data-track-index="2"><span>ceritakan itu, dia, dia,</span></div>
+<div id="s407" class="clip sub" data-start="960.270" data-duration="2.350" data-track-index="2"><span>orang menganggap dia seperti orang yang</span></div>
+<div id="s408" class="clip sub" data-start="962.510" data-duration="2.346" data-track-index="2"><span>tidak punya, tidak punya apa,</span></div>
+<div id="s409" class="clip sub" data-start="964.830" data-duration="1.690" data-track-index="2"><span>yang bertentangan dengan agama,</span></div>
+<div id="s410" class="clip sub" data-start="966.490" data-duration="2.080" data-track-index="2"><span>tapi <b>luapan</b> <b>perasaan</b> itu...</span></div>
+<div id="s411" class="clip sub" data-start="968.590" data-duration="3.660" data-track-index="2"><span>kalau kita dengar dia, syair-syair</span></div>
+<div id="s412" class="clip sub" data-start="972.270" data-duration="1.710" data-track-index="2"><span><b>Rabiatul Adawiyah</b> itu,</span></div>
+<div id="s413" class="clip sub" data-start="973.870" data-duration="3.050" data-track-index="2"><span>misalnya, &quot;Seandainya syurga itu untukku,</span></div>
+<div id="s414" class="clip sub" data-start="976.810" data-duration="2.170" data-track-index="2"><span>saya tidak perlukan syurga itu,</span></div>
+<div id="s415" class="clip sub" data-start="979.230" data-duration="2.430" data-track-index="2"><span>berikan saja syurga itu kepada orang</span></div>
+<div id="s416" class="clip sub" data-start="981.550" data-duration="1.220" data-track-index="2"><span>yang Kau cintai.</span></div>
+<div id="s417" class="clip sub" data-start="982.790" data-duration="1.370" data-track-index="2"><span>Kalau neraka itu untukku,</span></div>
+<div id="s418" class="clip sub" data-start="984.110" data-duration="2.255" data-track-index="2"><span>saya tak perlu neraka itu.&quot;</span></div>
+<div id="s419" class="clip sub" data-start="986.385" data-duration="1.175" data-track-index="2"><span>Kata dia kan,</span></div>
+<div id="s420" class="clip sub" data-start="987.550" data-duration="2.270" data-track-index="2"><span>&quot;Neraka itu diberikan kepada orang yang...</span></div>
+<div id="s421" class="clip sub" data-start="989.710" data-duration="2.966" data-track-index="2"><span>Tetapi kalau <b>jiwa</b> ini ada rindu kepada-Mu,</span></div>
+<div id="s422" class="clip sub" data-start="992.580" data-duration="1.936" data-track-index="2"><span>ya Tuhan,&quot; kata dia,</span></div>
+<div id="s423" class="clip sub" data-start="994.510" data-duration="2.290" data-track-index="2"><span>&quot;maka jangan Kau tolak rinduku ini.&quot;</span></div>
+<div id="s424" class="clip sub" data-start="996.810" data-duration="1.512" data-track-index="2"><span>Itu dahsyat sekali.</span></div>
+<div id="s425" class="clip sub" data-start="998.342" data-duration="2.698" data-track-index="2"><span>Syair-syair <b>Rabiatul Adawiyah</b> itu.</span></div>
+<div id="s426" class="clip sub" data-start="1000.930" data-duration="0.730" data-track-index="2"><span>Panjang ya.</span></div>
+<div id="s427" class="clip sub" data-start="1001.550" data-duration="0.710" data-track-index="2"><span>Panjang.</span></div>
+<div id="s428" class="clip sub" data-start="1002.150" data-duration="1.027" data-track-index="2"><span>Macam mana doktor ingat? Banyak doktor</span></div>
+<div id="s429" class="clip sub" data-start="1003.110" data-duration="0.910" data-track-index="2"><span>ingat.</span></div>
+<div id="s430" class="clip sub" data-start="1004.110" data-duration="3.630" data-track-index="2"><span>Saya suka penyair-penyair,</span></div>
+<div id="s431" class="clip sub" data-start="1007.630" data-duration="2.650" data-track-index="2"><span>filosofi-filosofi yang dahulu lah, macam</span></div>
+<div id="s432" class="clip sub" data-start="1010.170" data-duration="1.630" data-track-index="2"><span><b>Jalaluddin Ar-Rumi</b>.</span></div>
+<div id="s433" class="clip sub" data-start="1012.010" data-duration="2.850" data-track-index="2"><span>Ar-Rumi memang dia famous lah untuk</span></div>
+<div id="s434" class="clip sub" data-start="1014.750" data-duration="1.610" data-track-index="2"><span>syair-syair</span></div>
+<div id="s435" class="clip sub" data-start="1016.530" data-duration="1.454" data-track-index="2"><span><b>romantis</b>.</span></div>
+<div id="s436" class="clip sub" data-start="1018.270" data-duration="2.520" data-track-index="2"><span>Ini pandangan saya lah. Pandangan</span></div>
+<div id="s437" class="clip sub" data-start="1020.810" data-duration="2.546" data-track-index="2"><span>doktor ya. Okay,</span></div>
+<div id="s438" class="clip sub" data-start="1023.450" data-duration="2.710" data-track-index="2"><span>so jadi doktor, kita dah pun sampai ke</span></div>
+<div id="s439" class="clip sub" data-start="1026.050" data-duration="1.830" data-track-index="2"><span>soalan yang terakhir lah untuk kita punya</span></div>
+<div id="s440" class="clip sub" data-start="1027.895" data-duration="3.265" data-track-index="2"><span>podcast. Singkat sangat, singkat sangat lah.</span></div>
+<div id="s441" class="clip sub" data-start="1031.530" data-duration="3.990" data-track-index="2"><span>Apakah nilai daripada <b>romantisme</b> menurut</span></div>
+<div id="s442" class="clip sub" data-start="1035.410" data-duration="2.590" data-track-index="2"><span>doktor yang diperlukan oleh kita semua</span></div>
+<div id="s443" class="clip sub" data-start="1037.890" data-duration="1.870" data-track-index="2"><span>pada masa kini?</span></div>
+<div id="s444" class="clip sub" data-start="1039.990" data-duration="1.130" data-track-index="2"><span>Masa sekarang lah.</span></div>
+<div id="s445" class="clip sub" data-start="1041.210" data-duration="3.750" data-track-index="2"><span>Perkembangan <b>teknologi</b> itu membuat gap</span></div>
+<div id="s446" class="clip sub" data-start="1044.850" data-duration="5.518" data-track-index="2"><span>dari seseorang itu kepada nilai-nilai</span></div>
+<div id="s447" class="clip sub" data-start="1050.330" data-duration="2.680" data-track-index="2"><span><b>romantis</b>. Kerana yang ada itu hanya semu.</span></div>
+<div id="s448" class="clip sub" data-start="1053.030" data-duration="4.380" data-track-index="2"><span>Contoh misalnya, dia tengok di <b>media sosial</b>,</span></div>
+<div id="s449" class="clip sub" data-start="1057.430" data-duration="4.470" data-track-index="2"><span>orang memberikan bunga, dia akan mengikuti</span></div>
+<div id="s450" class="clip sub" data-start="1061.790" data-duration="1.630" data-track-index="2"><span>orang itu. Padahal itu bukan <b>romantis</b>.</span></div>
+<div id="s451" class="clip sub" data-start="1063.350" data-duration="2.290" data-track-index="2"><span><b>Romantis</b> itu dia akan menjadi diri dia</span></div>
+<div id="s452" class="clip sub" data-start="1065.530" data-duration="2.890" data-track-index="2"><span>sendiri, bagaimana dia meluapkan. Misalnya</span></div>
+<div id="s453" class="clip sub" data-start="1068.310" data-duration="2.670" data-track-index="2"><span>kalau di <b>media sosial</b>, banyak orang</span></div>
+<div id="s454" class="clip sub" data-start="1070.870" data-duration="4.030" data-track-index="2"><span>meluapkan rasa dia misalnya dengan apa,</span></div>
+<div id="s455" class="clip sub" data-start="1074.790" data-duration="4.980" data-track-index="2"><span>memberikan apa namanya, ayat-ayat manis,</span></div>
+<div id="s456" class="clip sub" data-start="1079.790" data-duration="2.770" data-track-index="2"><span>kemudian sambil duduk... Kemudian kita tiru.</span></div>
+<div id="s457" class="clip sub" data-start="1082.450" data-duration="2.330" data-track-index="2"><span>Banyak orang yang meniru, padahal itu bukan</span></div>
+<div id="s458" class="clip sub" data-start="1084.670" data-duration="4.750" data-track-index="2"><span><b>luapan</b> emosional diri dia sendiri, tetapi</span></div>
+<div id="s459" class="clip sub" data-start="1089.310" data-duration="3.530" data-track-index="2"><span>hanya mencontoh. Itu adalah suatu nilai</span></div>
+<div id="s460" class="clip sub" data-start="1092.730" data-duration="2.150" data-track-index="2"><span>yang semu. <b>Romantis</b>,</span></div>
+<div id="s461" class="clip sub" data-start="1094.770" data-duration="3.430" data-track-index="2"><span>dia akan membangunkan <b>perasaan</b> itu dari</span></div>
+<div id="s462" class="clip sub" data-start="1098.090" data-duration="1.490" data-track-index="2"><span>diri kita sendiri,</span></div>
+<div id="s463" class="clip sub" data-start="1099.950" data-duration="3.030" data-track-index="2"><span>kadang hal tersebut mungkin orang melihat</span></div>
+<div id="s464" class="clip sub" data-start="1102.870" data-duration="3.690" data-track-index="2"><span>tidak <b>romantis</b> tapi pasangan dia merasakan</span></div>
+<div id="s465" class="clip sub" data-start="1106.560" data-duration="4.560" data-track-index="2"><span>itulah keromantisan pada dirinya.</span></div>
+<div id="s466" class="clip sub" data-start="1111.230" data-duration="2.290" data-track-index="2"><span>Kita memang perlu <b>romantis</b>.</span></div>
+<div id="s467" class="clip sub" data-start="1114.070" data-duration="2.370" data-track-index="2"><span><b>Romantis</b> ini adalah salah satu untuk</span></div>
+<div id="s468" class="clip sub" data-start="1116.330" data-duration="4.070" data-track-index="2"><span>membina sosial kita kepada masyarakat.</span></div>
+<div id="s469" class="clip sub" data-start="1120.970" data-duration="3.010" data-track-index="2"><span>Macam mana kita tahu tentang seseorang itu,</span></div>
+<div id="s470" class="clip sub" data-start="1123.870" data-duration="3.410" data-track-index="2"><span>macam mana kita faham. Kadang <b>luapan</b> itu</span></div>
+<div id="s471" class="clip sub" data-start="1127.170" data-duration="3.010" data-track-index="2"><span>tak perlu kita ucapkan, tapi kita</span></div>
+<div id="s472" class="clip sub" data-start="1130.070" data-duration="5.550" data-track-index="2"><span>memberikan sebuah <b>perbuatan</b>.</span></div>
+<div id="s473" class="clip sub" data-start="1138.570" data-duration="2.990" data-track-index="2"><span>Itu akan menjadikan dia <b>romantis</b>. Seperti</span></div>
+<div id="s474" class="clip sub" data-start="1142.290" data-duration="0.710" data-track-index="2"><span>itulah. Itu pandangan saya.</span></div>
+<div id="s475" class="clip sub" data-start="1142.890" data-duration="2.150" data-track-index="2"><span>Itu pandangan doktor je.</span></div>
+<div id="s476" class="clip sub" data-start="1147.010" data-duration="2.910" data-track-index="2"><span>So jadi Alice, berdasarkan daripada pandangan</span></div>
+<div id="s477" class="clip sub" data-start="1149.810" data-duration="3.200" data-track-index="2"><span>doktor mengenai kita punya tajuk hari ini,</span></div>
+<div id="s478" class="clip sub" data-start="1153.030" data-duration="1.490" data-track-index="2"><span>sebenarnya apa yang kita boleh dapat</span></div>
+<div id="s479" class="clip sub" data-start="1154.410" data-duration="3.130" data-track-index="2"><span>daripada pengajaran ni? Bukan sahaja</span></div>
+<div id="s480" class="clip sub" data-start="1157.430" data-duration="3.130" data-track-index="2"><span>daripada kita, cara kita meluahkan <b>perasaan</b></span></div>
+<div id="s481" class="clip sub" data-start="1160.450" data-duration="2.130" data-track-index="2"><span>kita daripada percakapan ataupun...</span></div>
+<div id="s482" class="clip sub" data-start="1162.890" data-duration="3.610" data-track-index="2"><span>tapi dengan <b>perbuatan</b> pun. <b>Perbuatan</b> pun</span></div>
+<div id="s483" class="clip sub" data-start="1166.390" data-duration="2.050" data-track-index="2"><span>boleh dikira juga lah kan, macam kita nak</span></div>
+<div id="s484" class="clip sub" data-start="1168.330" data-duration="3.190" data-track-index="2"><span>meluahkan <b>perasaan</b>. Betul. Jadi,</span></div>
+<div id="s485" class="clip sub" data-start="1171.410" data-duration="2.450" data-track-index="2"><span>ada hal-hal yang memang mungkin menurut</span></div>
+<div id="s486" class="clip sub" data-start="1173.750" data-duration="2.470" data-track-index="2"><span>orang lain tidak <b>romantis</b> tetapi ada</span></div>
+<div id="s487" class="clip sub" data-start="1176.110" data-duration="1.710" data-track-index="2"><span>bagian orang merasakan, &quot;Oh, dia sangat</span></div>
+<div id="s488" class="clip sub" data-start="1177.710" data-duration="2.750" data-track-index="2"><span><b>romantis</b>.&quot; <b>Romantis</b> tidak harus dengan</span></div>
+<div id="s489" class="clip sub" data-start="1180.350" data-duration="2.570" data-track-index="2"><span>selalu berpuisi tetapi dengan <b>perbuatan</b></span></div>
+<div id="s490" class="clip sub" data-start="1182.810" data-duration="3.450" data-track-index="2"><span>dia boleh dilakukan dengan <b>romantis</b>.</span></div>
+<div id="s491" class="clip sub" data-start="1187.740" data-duration="6.350" data-track-index="2"><span>Ya, memang pada dasarnya kita manusia ni</span></div>
+<div id="s492" class="clip sub" data-start="1196.450" data-duration="6.670" data-track-index="2"><span>perlu yang namanya <b>empati</b>. <b>Empati</b> tu, kadang</span></div>
+<div id="s493" class="clip sub" data-start="1203.010" data-duration="3.670" data-track-index="2"><span>dari <b>empati</b> itu timbul rasa, rasa <b>luapan</b></span></div>
+<div id="s494" class="clip sub" data-start="1206.570" data-duration="1.450" data-track-index="2"><span>diri. Nah, ini kadang-kadang itu yang</span></div>
+<div id="s495" class="clip sub" data-start="1207.910" data-duration="2.600" data-track-index="2"><span><b>romantis</b>. Misalnya pada saat kawan-kawan</span></div>
+<div id="s496" class="clip sub" data-start="1210.530" data-duration="5.030" data-track-index="2"><span>sebilik kita, dia sakit, pada saat dia sakit</span></div>
+<div id="s497" class="clip sub" data-start="1215.450" data-duration="2.980" data-track-index="2"><span>kita <b>empati</b> dengan dia. &quot;Oh, dia ini sakit,</span></div>
+<div id="s498" class="clip sub" data-start="1218.450" data-duration="1.670" data-track-index="2"><span>apa yang harus kita lakukan?&quot;</span></div>
+<div id="s499" class="clip sub" data-start="1220.270" data-duration="2.510" data-track-index="2"><span><b>Romantis</b> bukan dengan pasangan-pasangan</span></div>
+<div id="s500" class="clip sub" data-start="1222.670" data-duration="2.630" data-track-index="2"><span>semata, menurut saya. Tapi <b>romantis</b> ini</span></div>
+<div id="s501" class="clip sub" data-start="1225.190" data-duration="3.470" data-track-index="2"><span>boleh kita jadikan <b>luapan</b> diri kita untuk</span></div>
+<div id="s502" class="clip sub" data-start="1228.550" data-duration="2.270" data-track-index="2"><span>orang-orang yang ada di sekitar kita, orang</span></div>
+<div id="s503" class="clip sub" data-start="1230.710" data-duration="4.270" data-track-index="2"><span>yang kita sayang, orang yang bersama, kawan.</span></div>
+<div id="s504" class="clip sub" data-start="1235.790" data-duration="4.218" data-track-index="2"><span>Bukan sahaja daripada kita awek-awek.</span></div>
+<div id="s505" class="clip sub" data-start="1240.130" data-duration="3.670" data-track-index="2"><span>Berbeda kalau <b>romantis</b> dalam segi</span></div>
+<div id="s506" class="clip sub" data-start="1243.690" data-duration="1.350" data-track-index="2"><span>berpacaran,</span></div>
+<div id="s507" class="clip sub" data-start="1245.850" data-duration="5.370" data-track-index="2"><span>anak-anak berpacaran. Kalau ini <b>romantis</b></span></div>
+<div id="s508" class="clip sub" data-start="1251.150" data-duration="1.820" data-track-index="2"><span>kita dalam <b>falsafah</b>,</span></div>
+<div id="s509" class="clip sub" data-start="1252.990" data-duration="1.390" data-track-index="2"><span>dalam keilmuan.</span></div>
+<div id="s510" class="clip sub" data-start="1254.750" data-duration="4.630" data-track-index="2"><span>Jadi kita tahu, misalnya kawan kita lagi</span></div>
+<div id="s511" class="clip sub" data-start="1259.270" data-duration="3.070" data-track-index="2"><span>kesusahan, kita tahu <b>perasaan</b> dia,</span></div>
+<div id="s512" class="clip sub" data-start="1263.110" data-duration="2.430" data-track-index="2"><span>apa yang harus dilakukan, itu adalah suatu</span></div>
+<div id="s513" class="clip sub" data-start="1265.430" data-duration="4.150" data-track-index="2"><span>tindakan yang <b>romantis</b>, adanya <b>empati</b> pada</span></div>
+<div id="s514" class="clip sub" data-start="1269.470" data-duration="5.198" data-track-index="2"><span>kita. Okay, jadi itu pada <b>belas kasihan</b>. Belas</span></div>
+<div id="s515" class="clip sub" data-start="1274.565" data-duration="5.725" data-track-index="2"><span>kasihan berbeda, kalau, kalau pandangan saya,</span></div>
+<div id="s516" class="clip sub" data-start="1280.310" data-duration="2.910" data-track-index="2"><span>kalau <b>belas kasihan</b> itu, dia tidak akan</span></div>
+<div id="s517" class="clip sub" data-start="1283.110" data-duration="1.770" data-track-index="2"><span>muncul setiap waktu.</span></div>
+<div id="s518" class="clip sub" data-start="1285.210" data-duration="3.150" data-track-index="2"><span>Kalau <b>empati</b> ini, dia akan melihat orang</span></div>
+<div id="s519" class="clip sub" data-start="1288.250" data-duration="2.930" data-track-index="2"><span>itu, &quot;Oh, susah.&quot; Kalau <b>belas kasihan</b> itu,</span></div>
+<div id="s520" class="clip sub" data-start="1291.470" data-duration="2.520" data-track-index="2"><span>kita kasihan pada orang yang mungkin dekat.</span></div>
+<div id="s521" class="clip sub" data-start="1294.010" data-duration="1.550" data-track-index="2"><span>Kalau orang yang jauh, mungkin dia tak akan</span></div>
+<div id="s522" class="clip sub" data-start="1295.450" data-duration="4.506" data-track-index="2"><span>muncul. Itulah halnya.</span></div>
+<div id="s523" class="clip sub" data-start="1300.090" data-duration="3.090" data-track-index="2"><span><b>Empati</b> ini, dia harus ditumbuhkan.</span></div>
+<div id="s524" class="clip sub" data-start="1303.750" data-duration="3.210" data-track-index="2"><span>Jadi bukan hanya sekadar sehari, dua hari</span></div>
+<div id="s525" class="clip sub" data-start="1306.850" data-duration="0.750" data-track-index="2"><span>tak.</span></div>
+<div id="s526" class="clip sub" data-start="1308.210" data-duration="2.580" data-track-index="2"><span>Jadi memang, asal simpatinya,</span></div>
+<div id="s527" class="clip sub" data-start="1310.810" data-duration="2.320" data-track-index="2"><span>kita <b>simpati</b>, <b>simpati</b>,</span></div>
+<div id="s528" class="clip sub" data-start="1313.150" data-duration="3.890" data-track-index="2"><span>kita suka, suka. Tapi <b>empati</b> ini, kita <b>luapan</b></span></div>
+<div id="s529" class="clip sub" data-start="1316.930" data-duration="3.490" data-track-index="2"><span><b>perasaan</b> kita, ikhlas bagian kita berbuat,</span></div>
+<div id="s530" class="clip sub" data-start="1320.310" data-duration="5.890" data-track-index="2"><span>tapi rasa kita ingin, apa, merasakan orang</span></div>
+<div id="s531" class="clip sub" data-start="1326.090" data-duration="4.730" data-track-index="2"><span>itu. Itulah <b>empati</b>. Misalnya kawan kita lagi</span></div>
+<div id="s532" class="clip sub" data-start="1330.710" data-duration="3.230" data-track-index="2"><span>kesusahan, apa yang harus, boleh kita</span></div>
+<div id="s533" class="clip sub" data-start="1333.830" data-duration="3.510" data-track-index="2"><span>bantu. Merasakan situasi. Betul, merasakan</span></div>
+<div id="s534" class="clip sub" data-start="1337.230" data-duration="3.456" data-track-index="2"><span>situasi orang yang, kawan-kawan kita ada</span></div>
+<div id="s535" class="clip sub" data-start="1340.630" data-duration="2.420" data-track-index="2"><span>kesusahan. Seperti itu. Itu <b>empati</b>.</span></div>
+<div id="s536" class="clip sub" data-start="1343.070" data-duration="3.710" data-track-index="2"><span>Alright doktor, so jadi kita nak habis ni.</span></div>
+<div id="s537" class="clip sub" data-start="1346.670" data-duration="3.390" data-track-index="2"><span>Sebenarnya kami ada sediakan <b>buah tangan</b></span></div>
+<div id="s538" class="clip sub" data-start="1350.080" data-duration="2.480" data-track-index="2"><span>jugalah, doktor. <b>Buah tangan</b>.</span></div>
+<div id="s539" class="clip sub" data-start="1352.450" data-duration="3.250" data-track-index="2"><span><b>Buah tangan</b>. <b>Buah tangan</b> tu bagian dari</span></div>
+<div id="s540" class="clip sub" data-start="1355.790" data-duration="2.840" data-track-index="2"><span><b>filosofi</b>. Buah tak tangan?</span></div>
+<div id="s541" class="clip sub" data-start="1358.650" data-duration="1.190" data-track-index="2"><span>Tak kan?</span></div>
+<div id="s542" class="clip sub" data-start="1359.930" data-duration="2.427" data-track-index="2"><span>Maksudnya kan orang-orang <b>falsafah</b>, dia</span></div>
+<div id="s543" class="clip sub" data-start="1362.370" data-duration="4.650" data-track-index="2"><span>mempunyai <b>filosofi</b>, dia akan membuat <b>alam</b></span></div>
+<div id="s544" class="clip sub" data-start="1366.910" data-duration="3.930" data-track-index="2"><span>sekitar tu seperti memberikan <b>buah tangan</b>.</span></div>
+<div id="s545" class="clip sub" data-start="1370.730" data-duration="1.890" data-track-index="2"><span>Itu kan, seperti itulah.</span></div>
+<div id="s546" class="clip sub" data-start="1372.710" data-duration="3.411" data-track-index="2"><span>Okay.</span></div>
+<div id="s547" class="clip sub" data-start="1376.212" data-duration="0.870" data-track-index="2"><span>Sabar je, kita sembang-sembang.</span></div>
+<div id="s548" class="clip sub" data-start="1378.575" data-duration="5.539" data-track-index="2"><span>Okay, okay doktor.</span></div>
+<div id="s549" class="clip sub" data-start="1384.331" data-duration="1.211" data-track-index="2"><span>Ini <b>buah tangan</b>.</span></div>
+<div id="s550" class="clip sub" data-start="1385.651" data-duration="1.351" data-track-index="2"><span>Terima kasih.</span></div>
+<div id="s551" class="clip sub" data-start="1387.161" data-duration="1.436" data-track-index="2"><span><b>Buah tangan</b>...</span></div>
+<div id="s552" class="clip sub" data-start="1390.811" data-duration="1.670" data-track-index="2"><span>Saya terima.</span></div>
+<div id="s553" class="clip sub" data-start="1392.692" data-duration="6.486" data-track-index="2"><span>Okay.</span></div>
+<div id="s554" class="clip sub" data-start="1399.512" data-duration="3.087" data-track-index="2"><span>Okay, so jadi sekian daripada kami, iaitu</span></div>
+<div id="s555" class="clip sub" data-start="1402.531" data-duration="2.730" data-track-index="2"><span>pengacara bagi podcast hari ini, saya</span></div>
+<div id="s556" class="clip sub" data-start="1405.308" data-duration="2.145" data-track-index="2"><span>Muhammad Hasid, dan saya Alice Catherine.</span></div>
+<div id="s557" class="clip sub" data-start="1407.592" data-duration="2.489" data-track-index="2"><span>Dan juga terima kasih kepada Dr.</span></div>
+<div id="s558" class="clip sub" data-start="1410.092" data-duration="2.050" data-track-index="2"><span>Satria juga kerana sudi hadir</span></div>
+<div id="s559" class="clip sub" data-start="1412.049" data-duration="1.813" data-track-index="2"><span>pada pagi ini.</span></div>
+<div id="s560" class="clip sub" data-start="1413.882" data-duration="2.759" data-track-index="2"><span>Okay, jadi sekian, terima kasih.</span></div>
+<div id="s561" class="clip sub" data-start="1416.531" data-duration="2.591" data-track-index="2"><span>Assalamualaikum dan juga salam sejahtera.</span></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+
+function mulberry(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;}}
+function particles(id,n,w,h,a,b,seed){const r=mulberry(seed+1);for(let k=0;k<n;k++){const el='#'+id+'d'+k;const x=r()*w,y=r()*h,dy=-(25+r()*35),dx=(r()-.5)*30,s=.6+r()*.9;
+ tl.fromTo(el,{x:x,y:y,opacity:0,scale:s},{x:x+dx,y:y+dy,opacity:.55,duration:Math.min(.9,(b-a)/2),ease:'sine.out'},a);
+ tl.to(el,{x:x+dx*2,y:y+dy*2,opacity:0,duration:Math.max(.4,(b-a)/2-.05),ease:'sine.in'},a+Math.min(.9,(b-a)/2));}}
+
+tl.fromTo("#tk",{opacity:0,y:-10,filter:"blur(6px)"},{opacity:1,y:0,filter:"blur(0px)",duration:1.0,ease:"power3.out"},0.1);
+tl.fromTo("#tt",{opacity:0,y:20,filter:"blur(12px)"},{opacity:1,y:0,filter:"blur(0px)",duration:1.1,ease:"power3.out"},0.25);
+tl.fromTo("#tt",{scale:1},{scale:1.04,duration:4.4,ease:"none"},0.25);
+tl.fromTo("#tln",{scaleX:0},{scaleX:1,duration:0.8,ease:"power2.inOut"},0.6);
+tl.fromTo("#ts",{opacity:0,y:12},{opacity:1,y:0,duration:0.8,ease:"power2.out"},0.8);
+tl.to("#c1 .dim, #tk, #tt, #tln, #ts",{opacity:0,duration:0.7,ease:"power2.in"},4.1);
+particles("pt2",14,800,320,0.200,4.800,3);
+tl.fromTo("#c4 .bug",{opacity:0,x:-20},{opacity:1,x:0,duration:0.5,ease:"power3.out"},46.940);
+tl.fromTo("#c5 .bug",{opacity:0,x:-20},{opacity:1,x:0,duration:0.5,ease:"power3.out"},336.630);
+tl.fromTo("#c6 .bug",{opacity:0,x:-20},{opacity:1,x:0,duration:0.5,ease:"power3.out"},622.060);
+tl.fromTo("#c7 .bug",{opacity:0,x:-20},{opacity:1,x:0,duration:0.5,ease:"power3.out"},725.250);
+tl.fromTo("#c8 .bug",{opacity:0,x:-20},{opacity:1,x:0,duration:0.5,ease:"power3.out"},875.370);
+tl.fromTo("#c9 .bug",{opacity:0,x:-20},{opacity:1,x:0,duration:0.5,ease:"power3.out"},1026.310);
+tl.fromTo("#c10 .bug",{opacity:0,x:-20},{opacity:1,x:0,duration:0.5,ease:"power3.out"},1190.210);
+tl.fromTo("#c11 .bug",{opacity:0,x:-20},{opacity:1,x:0,duration:0.5,ease:"power3.out"},1346.690);
+tl.fromTo("#c12 .prog",{opacity:0},{opacity:1,duration:0.6},5.0);
+tl.fromTo("#pf",{scaleX:0.0035},{scaleX:1,duration:1416.482,ease:"none"},5.0);
+tl.fromTo("#c13 .chband",{opacity:0},{opacity:1,duration:0.4},43.540);
+tl.fromTo("#c13 .chn",{opacity:0,y:-8,filter:"blur(6px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.7,ease:"power3.out"},43.540);
+tl.fromTo("#c13 .chl",{scaleX:0},{scaleX:1,duration:0.6,ease:"power2.inOut"},43.690);
+tl.fromTo("#c13 .cht",{opacity:0,y:16,filter:"blur(8px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.7,ease:"power3.out"},43.790);
+tl.to("#c13 .chband, #c13 .chn, #c13 .chl, #c13 .cht",{opacity:0,duration:0.45},46.640);
+particles("pt14",8,600,140,43.540,47.140,43);
+tl.fromTo("#c16 .chband",{opacity:0},{opacity:1,duration:0.4},333.430);
+tl.fromTo("#c16 .chn",{opacity:0,y:-8,filter:"blur(6px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.7,ease:"power3.out"},333.430);
+tl.fromTo("#c16 .chl",{scaleX:0},{scaleX:1,duration:0.6,ease:"power2.inOut"},333.580);
+tl.fromTo("#c16 .cht",{opacity:0,y:16,filter:"blur(8px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.7,ease:"power3.out"},333.680);
+tl.to("#c16 .chband, #c16 .chn, #c16 .chl, #c16 .cht",{opacity:0,duration:0.45},336.530);
+particles("pt17",8,600,140,333.430,337.030,333);
+tl.fromTo("#c19 .chband",{opacity:0},{opacity:1,duration:0.4},618.860);
+tl.fromTo("#c19 .chn",{opacity:0,y:-8,filter:"blur(6px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.7,ease:"power3.out"},618.860);
+tl.fromTo("#c19 .chl",{scaleX:0},{scaleX:1,duration:0.6,ease:"power2.inOut"},619.010);
+tl.fromTo("#c19 .cht",{opacity:0,y:16,filter:"blur(8px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.7,ease:"power3.out"},619.110);
+tl.to("#c19 .chband, #c19 .chn, #c19 .chl, #c19 .cht",{opacity:0,duration:0.45},621.960);
+particles("pt20",8,600,140,618.860,622.460,618);
+tl.fromTo("#c22 .chband",{opacity:0},{opacity:1,duration:0.4},722.050);
+tl.fromTo("#c22 .chn",{opacity:0,y:-8,filter:"blur(6px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.7,ease:"power3.out"},722.050);
+tl.fromTo("#c22 .chl",{scaleX:0},{scaleX:1,duration:0.6,ease:"power2.inOut"},722.200);
+tl.fromTo("#c22 .cht",{opacity:0,y:16,filter:"blur(8px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.7,ease:"power3.out"},722.300);
+tl.to("#c22 .chband, #c22 .chn, #c22 .chl, #c22 .cht",{opacity:0,duration:0.45},725.150);
+particles("pt23",8,600,140,722.050,725.650,722);
+tl.fromTo("#c25 .chband",{opacity:0},{opacity:1,duration:0.4},872.170);
+tl.fromTo("#c25 .chn",{opacity:0,y:-8,filter:"blur(6px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.7,ease:"power3.out"},872.170);
+tl.fromTo("#c25 .chl",{scaleX:0},{scaleX:1,duration:0.6,ease:"power2.inOut"},872.320);
+tl.fromTo("#c25 .cht",{opacity:0,y:16,filter:"blur(8px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.7,ease:"power3.out"},872.420);
+tl.to("#c25 .chband, #c25 .chn, #c25 .chl, #c25 .cht",{opacity:0,duration:0.45},875.270);
+particles("pt26",8,600,140,872.170,875.770,872);
+tl.fromTo("#c28 .chband",{opacity:0},{opacity:1,duration:0.4},1023.110);
+tl.fromTo("#c28 .chn",{opacity:0,y:-8,filter:"blur(6px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.7,ease:"power3.out"},1023.110);
+tl.fromTo("#c28 .chl",{scaleX:0},{scaleX:1,duration:0.6,ease:"power2.inOut"},1023.260);
+tl.fromTo("#c28 .cht",{opacity:0,y:16,filter:"blur(8px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.7,ease:"power3.out"},1023.360);
+tl.to("#c28 .chband, #c28 .chn, #c28 .chl, #c28 .cht",{opacity:0,duration:0.45},1026.210);
+particles("pt29",8,600,140,1023.110,1026.710,1023);
+tl.fromTo("#c31 .chband",{opacity:0},{opacity:1,duration:0.4},1187.010);
+tl.fromTo("#c31 .chn",{opacity:0,y:-8,filter:"blur(6px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.7,ease:"power3.out"},1187.010);
+tl.fromTo("#c31 .chl",{scaleX:0},{scaleX:1,duration:0.6,ease:"power2.inOut"},1187.160);
+tl.fromTo("#c31 .cht",{opacity:0,y:16,filter:"blur(8px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.7,ease:"power3.out"},1187.260);
+tl.to("#c31 .chband, #c31 .chn, #c31 .chl, #c31 .cht",{opacity:0,duration:0.45},1190.110);
+particles("pt32",8,600,140,1187.010,1190.610,1187);
+tl.fromTo("#c34 .chband",{opacity:0},{opacity:1,duration:0.4},1343.490);
+tl.fromTo("#c34 .chn",{opacity:0,y:-8,filter:"blur(6px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.7,ease:"power3.out"},1343.490);
+tl.fromTo("#c34 .chl",{scaleX:0},{scaleX:1,duration:0.6,ease:"power2.inOut"},1343.640);
+tl.fromTo("#c34 .cht",{opacity:0,y:16,filter:"blur(8px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.7,ease:"power3.out"},1343.740);
+tl.to("#c34 .chband, #c34 .chn, #c34 .chl, #c34 .cht",{opacity:0,duration:0.45},1346.590);
+particles("pt35",8,600,140,1343.490,1347.090,1343);
+tl.fromTo("#c37 .l3",{opacity:0,x:-40},{opacity:1,x:0,duration:0.55,ease:"power3.out"},36.840);
+tl.fromTo("#c37 .acc",{scaleY:0},{scaleY:1,duration:0.5,ease:"power2.out"},36.940);
+tl.to("#c37 .l3",{opacity:0,x:-20,duration:0.4},41.040);
+tl.fromTo("#c38 .l3",{opacity:0,x:-40},{opacity:1,x:0,duration:0.55,ease:"power3.out"},38.240);
+tl.fromTo("#c38 .acc",{scaleY:0},{scaleY:1,duration:0.5,ease:"power2.out"},38.340);
+tl.to("#c38 .l3",{opacity:0,x:-20,duration:0.4},42.040);
+tl.fromTo("#c39 .l3",{opacity:0,x:-40},{opacity:1,x:0,duration:0.55,ease:"power3.out"},71.530);
+tl.fromTo("#c39 .acc",{scaleY:0},{scaleY:1,duration:0.5,ease:"power2.out"},71.630);
+tl.to("#c39 .l3",{opacity:0,x:-20,duration:0.4},77.480);
+tl.fromTo("#c40 .card",{opacity:0,x:40},{opacity:1,x:0,duration:0.55,ease:"power3.out"},79.450);
+tl.to("#c40 .card",{opacity:0,x:20,duration:0.4,ease:"power2.in"},86.060);
+tl.fromTo("#c40 .ic",{scale:0.6,opacity:0},{scale:1,opacity:1,duration:0.5,ease:"back.out(2)"},79.580);
+particles("pt41",6,600,220,79.430,86.510,794);
+tl.fromTo("#c43 .card",{opacity:0,x:40},{opacity:1,x:0,duration:0.55,ease:"power3.out"},142.150);
+tl.to("#c43 .card",{opacity:0,x:20,duration:0.4,ease:"power2.in"},188.200);
+tl.fromTo("#c43 .rule",{scaleX:0},{scaleX:1,duration:0.7,ease:"power2.inOut"},142.330);
+tl.fromTo("#c43s0",{opacity:0,x:20},{opacity:1,x:0,duration:0.5,ease:"power3.out"},142.630);
+tl.fromTo("#c43s1",{opacity:0,x:20},{opacity:1,x:0,duration:0.5,ease:"power3.out"},154.630);
+tl.fromTo("#c43s2",{opacity:0,x:20},{opacity:1,x:0,duration:0.5,ease:"power3.out"},159.630);
+tl.fromTo("#c43s3",{opacity:0,x:20},{opacity:1,x:0,duration:0.5,ease:"power3.out"},182.650);
+tl.fromTo("#c43 .vline",{scaleY:0},{scaleY:1,duration:40.520,ease:"power1.inOut"},142.430);
+tl.fromTo("#c44 .card",{opacity:0,x:40},{opacity:1,x:0,duration:0.55,ease:"power3.out"},215.370);
+tl.to("#c44 .card",{opacity:0,x:20,duration:0.4,ease:"power2.in"},223.200);
+tl.fromTo("#c44 .ic",{scale:0.6,opacity:0},{scale:1,opacity:1,duration:0.5,ease:"back.out(2)"},215.500);
+particles("pt45",6,600,220,215.350,223.650,2153);
+tl.fromTo("#c47 .card",{opacity:0,x:40},{opacity:1,x:0,duration:0.55,ease:"power3.out"},294.330);
+tl.to("#c47 .card",{opacity:0,x:20,duration:0.4,ease:"power2.in"},304.460);
+tl.fromTo("#c47 .qb",{opacity:0,y:10},{opacity:1,y:0,duration:0.6,ease:"power2.out"},294.560);
+tl.fromTo("#c47 .qw",{opacity:0},{opacity:1,duration:0.5},294.910);
+tl.fromTo("#c48 .card",{opacity:0,x:40},{opacity:1,x:0,duration:0.55,ease:"power3.out"},405.430);
+tl.to("#c48 .card",{opacity:0,x:20,duration:0.4,ease:"power2.in"},413.760);
+tl.fromTo("#c48 .ic",{scale:0.6,opacity:0},{scale:1,opacity:1,duration:0.5,ease:"back.out(2)"},405.560);
+particles("pt49",6,600,220,405.410,414.210,4054);
+tl.fromTo("#c51 .card",{opacity:0,x:40},{opacity:1,x:0,duration:0.55,ease:"power3.out"},471.770);
+tl.to("#c51 .card",{opacity:0,x:20,duration:0.4,ease:"power2.in"},512.860);
+tl.fromTo("#c51 .rule",{scaleX:0},{scaleX:1,duration:0.7,ease:"power2.inOut"},471.950);
+tl.fromTo("#c51 .col:first-child",{opacity:0,y:10},{opacity:1,y:0,duration:0.5},472.100);
+tl.fromTo("#c51 .div",{scaleY:0},{scaleY:1,duration:0.5},499.750);
+tl.fromTo("#c51 .col:last-child",{opacity:0,y:10},{opacity:1,y:0,duration:0.5},499.850);
+tl.fromTo("#c52 .card",{opacity:0,x:40},{opacity:1,x:0,duration:0.55,ease:"power3.out"},532.830);
+tl.to("#c52 .card",{opacity:0,x:20,duration:0.4,ease:"power2.in"},594.860);
+tl.fromTo("#c52 .rule",{scaleX:0},{scaleX:1,duration:0.7,ease:"power2.inOut"},533.010);
+tl.fromTo("#c52s0",{opacity:0,x:20},{opacity:1,x:0,duration:0.5,ease:"power3.out"},533.110);
+tl.fromTo("#c52s1",{opacity:0,x:20},{opacity:1,x:0,duration:0.5,ease:"power3.out"},548.810);
+tl.fromTo("#c52s2",{opacity:0,x:20},{opacity:1,x:0,duration:0.5,ease:"power3.out"},585.810);
+tl.fromTo("#c52 .vline",{scaleY:0},{scaleY:1,duration:53.000,ease:"power1.inOut"},533.110);
+tl.fromTo("#c53 .card",{opacity:0,x:40},{opacity:1,x:0,duration:0.55,ease:"power3.out"},630.170);
+tl.to("#c53 .card",{opacity:0,x:20,duration:0.4,ease:"power2.in"},696.200);
+tl.fromTo("#c53 .rule",{scaleX:0},{scaleX:1,duration:0.7,ease:"power2.inOut"},630.350);
+tl.fromTo("#c53 .col:first-child",{opacity:0,y:10},{opacity:1,y:0,duration:0.5},630.500);
+tl.fromTo("#c53 .div",{scaleY:0},{scaleY:1,duration:0.5},667.150);
+tl.fromTo("#c53 .col:last-child",{opacity:0,y:10},{opacity:1,y:0,duration:0.5},667.250);
+tl.fromTo("#c54 .card",{opacity:0,x:40},{opacity:1,x:0,duration:0.55,ease:"power3.out"},782.270);
+tl.to("#c54 .card",{opacity:0,x:20,duration:0.4,ease:"power2.in"},806.120);
+tl.fromTo("#c54 .rule",{scaleX:0},{scaleX:1,duration:0.7,ease:"power2.inOut"},782.450);
+tl.fromTo("#c54 .col:first-child",{opacity:0,y:10},{opacity:1,y:0,duration:0.5},782.600);
+tl.fromTo("#c54 .div",{scaleY:0},{scaleY:1,duration:0.5},791.250);
+tl.fromTo("#c54 .col:last-child",{opacity:0,y:10},{opacity:1,y:0,duration:0.5},791.350);
+tl.fromTo("#c55 .card",{opacity:0,x:40},{opacity:1,x:0,duration:0.55,ease:"power3.out"},823.090);
+tl.to("#c55 .card",{opacity:0,x:20,duration:0.4,ease:"power2.in"},840.120);
+tl.fromTo("#c55 .ic",{scale:0.6,opacity:0},{scale:1,opacity:1,duration:0.5,ease:"back.out(2)"},823.220);
+particles("pt56",6,600,220,823.070,840.570,8230);
+tl.fromTo("#c58 .card",{opacity:0,x:40},{opacity:1,x:0,duration:0.55,ease:"power3.out"},896.230);
+tl.to("#c58 .card",{opacity:0,x:20,duration:0.4,ease:"power2.in"},911.760);
+tl.fromTo("#c58 .rule",{scaleX:0},{scaleX:1,duration:0.7,ease:"power2.inOut"},896.410);
+tl.fromTo("#c58 .col:first-child",{opacity:0,y:10},{opacity:1,y:0,duration:0.5},896.560);
+tl.fromTo("#c58 .div",{scaleY:0},{scaleY:1,duration:0.5},903.710);
+tl.fromTo("#c58 .col:last-child",{opacity:0,y:10},{opacity:1,y:0,duration:0.5},903.810);
+tl.fromTo("#c59 .card",{opacity:0,x:40},{opacity:1,x:0,duration:0.55,ease:"power3.out"},929.590);
+tl.to("#c59 .card",{opacity:0,x:20,duration:0.4,ease:"power2.in"},970.060);
+tl.fromTo("#c59 .rule",{scaleX:0},{scaleX:1,duration:0.7,ease:"power2.inOut"},929.770);
+tl.fromTo("#c59s0",{opacity:0,x:20},{opacity:1,x:0,duration:0.5,ease:"power3.out"},930.070);
+tl.fromTo("#c59s1",{opacity:0,x:20},{opacity:1,x:0,duration:0.5,ease:"power3.out"},934.070);
+tl.fromTo("#c59s2",{opacity:0,x:20},{opacity:1,x:0,duration:0.5,ease:"power3.out"},956.510);
+tl.fromTo("#c59 .vline",{scaleY:0},{scaleY:1,duration:26.940,ease:"power1.inOut"},929.870);
+tl.fromTo("#c60 .card",{opacity:0,x:40},{opacity:1,x:0,duration:0.55,ease:"power3.out"},973.530);
+tl.to("#c60 .card",{opacity:0,x:20,duration:0.4,ease:"power2.in"},997.560);
+tl.fromTo("#c60 .qb",{opacity:0,y:10},{opacity:1,y:0,duration:0.6,ease:"power2.out"},973.760);
+tl.fromTo("#c60 .qw",{opacity:0},{opacity:1,duration:0.5},974.110);
+tl.fromTo("#c61 .card",{opacity:0,x:40},{opacity:1,x:0,duration:0.55,ease:"power3.out"},1041.040);
+tl.to("#c61 .card",{opacity:0,x:20,duration:0.4,ease:"power2.in"},1087.780);
+tl.fromTo("#c61 .rule",{scaleX:0},{scaleX:1,duration:0.7,ease:"power2.inOut"},1041.220);
+tl.fromTo("#c61 .col:first-child",{opacity:0,y:10},{opacity:1,y:0,duration:0.5},1041.370);
+tl.fromTo("#c61 .div",{scaleY:0},{scaleY:1,duration:0.5},1061.830);
+tl.fromTo("#c61 .col:last-child",{opacity:0,y:10},{opacity:1,y:0,duration:0.5},1061.930);
+tl.fromTo("#c62 .card",{opacity:0,x:40},{opacity:1,x:0,duration:0.55,ease:"power3.out"},1111.250);
+tl.to("#c62 .card",{opacity:0,x:20,duration:0.4,ease:"power2.in"},1140.940);
+tl.fromTo("#c62 .ic",{scale:0.6,opacity:0},{scale:1,opacity:1,duration:0.5,ease:"back.out(2)"},1111.380);
+particles("pt63",6,600,220,1111.230,1141.390,11112);
+tl.fromTo("#c65 .card",{opacity:0,x:40},{opacity:1,x:0,duration:0.55,ease:"power3.out"},1178.800);
+tl.to("#c65 .card",{opacity:0,x:20,duration:0.4,ease:"power2.in"},1185.860);
+tl.fromTo("#c65 .ic",{scale:0.6,opacity:0},{scale:1,opacity:1,duration:0.5,ease:"back.out(2)"},1178.930);
+particles("pt66",6,600,220,1178.780,1186.310,11787);
+tl.fromTo("#c68 .card",{opacity:0,x:40},{opacity:1,x:0,duration:0.55,ease:"power3.out"},1254.970);
+tl.to("#c68 .card",{opacity:0,x:20,duration:0.4,ease:"power2.in"},1341.240);
+tl.fromTo("#c68 .rule",{scaleX:0},{scaleX:1,duration:0.7,ease:"power2.inOut"},1255.150);
+tl.fromTo("#c68s0",{opacity:0,x:20},{opacity:1,x:0,duration:0.5,ease:"power3.out"},1255.450);
+tl.fromTo("#c68s1",{opacity:0,x:20},{opacity:1,x:0,duration:0.5,ease:"power3.out"},1273.950);
+tl.fromTo("#c68s2",{opacity:0,x:20},{opacity:1,x:0,duration:0.5,ease:"power3.out"},1308.290);
+tl.fromTo("#c68 .vline",{scaleY:0},{scaleY:1,duration:53.340,ease:"power1.inOut"},1255.250);
+tl.fromTo("#c69 .card",{opacity:0,x:40},{opacity:1,x:0,duration:0.55,ease:"power3.out"},1347.110);
+tl.to("#c69 .card",{opacity:0,x:20,duration:0.4,ease:"power2.in"},1374.232);
+tl.fromTo("#c69 .ic",{scale:0.6,opacity:0},{scale:1,opacity:1,duration:0.5,ease:"back.out(2)"},1347.240);
+particles("pt70",6,600,220,1347.090,1374.682,13470);
+tl.fromTo("#c72 .et",{opacity:0,y:16,filter:"blur(10px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.9,ease:"power3.out"},1422.567);
+tl.fromTo("#c72 .tline",{scaleX:0},{scaleX:1,duration:0.7,ease:"power2.inOut"},1422.867);
+tl.fromTo("#c72 .ec, #c72 .ek",{opacity:0,y:8},{opacity:1,y:0,duration:0.6,stagger:0.2},1423.067);
+particles("pt73",12,800,320,1422.567,1426.467,9);
+tl.fromTo("#s75 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},0.170);
+tl.to("#s75 span",{opacity:0,duration:0.12},1.630);
+tl.fromTo("#s76 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1.650);
+tl.to("#s76 span",{opacity:0,duration:0.12},3.170);
+tl.fromTo("#s77 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},3.190);
+tl.to("#s77 span",{opacity:0,duration:0.12},5.516);
+tl.fromTo("#s78 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},5.576);
+tl.to("#s78 span",{opacity:0,duration:0.12},8.180);
+tl.fromTo("#s79 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},8.330);
+tl.to("#s79 span",{opacity:0,duration:0.12},10.750);
+tl.fromTo("#s80 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},11.290);
+tl.to("#s80 span",{opacity:0,duration:0.12},13.610);
+tl.fromTo("#s81 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},13.720);
+tl.to("#s81 span",{opacity:0,duration:0.12},15.490);
+tl.fromTo("#s82 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},15.510);
+tl.to("#s82 span",{opacity:0,duration:0.12},16.270);
+tl.fromTo("#s83 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},16.290);
+tl.to("#s83 span",{opacity:0,duration:0.12},18.930);
+tl.fromTo("#s84 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},18.950);
+tl.to("#s84 span",{opacity:0,duration:0.12},21.320);
+tl.fromTo("#s85 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},21.470);
+tl.to("#s85 span",{opacity:0,duration:0.12},23.110);
+tl.fromTo("#s86 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},23.130);
+tl.to("#s86 span",{opacity:0,duration:0.12},24.350);
+tl.fromTo("#s87 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},24.890);
+tl.to("#s87 span",{opacity:0,duration:0.12},26.450);
+tl.fromTo("#s88 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},26.670);
+tl.to("#s88 span",{opacity:0,duration:0.12},28.830);
+tl.fromTo("#s89 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},28.850);
+tl.to("#s89 span",{opacity:0,duration:0.12},31.330);
+tl.fromTo("#s90 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},31.350);
+tl.to("#s90 span",{opacity:0,duration:0.12},32.710);
+tl.fromTo("#s91 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},32.860);
+tl.to("#s91 span",{opacity:0,duration:0.12},34.150);
+tl.fromTo("#s92 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},34.470);
+tl.to("#s92 span",{opacity:0,duration:0.12},36.288);
+tl.fromTo("#s93 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},36.410);
+tl.to("#s93 span",{opacity:0,duration:0.12},37.790);
+tl.fromTo("#s94 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},37.810);
+tl.to("#s94 span",{opacity:0,duration:0.12},38.370);
+tl.fromTo("#s95 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},39.190);
+tl.to("#s95 span",{opacity:0,duration:0.12},42.170);
+tl.fromTo("#s96 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},43.330);
+tl.to("#s96 span",{opacity:0,duration:0.12},45.520);
+tl.fromTo("#s97 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},45.670);
+tl.to("#s97 span",{opacity:0,duration:0.12},46.700);
+tl.fromTo("#s98 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},46.850);
+tl.to("#s98 span",{opacity:0,duration:0.12},48.870);
+tl.fromTo("#s99 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},48.890);
+tl.to("#s99 span",{opacity:0,duration:0.12},50.802);
+tl.fromTo("#s100 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},52.500);
+tl.to("#s100 span",{opacity:0,duration:0.12},53.370);
+tl.fromTo("#s101 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},53.490);
+tl.to("#s101 span",{opacity:0,duration:0.12},55.490);
+tl.fromTo("#s102 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},55.510);
+tl.to("#s102 span",{opacity:0,duration:0.12},57.100);
+tl.fromTo("#s103 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},57.250);
+tl.to("#s103 span",{opacity:0,duration:0.12},58.310);
+tl.fromTo("#s104 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},58.530);
+tl.to("#s104 span",{opacity:0,duration:0.12},61.830);
+tl.fromTo("#s105 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},61.850);
+tl.to("#s105 span",{opacity:0,duration:0.12},64.830);
+tl.fromTo("#s106 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},64.850);
+tl.to("#s106 span",{opacity:0,duration:0.12},68.070);
+tl.fromTo("#s107 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},68.130);
+tl.to("#s107 span",{opacity:0,duration:0.12},71.510);
+tl.fromTo("#s108 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},72.530);
+tl.to("#s108 span",{opacity:0,duration:0.12},75.840);
+tl.fromTo("#s109 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},75.990);
+tl.to("#s109 span",{opacity:0,duration:0.12},80.030);
+tl.fromTo("#s110 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},80.050);
+tl.to("#s110 span",{opacity:0,duration:0.12},82.870);
+tl.fromTo("#s111 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},83.090);
+tl.to("#s111 span",{opacity:0,duration:0.12},84.190);
+tl.fromTo("#s112 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},84.710);
+tl.to("#s112 span",{opacity:0,duration:0.12},87.430);
+tl.fromTo("#s113 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},87.450);
+tl.to("#s113 span",{opacity:0,duration:0.12},93.470);
+tl.fromTo("#s114 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},93.490);
+tl.to("#s114 span",{opacity:0,duration:0.12},95.760);
+tl.fromTo("#s115 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},95.910);
+tl.to("#s115 span",{opacity:0,duration:0.12},98.840);
+tl.fromTo("#s116 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},98.990);
+tl.to("#s116 span",{opacity:0,duration:0.12},100.150);
+tl.fromTo("#s117 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},100.370);
+tl.to("#s117 span",{opacity:0,duration:0.12},104.298);
+tl.fromTo("#s118 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},104.590);
+tl.to("#s118 span",{opacity:0,duration:0.12},107.030);
+tl.fromTo("#s119 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},107.050);
+tl.to("#s119 span",{opacity:0,duration:0.12},109.290);
+tl.fromTo("#s120 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},110.130);
+tl.to("#s120 span",{opacity:0,duration:0.12},113.610);
+tl.fromTo("#s121 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},113.630);
+tl.to("#s121 span",{opacity:0,duration:0.12},115.450);
+tl.fromTo("#s122 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},115.790);
+tl.to("#s122 span",{opacity:0,duration:0.12},117.970);
+tl.fromTo("#s123 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},117.990);
+tl.to("#s123 span",{opacity:0,duration:0.12},119.570);
+tl.fromTo("#s124 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},119.590);
+tl.to("#s124 span",{opacity:0,duration:0.12},120.650);
+tl.fromTo("#s125 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},120.670);
+tl.to("#s125 span",{opacity:0,duration:0.12},124.117);
+tl.fromTo("#s126 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},124.165);
+tl.to("#s126 span",{opacity:0,duration:0.12},125.260);
+tl.fromTo("#s127 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},125.410);
+tl.to("#s127 span",{opacity:0,duration:0.12},127.222);
+tl.fromTo("#s128 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},127.260);
+tl.to("#s128 span",{opacity:0,duration:0.12},129.710);
+tl.fromTo("#s129 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},131.630);
+tl.to("#s129 span",{opacity:0,duration:0.12},135.090);
+tl.fromTo("#s130 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},135.110);
+tl.to("#s130 span",{opacity:0,duration:0.12},135.830);
+tl.fromTo("#s131 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},136.730);
+tl.to("#s131 span",{opacity:0,duration:0.12},142.140);
+tl.fromTo("#s132 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},142.290);
+tl.to("#s132 span",{opacity:0,duration:0.12},146.210);
+tl.fromTo("#s133 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},146.230);
+tl.to("#s133 span",{opacity:0,duration:0.12},147.210);
+tl.fromTo("#s134 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},147.570);
+tl.to("#s134 span",{opacity:0,duration:0.12},149.250);
+tl.fromTo("#s135 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},149.270);
+tl.to("#s135 span",{opacity:0,duration:0.12},152.130);
+tl.fromTo("#s136 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},152.530);
+tl.to("#s136 span",{opacity:0,duration:0.12},153.930);
+tl.fromTo("#s137 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},154.530);
+tl.to("#s137 span",{opacity:0,duration:0.12},159.650);
+tl.fromTo("#s138 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},159.670);
+tl.to("#s138 span",{opacity:0,duration:0.12},162.210);
+tl.fromTo("#s139 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},162.230);
+tl.to("#s139 span",{opacity:0,duration:0.12},165.270);
+tl.fromTo("#s140 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},165.290);
+tl.to("#s140 span",{opacity:0,duration:0.12},167.970);
+tl.fromTo("#s141 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},167.990);
+tl.to("#s141 span",{opacity:0,duration:0.12},169.370);
+tl.fromTo("#s142 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},170.350);
+tl.to("#s142 span",{opacity:0,duration:0.12},173.970);
+tl.fromTo("#s143 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},173.990);
+tl.to("#s143 span",{opacity:0,duration:0.12},174.730);
+tl.fromTo("#s144 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},175.510);
+tl.to("#s144 span",{opacity:0,duration:0.12},178.830);
+tl.fromTo("#s145 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},178.850);
+tl.to("#s145 span",{opacity:0,duration:0.12},181.510);
+tl.fromTo("#s146 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},181.530);
+tl.to("#s146 span",{opacity:0,duration:0.12},185.590);
+tl.fromTo("#s147 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},185.610);
+tl.to("#s147 span",{opacity:0,duration:0.12},188.209);
+tl.fromTo("#s148 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},188.262);
+tl.to("#s148 span",{opacity:0,duration:0.12},189.910);
+tl.fromTo("#s149 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},190.060);
+tl.to("#s149 span",{opacity:0,duration:0.12},195.190);
+tl.fromTo("#s150 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},195.210);
+tl.to("#s150 span",{opacity:0,duration:0.12},196.770);
+tl.fromTo("#s151 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},197.690);
+tl.to("#s151 span",{opacity:0,duration:0.12},202.810);
+tl.fromTo("#s152 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},202.890);
+tl.to("#s152 span",{opacity:0,duration:0.12},205.610);
+tl.fromTo("#s153 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},205.630);
+tl.to("#s153 span",{opacity:0,duration:0.12},208.710);
+tl.fromTo("#s154 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},208.730);
+tl.to("#s154 span",{opacity:0,duration:0.12},210.690);
+tl.fromTo("#s155 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},210.710);
+tl.to("#s155 span",{opacity:0,duration:0.12},213.422);
+tl.fromTo("#s156 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},213.496);
+tl.to("#s156 span",{opacity:0,duration:0.12},216.851);
+tl.fromTo("#s157 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},216.880);
+tl.to("#s157 span",{opacity:0,duration:0.12},221.675);
+tl.fromTo("#s158 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},221.825);
+tl.to("#s158 span",{opacity:0,duration:0.12},225.110);
+tl.fromTo("#s159 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},225.130);
+tl.to("#s159 span",{opacity:0,duration:0.12},226.270);
+tl.fromTo("#s160 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},226.510);
+tl.to("#s160 span",{opacity:0,duration:0.12},231.110);
+tl.fromTo("#s161 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},231.130);
+tl.to("#s161 span",{opacity:0,duration:0.12},234.410);
+tl.fromTo("#s162 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},234.430);
+tl.to("#s162 span",{opacity:0,duration:0.12},236.810);
+tl.fromTo("#s163 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},236.830);
+tl.to("#s163 span",{opacity:0,duration:0.12},240.360);
+tl.fromTo("#s164 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},240.510);
+tl.to("#s164 span",{opacity:0,duration:0.12},242.390);
+tl.fromTo("#s165 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},242.410);
+tl.to("#s165 span",{opacity:0,duration:0.12},243.990);
+tl.fromTo("#s166 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},244.810);
+tl.to("#s166 span",{opacity:0,duration:0.12},247.830);
+tl.fromTo("#s167 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},247.850);
+tl.to("#s167 span",{opacity:0,duration:0.12},249.752);
+tl.fromTo("#s168 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},249.814);
+tl.to("#s168 span",{opacity:0,duration:0.12},252.670);
+tl.fromTo("#s169 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},252.890);
+tl.to("#s169 span",{opacity:0,duration:0.12},256.150);
+tl.fromTo("#s170 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},256.170);
+tl.to("#s170 span",{opacity:0,duration:0.12},258.890);
+tl.fromTo("#s171 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},258.910);
+tl.to("#s171 span",{opacity:0,duration:0.12},260.410);
+tl.fromTo("#s172 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},260.430);
+tl.to("#s172 span",{opacity:0,duration:0.12},261.280);
+tl.fromTo("#s173 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},261.430);
+tl.to("#s173 span",{opacity:0,duration:0.12},263.110);
+tl.fromTo("#s174 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},263.130);
+tl.to("#s174 span",{opacity:0,duration:0.12},266.590);
+tl.fromTo("#s175 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},267.110);
+tl.to("#s175 span",{opacity:0,duration:0.12},267.990);
+tl.fromTo("#s176 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},268.870);
+tl.to("#s176 span",{opacity:0,duration:0.12},271.990);
+tl.fromTo("#s177 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},272.210);
+tl.to("#s177 span",{opacity:0,duration:0.12},275.530);
+tl.fromTo("#s178 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},275.550);
+tl.to("#s178 span",{opacity:0,duration:0.12},277.490);
+tl.fromTo("#s179 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},277.777);
+tl.to("#s179 span",{opacity:0,duration:0.12},280.210);
+tl.fromTo("#s180 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},280.610);
+tl.to("#s180 span",{opacity:0,duration:0.12},282.770);
+tl.fromTo("#s181 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},282.885);
+tl.to("#s181 span",{opacity:0,duration:0.12},284.210);
+tl.fromTo("#s182 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},284.230);
+tl.to("#s182 span",{opacity:0,duration:0.12},286.174);
+tl.fromTo("#s183 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},286.410);
+tl.to("#s183 span",{opacity:0,duration:0.12},290.070);
+tl.fromTo("#s184 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},290.090);
+tl.to("#s184 span",{opacity:0,duration:0.12},292.750);
+tl.fromTo("#s185 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},292.770);
+tl.to("#s185 span",{opacity:0,duration:0.12},293.570);
+tl.fromTo("#s186 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},294.250);
+tl.to("#s186 span",{opacity:0,duration:0.12},299.830);
+tl.fromTo("#s187 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},299.850);
+tl.to("#s187 span",{opacity:0,duration:0.12},301.440);
+tl.fromTo("#s188 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},301.590);
+tl.to("#s188 span",{opacity:0,duration:0.12},303.110);
+tl.fromTo("#s189 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},303.130);
+tl.to("#s189 span",{opacity:0,duration:0.12},306.400);
+tl.fromTo("#s190 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},306.550);
+tl.to("#s190 span",{opacity:0,duration:0.12},312.350);
+tl.fromTo("#s191 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},312.370);
+tl.to("#s191 span",{opacity:0,duration:0.12},317.730);
+tl.fromTo("#s192 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},317.750);
+tl.to("#s192 span",{opacity:0,duration:0.12},321.010);
+tl.fromTo("#s193 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},321.030);
+tl.to("#s193 span",{opacity:0,duration:0.12},322.670);
+tl.fromTo("#s194 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},323.270);
+tl.to("#s194 span",{opacity:0,duration:0.12},324.130);
+tl.fromTo("#s195 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},324.350);
+tl.to("#s195 span",{opacity:0,duration:0.12},325.630);
+tl.fromTo("#s196 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},326.910);
+tl.to("#s196 span",{opacity:0,duration:0.12},330.090);
+tl.fromTo("#s197 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},330.110);
+tl.to("#s197 span",{opacity:0,duration:0.12},332.540);
+tl.fromTo("#s198 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},332.690);
+tl.to("#s198 span",{opacity:0,duration:0.12},336.450);
+tl.fromTo("#s199 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},336.470);
+tl.to("#s199 span",{opacity:0,duration:0.12},339.000);
+tl.fromTo("#s200 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},339.150);
+tl.to("#s200 span",{opacity:0,duration:0.12},341.650);
+tl.fromTo("#s201 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},341.710);
+tl.to("#s201 span",{opacity:0,duration:0.12},342.180);
+tl.fromTo("#s202 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},341.990);
+tl.to("#s202 span",{opacity:0,duration:0.12},342.950);
+tl.fromTo("#s203 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},343.530);
+tl.to("#s203 span",{opacity:0,duration:0.12},346.720);
+tl.fromTo("#s204 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},346.870);
+tl.to("#s204 span",{opacity:0,duration:0.12},350.210);
+tl.fromTo("#s205 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},350.850);
+tl.to("#s205 span",{opacity:0,duration:0.12},355.065);
+tl.fromTo("#s206 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},355.215);
+tl.to("#s206 span",{opacity:0,duration:0.12},356.100);
+tl.fromTo("#s207 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},356.250);
+tl.to("#s207 span",{opacity:0,duration:0.12},359.030);
+tl.fromTo("#s208 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},359.050);
+tl.to("#s208 span",{opacity:0,duration:0.12},360.020);
+tl.fromTo("#s209 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},360.170);
+tl.to("#s209 span",{opacity:0,duration:0.12},362.370);
+tl.fromTo("#s210 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},363.370);
+tl.to("#s210 span",{opacity:0,duration:0.12},368.210);
+tl.fromTo("#s211 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},368.230);
+tl.to("#s211 span",{opacity:0,duration:0.12},373.806);
+tl.fromTo("#s212 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},374.030);
+tl.to("#s212 span",{opacity:0,duration:0.12},377.330);
+tl.fromTo("#s213 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},377.350);
+tl.to("#s213 span",{opacity:0,duration:0.12},380.170);
+tl.fromTo("#s214 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},380.190);
+tl.to("#s214 span",{opacity:0,duration:0.12},380.660);
+tl.fromTo("#s215 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},380.510);
+tl.to("#s215 span",{opacity:0,duration:0.12},381.500);
+tl.fromTo("#s216 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},381.650);
+tl.to("#s216 span",{opacity:0,duration:0.12},383.970);
+tl.fromTo("#s217 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},383.990);
+tl.to("#s217 span",{opacity:0,duration:0.12},388.020);
+tl.fromTo("#s218 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},388.170);
+tl.to("#s218 span",{opacity:0,duration:0.12},391.090);
+tl.fromTo("#s219 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},392.170);
+tl.to("#s219 span",{opacity:0,duration:0.12},394.450);
+tl.fromTo("#s220 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},394.470);
+tl.to("#s220 span",{opacity:0,duration:0.12},395.430);
+tl.fromTo("#s221 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},395.930);
+tl.to("#s221 span",{opacity:0,duration:0.12},398.510);
+tl.fromTo("#s222 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},398.530);
+tl.to("#s222 span",{opacity:0,duration:0.12},400.150);
+tl.fromTo("#s223 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},400.370);
+tl.to("#s223 span",{opacity:0,duration:0.12},402.630);
+tl.fromTo("#s224 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},402.650);
+tl.to("#s224 span",{opacity:0,duration:0.12},407.050);
+tl.fromTo("#s225 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},407.070);
+tl.to("#s225 span",{opacity:0,duration:0.12},410.330);
+tl.fromTo("#s226 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},410.350);
+tl.to("#s226 span",{opacity:0,duration:0.12},413.190);
+tl.fromTo("#s227 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},413.210);
+tl.to("#s227 span",{opacity:0,duration:0.12},414.300);
+tl.fromTo("#s228 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},414.450);
+tl.to("#s228 span",{opacity:0,duration:0.12},418.430);
+tl.fromTo("#s229 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},418.770);
+tl.to("#s229 span",{opacity:0,duration:0.12},421.470);
+tl.fromTo("#s230 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},421.490);
+tl.to("#s230 span",{opacity:0,duration:0.12},422.475);
+tl.fromTo("#s231 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},422.625);
+tl.to("#s231 span",{opacity:0,duration:0.12},425.830);
+tl.fromTo("#s232 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},425.850);
+tl.to("#s232 span",{opacity:0,duration:0.12},427.373);
+tl.fromTo("#s233 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},427.490);
+tl.to("#s233 span",{opacity:0,duration:0.12},428.646);
+tl.fromTo("#s234 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},428.950);
+tl.to("#s234 span",{opacity:0,duration:0.12},435.210);
+tl.fromTo("#s235 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},435.230);
+tl.to("#s235 span",{opacity:0,duration:0.12},437.570);
+tl.fromTo("#s236 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},437.590);
+tl.to("#s236 span",{opacity:0,duration:0.12},439.510);
+tl.fromTo("#s237 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},439.530);
+tl.to("#s237 span",{opacity:0,duration:0.12},443.170);
+tl.fromTo("#s238 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},443.390);
+tl.to("#s238 span",{opacity:0,duration:0.12},446.780);
+tl.fromTo("#s239 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},446.930);
+tl.to("#s239 span",{opacity:0,duration:0.12},449.772);
+tl.fromTo("#s240 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},449.849);
+tl.to("#s240 span",{opacity:0,duration:0.12},455.590);
+tl.fromTo("#s241 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},455.610);
+tl.to("#s241 span",{opacity:0,duration:0.12},457.910);
+tl.fromTo("#s242 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},457.930);
+tl.to("#s242 span",{opacity:0,duration:0.12},460.980);
+tl.fromTo("#s243 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},461.130);
+tl.to("#s243 span",{opacity:0,duration:0.12},467.950);
+tl.fromTo("#s244 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},467.970);
+tl.to("#s244 span",{opacity:0,duration:0.12},472.650);
+tl.fromTo("#s245 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},472.670);
+tl.to("#s245 span",{opacity:0,duration:0.12},474.770);
+tl.fromTo("#s246 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},474.870);
+tl.to("#s246 span",{opacity:0,duration:0.12},477.790);
+tl.fromTo("#s247 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},477.810);
+tl.to("#s247 span",{opacity:0,duration:0.12},483.830);
+tl.fromTo("#s248 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},483.850);
+tl.to("#s248 span",{opacity:0,duration:0.12},485.450);
+tl.fromTo("#s249 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},486.350);
+tl.to("#s249 span",{opacity:0,duration:0.12},489.990);
+tl.fromTo("#s250 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},490.470);
+tl.to("#s250 span",{opacity:0,duration:0.12},494.622);
+tl.fromTo("#s251 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},494.870);
+tl.to("#s251 span",{opacity:0,duration:0.12},499.290);
+tl.fromTo("#s252 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},499.310);
+tl.to("#s252 span",{opacity:0,duration:0.12},503.000);
+tl.fromTo("#s253 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},503.150);
+tl.to("#s253 span",{opacity:0,duration:0.12},505.602);
+tl.fromTo("#s254 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},505.910);
+tl.to("#s254 span",{opacity:0,duration:0.12},507.900);
+tl.fromTo("#s255 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},508.050);
+tl.to("#s255 span",{opacity:0,duration:0.12},511.230);
+tl.fromTo("#s256 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},511.450);
+tl.to("#s256 span",{opacity:0,duration:0.12},514.250);
+tl.fromTo("#s257 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},514.270);
+tl.to("#s257 span",{opacity:0,duration:0.12},516.670);
+tl.fromTo("#s258 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},516.820);
+tl.to("#s258 span",{opacity:0,duration:0.12},520.870);
+tl.fromTo("#s259 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},520.890);
+tl.to("#s259 span",{opacity:0,duration:0.12},522.830);
+tl.fromTo("#s260 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},523.250);
+tl.to("#s260 span",{opacity:0,duration:0.12},525.270);
+tl.fromTo("#s261 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},525.290);
+tl.to("#s261 span",{opacity:0,duration:0.12},527.090);
+tl.fromTo("#s262 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},527.110);
+tl.to("#s262 span",{opacity:0,duration:0.12},530.950);
+tl.fromTo("#s263 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},531.200);
+tl.to("#s263 span",{opacity:0,duration:0.12},532.434);
+tl.fromTo("#s264 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},532.790);
+tl.to("#s264 span",{opacity:0,duration:0.12},535.270);
+tl.fromTo("#s265 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},535.290);
+tl.to("#s265 span",{opacity:0,duration:0.12},539.870);
+tl.fromTo("#s266 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},539.890);
+tl.to("#s266 span",{opacity:0,duration:0.12},541.590);
+tl.fromTo("#s267 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},541.915);
+tl.to("#s267 span",{opacity:0,duration:0.12},543.284);
+tl.fromTo("#s268 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},543.730);
+tl.to("#s268 span",{opacity:0,duration:0.12},547.646);
+tl.fromTo("#s269 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},547.930);
+tl.to("#s269 span",{opacity:0,duration:0.12},548.827);
+tl.fromTo("#s270 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},548.854);
+tl.to("#s270 span",{opacity:0,duration:0.12},551.770);
+tl.fromTo("#s271 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},551.790);
+tl.to("#s271 span",{opacity:0,duration:0.12},554.710);
+tl.fromTo("#s272 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},554.730);
+tl.to("#s272 span",{opacity:0,duration:0.12},560.830);
+tl.fromTo("#s273 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},560.850);
+tl.to("#s273 span",{opacity:0,duration:0.12},561.830);
+tl.fromTo("#s274 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},562.850);
+tl.to("#s274 span",{opacity:0,duration:0.12},566.050);
+tl.fromTo("#s275 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},566.070);
+tl.to("#s275 span",{opacity:0,duration:0.12},569.210);
+tl.fromTo("#s276 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},569.230);
+tl.to("#s276 span",{opacity:0,duration:0.12},570.290);
+tl.fromTo("#s277 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},570.730);
+tl.to("#s277 span",{opacity:0,duration:0.12},573.290);
+tl.fromTo("#s278 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},573.420);
+tl.to("#s278 span",{opacity:0,duration:0.12},574.470);
+tl.fromTo("#s279 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},575.390);
+tl.to("#s279 span",{opacity:0,duration:0.12},577.750);
+tl.fromTo("#s280 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},577.770);
+tl.to("#s280 span",{opacity:0,duration:0.12},580.290);
+tl.fromTo("#s281 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},580.310);
+tl.to("#s281 span",{opacity:0,duration:0.12},582.230);
+tl.fromTo("#s282 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},582.840);
+tl.to("#s282 span",{opacity:0,duration:0.12},584.722);
+tl.fromTo("#s283 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},585.510);
+tl.to("#s283 span",{opacity:0,duration:0.12},588.650);
+tl.fromTo("#s284 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},589.710);
+tl.to("#s284 span",{opacity:0,duration:0.12},591.930);
+tl.fromTo("#s285 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},591.950);
+tl.to("#s285 span",{opacity:0,duration:0.12},594.650);
+tl.fromTo("#s286 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},594.670);
+tl.to("#s286 span",{opacity:0,duration:0.12},595.750);
+tl.fromTo("#s287 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},595.770);
+tl.to("#s287 span",{opacity:0,duration:0.12},601.320);
+tl.fromTo("#s288 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},601.470);
+tl.to("#s288 span",{opacity:0,duration:0.12},605.030);
+tl.fromTo("#s289 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},605.050);
+tl.to("#s289 span",{opacity:0,duration:0.12},606.220);
+tl.fromTo("#s290 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},606.370);
+tl.to("#s290 span",{opacity:0,duration:0.12},609.010);
+tl.fromTo("#s291 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},609.030);
+tl.to("#s291 span",{opacity:0,duration:0.12},610.290);
+tl.fromTo("#s292 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},610.587);
+tl.to("#s292 span",{opacity:0,duration:0.12},613.058);
+tl.fromTo("#s293 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},613.470);
+tl.to("#s293 span",{opacity:0,duration:0.12},616.726);
+tl.fromTo("#s294 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},616.780);
+tl.to("#s294 span",{opacity:0,duration:0.12},617.706);
+tl.fromTo("#s295 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},620.090);
+tl.to("#s295 span",{opacity:0,duration:0.12},621.690);
+tl.fromTo("#s296 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},622.290);
+tl.to("#s296 span",{opacity:0,duration:0.12},625.850);
+tl.fromTo("#s297 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},625.870);
+tl.to("#s297 span",{opacity:0,duration:0.12},629.050);
+tl.fromTo("#s298 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},630.470);
+tl.to("#s298 span",{opacity:0,duration:0.12},634.010);
+tl.fromTo("#s299 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},634.030);
+tl.to("#s299 span",{opacity:0,duration:0.12},638.070);
+tl.fromTo("#s300 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},638.090);
+tl.to("#s300 span",{opacity:0,duration:0.12},641.280);
+tl.fromTo("#s301 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},641.430);
+tl.to("#s301 span",{opacity:0,duration:0.12},645.230);
+tl.fromTo("#s302 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},645.250);
+tl.to("#s302 span",{opacity:0,duration:0.12},647.110);
+tl.fromTo("#s303 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},647.810);
+tl.to("#s303 span",{opacity:0,duration:0.12},650.390);
+tl.fromTo("#s304 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},650.410);
+tl.to("#s304 span",{opacity:0,duration:0.12},653.550);
+tl.fromTo("#s305 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},653.570);
+tl.to("#s305 span",{opacity:0,duration:0.12},655.850);
+tl.fromTo("#s306 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},655.870);
+tl.to("#s306 span",{opacity:0,duration:0.12},659.030);
+tl.fromTo("#s307 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},659.050);
+tl.to("#s307 span",{opacity:0,duration:0.12},661.070);
+tl.fromTo("#s308 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},661.090);
+tl.to("#s308 span",{opacity:0,duration:0.12},664.445);
+tl.fromTo("#s309 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},664.595);
+tl.to("#s309 span",{opacity:0,duration:0.12},667.690);
+tl.fromTo("#s310 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},668.550);
+tl.to("#s310 span",{opacity:0,duration:0.12},671.280);
+tl.fromTo("#s311 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},671.430);
+tl.to("#s311 span",{opacity:0,duration:0.12},673.960);
+tl.fromTo("#s312 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},674.110);
+tl.to("#s312 span",{opacity:0,duration:0.12},676.250);
+tl.fromTo("#s313 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},676.270);
+tl.to("#s313 span",{opacity:0,duration:0.12},676.850);
+tl.fromTo("#s314 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},677.370);
+tl.to("#s314 span",{opacity:0,duration:0.12},680.050);
+tl.fromTo("#s315 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},680.770);
+tl.to("#s315 span",{opacity:0,duration:0.12},684.930);
+tl.fromTo("#s316 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},684.950);
+tl.to("#s316 span",{opacity:0,duration:0.12},691.150);
+tl.fromTo("#s317 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},691.590);
+tl.to("#s317 span",{opacity:0,duration:0.12},694.380);
+tl.fromTo("#s318 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},694.530);
+tl.to("#s318 span",{opacity:0,duration:0.12},697.510);
+tl.fromTo("#s319 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},697.530);
+tl.to("#s319 span",{opacity:0,duration:0.12},698.290);
+tl.fromTo("#s320 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},698.310);
+tl.to("#s320 span",{opacity:0,duration:0.12},701.330);
+tl.fromTo("#s321 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},701.350);
+tl.to("#s321 span",{opacity:0,duration:0.12},704.030);
+tl.fromTo("#s322 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},704.650);
+tl.to("#s322 span",{opacity:0,duration:0.12},706.010);
+tl.fromTo("#s323 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},706.450);
+tl.to("#s323 span",{opacity:0,duration:0.12},710.530);
+tl.fromTo("#s324 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},710.550);
+tl.to("#s324 span",{opacity:0,duration:0.12},716.615);
+tl.fromTo("#s325 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},716.765);
+tl.to("#s325 span",{opacity:0,duration:0.12},721.370);
+tl.fromTo("#s326 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},721.680);
+tl.to("#s326 span",{opacity:0,duration:0.12},724.460);
+tl.fromTo("#s327 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},724.480);
+tl.to("#s327 span",{opacity:0,duration:0.12},727.620);
+tl.fromTo("#s328 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},727.640);
+tl.to("#s328 span",{opacity:0,duration:0.12},728.710);
+tl.fromTo("#s329 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},728.860);
+tl.to("#s329 span",{opacity:0,duration:0.12},731.010);
+tl.fromTo("#s330 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},731.160);
+tl.to("#s330 span",{opacity:0,duration:0.12},734.490);
+tl.fromTo("#s331 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},734.640);
+tl.to("#s331 span",{opacity:0,duration:0.12},737.580);
+tl.fromTo("#s332 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},737.600);
+tl.to("#s332 span",{opacity:0,duration:0.12},743.160);
+tl.fromTo("#s333 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},743.760);
+tl.to("#s333 span",{opacity:0,duration:0.12},746.860);
+tl.fromTo("#s334 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},746.880);
+tl.to("#s334 span",{opacity:0,duration:0.12},748.920);
+tl.fromTo("#s335 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},748.940);
+tl.to("#s335 span",{opacity:0,duration:0.12},751.500);
+tl.fromTo("#s336 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},752.300);
+tl.to("#s336 span",{opacity:0,duration:0.12},754.880);
+tl.fromTo("#s337 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},754.900);
+tl.to("#s337 span",{opacity:0,duration:0.12},756.700);
+tl.fromTo("#s338 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},757.060);
+tl.to("#s338 span",{opacity:0,duration:0.12},760.260);
+tl.fromTo("#s339 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},760.700);
+tl.to("#s339 span",{opacity:0,duration:0.12},762.490);
+tl.fromTo("#s340 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},762.640);
+tl.to("#s340 span",{opacity:0,duration:0.12},765.400);
+tl.fromTo("#s341 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},765.420);
+tl.to("#s341 span",{opacity:0,duration:0.12},767.120);
+tl.fromTo("#s342 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},767.420);
+tl.to("#s342 span",{opacity:0,duration:0.12},768.160);
+tl.fromTo("#s343 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},768.180);
+tl.to("#s343 span",{opacity:0,duration:0.12},770.180);
+tl.fromTo("#s344 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},770.200);
+tl.to("#s344 span",{opacity:0,duration:0.12},772.420);
+tl.fromTo("#s345 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},772.440);
+tl.to("#s345 span",{opacity:0,duration:0.12},775.360);
+tl.fromTo("#s346 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},775.660);
+tl.to("#s346 span",{opacity:0,duration:0.12},778.100);
+tl.fromTo("#s347 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},778.120);
+tl.to("#s347 span",{opacity:0,duration:0.12},780.630);
+tl.fromTo("#s348 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},780.780);
+tl.to("#s348 span",{opacity:0,duration:0.12},783.410);
+tl.fromTo("#s349 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},783.560);
+tl.to("#s349 span",{opacity:0,duration:0.12},786.180);
+tl.fromTo("#s350 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},786.200);
+tl.to("#s350 span",{opacity:0,duration:0.12},789.810);
+tl.fromTo("#s351 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},789.960);
+tl.to("#s351 span",{opacity:0,duration:0.12},793.450);
+tl.fromTo("#s352 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},793.600);
+tl.to("#s352 span",{opacity:0,duration:0.12},796.140);
+tl.fromTo("#s353 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},796.160);
+tl.to("#s353 span",{opacity:0,duration:0.12},800.360);
+tl.fromTo("#s354 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},800.380);
+tl.to("#s354 span",{opacity:0,duration:0.12},803.380);
+tl.fromTo("#s355 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},803.400);
+tl.to("#s355 span",{opacity:0,duration:0.12},804.580);
+tl.fromTo("#s356 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},804.800);
+tl.to("#s356 span",{opacity:0,duration:0.12},807.360);
+tl.fromTo("#s357 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},807.380);
+tl.to("#s357 span",{opacity:0,duration:0.12},809.300);
+tl.fromTo("#s358 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},809.400);
+tl.to("#s358 span",{opacity:0,duration:0.12},812.400);
+tl.fromTo("#s359 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},812.420);
+tl.to("#s359 span",{opacity:0,duration:0.12},817.180);
+tl.fromTo("#s360 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},817.200);
+tl.to("#s360 span",{opacity:0,duration:0.12},818.740);
+tl.fromTo("#s361 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},819.180);
+tl.to("#s361 span",{opacity:0,duration:0.12},827.560);
+tl.fromTo("#s362 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},827.580);
+tl.to("#s362 span",{opacity:0,duration:0.12},831.420);
+tl.fromTo("#s363 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},831.440);
+tl.to("#s363 span",{opacity:0,duration:0.12},834.660);
+tl.fromTo("#s364 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},834.680);
+tl.to("#s364 span",{opacity:0,duration:0.12},835.800);
+tl.fromTo("#s365 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},836.400);
+tl.to("#s365 span",{opacity:0,duration:0.12},838.356);
+tl.fromTo("#s366 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},838.520);
+tl.to("#s366 span",{opacity:0,duration:0.12},841.360);
+tl.fromTo("#s367 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},841.600);
+tl.to("#s367 span",{opacity:0,duration:0.12},842.760);
+tl.fromTo("#s368 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},843.545);
+tl.to("#s368 span",{opacity:0,duration:0.12},850.434);
+tl.fromTo("#s369 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},850.571);
+tl.to("#s369 span",{opacity:0,duration:0.12},853.947);
+tl.fromTo("#s370 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},854.084);
+tl.to("#s370 span",{opacity:0,duration:0.12},855.417);
+tl.fromTo("#s371 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},855.840);
+tl.to("#s371 span",{opacity:0,duration:0.12},858.540);
+tl.fromTo("#s372 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},858.560);
+tl.to("#s372 span",{opacity:0,duration:0.12},859.680);
+tl.fromTo("#s373 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},860.280);
+tl.to("#s373 span",{opacity:0,duration:0.12},860.800);
+tl.fromTo("#s374 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},861.155);
+tl.to("#s374 span",{opacity:0,duration:0.12},862.578);
+tl.fromTo("#s375 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},864.200);
+tl.to("#s375 span",{opacity:0,duration:0.12},864.820);
+tl.fromTo("#s376 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},866.680);
+tl.to("#s376 span",{opacity:0,duration:0.12},869.740);
+tl.fromTo("#s377 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},869.760);
+tl.to("#s377 span",{opacity:0,duration:0.12},870.520);
+tl.fromTo("#s378 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},870.760);
+tl.to("#s378 span",{opacity:0,duration:0.12},873.396);
+tl.fromTo("#s379 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},873.480);
+tl.to("#s379 span",{opacity:0,duration:0.12},876.180);
+tl.fromTo("#s380 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},876.485);
+tl.to("#s380 span",{opacity:0,duration:0.12},877.818);
+tl.fromTo("#s381 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},878.240);
+tl.to("#s381 span",{opacity:0,duration:0.12},880.680);
+tl.fromTo("#s382 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},880.830);
+tl.to("#s382 span",{opacity:0,duration:0.12},883.600);
+tl.fromTo("#s383 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},883.620);
+tl.to("#s383 span",{opacity:0,duration:0.12},888.100);
+tl.fromTo("#s384 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},888.120);
+tl.to("#s384 span",{opacity:0,duration:0.12},890.460);
+tl.fromTo("#s385 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},890.480);
+tl.to("#s385 span",{opacity:0,duration:0.12},893.240);
+tl.fromTo("#s386 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},893.260);
+tl.to("#s386 span",{opacity:0,duration:0.12},897.420);
+tl.fromTo("#s387 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},897.440);
+tl.to("#s387 span",{opacity:0,duration:0.12},899.260);
+tl.fromTo("#s388 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},899.280);
+tl.to("#s388 span",{opacity:0,duration:0.12},901.892);
+tl.fromTo("#s389 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},902.140);
+tl.to("#s389 span",{opacity:0,duration:0.12},905.700);
+tl.fromTo("#s390 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},905.720);
+tl.to("#s390 span",{opacity:0,duration:0.12},909.180);
+tl.fromTo("#s391 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},909.200);
+tl.to("#s391 span",{opacity:0,duration:0.12},913.560);
+tl.fromTo("#s392 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},913.580);
+tl.to("#s392 span",{opacity:0,duration:0.12},916.680);
+tl.fromTo("#s393 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},916.700);
+tl.to("#s393 span",{opacity:0,duration:0.12},919.560);
+tl.fromTo("#s394 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},919.580);
+tl.to("#s394 span",{opacity:0,duration:0.12},922.160);
+tl.fromTo("#s395 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},922.180);
+tl.to("#s395 span",{opacity:0,duration:0.12},925.360);
+tl.fromTo("#s396 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},925.380);
+tl.to("#s396 span",{opacity:0,duration:0.12},928.480);
+tl.fromTo("#s397 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},929.048);
+tl.to("#s397 span",{opacity:0,duration:0.12},932.552);
+tl.fromTo("#s398 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},933.290);
+tl.to("#s398 span",{opacity:0,duration:0.12},938.650);
+tl.fromTo("#s399 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},938.670);
+tl.to("#s399 span",{opacity:0,duration:0.12},944.730);
+tl.fromTo("#s400 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},944.750);
+tl.to("#s400 span",{opacity:0,duration:0.12},947.630);
+tl.fromTo("#s401 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},947.650);
+tl.to("#s401 span",{opacity:0,duration:0.12},950.435);
+tl.fromTo("#s402 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},950.585);
+tl.to("#s402 span",{opacity:0,duration:0.12},952.800);
+tl.fromTo("#s403 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},952.950);
+tl.to("#s403 span",{opacity:0,duration:0.12},954.100);
+tl.fromTo("#s404 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},954.250);
+tl.to("#s404 span",{opacity:0,duration:0.12},955.790);
+tl.fromTo("#s405 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},956.010);
+tl.to("#s405 span",{opacity:0,duration:0.12},957.490);
+tl.fromTo("#s406 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},957.510);
+tl.to("#s406 span",{opacity:0,duration:0.12},960.120);
+tl.fromTo("#s407 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},960.270);
+tl.to("#s407 span",{opacity:0,duration:0.12},962.490);
+tl.fromTo("#s408 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},962.510);
+tl.to("#s408 span",{opacity:0,duration:0.12},964.726);
+tl.fromTo("#s409 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},964.830);
+tl.to("#s409 span",{opacity:0,duration:0.12},966.390);
+tl.fromTo("#s410 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},966.490);
+tl.to("#s410 span",{opacity:0,duration:0.12},968.440);
+tl.fromTo("#s411 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},968.590);
+tl.to("#s411 span",{opacity:0,duration:0.12},972.120);
+tl.fromTo("#s412 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},972.270);
+tl.to("#s412 span",{opacity:0,duration:0.12},973.850);
+tl.fromTo("#s413 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},973.870);
+tl.to("#s413 span",{opacity:0,duration:0.12},976.790);
+tl.fromTo("#s414 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},976.810);
+tl.to("#s414 span",{opacity:0,duration:0.12},978.850);
+tl.fromTo("#s415 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},979.230);
+tl.to("#s415 span",{opacity:0,duration:0.12},981.530);
+tl.fromTo("#s416 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},981.550);
+tl.to("#s416 span",{opacity:0,duration:0.12},982.640);
+tl.fromTo("#s417 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},982.790);
+tl.to("#s417 span",{opacity:0,duration:0.12},984.030);
+tl.fromTo("#s418 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},984.110);
+tl.to("#s418 span",{opacity:0,duration:0.12},986.235);
+tl.fromTo("#s419 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},986.385);
+tl.to("#s419 span",{opacity:0,duration:0.12},987.430);
+tl.fromTo("#s420 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},987.550);
+tl.to("#s420 span",{opacity:0,duration:0.12},989.690);
+tl.fromTo("#s421 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},989.710);
+tl.to("#s421 span",{opacity:0,duration:0.12},992.546);
+tl.fromTo("#s422 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},992.580);
+tl.to("#s422 span",{opacity:0,duration:0.12},994.386);
+tl.fromTo("#s423 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},994.510);
+tl.to("#s423 span",{opacity:0,duration:0.12},996.670);
+tl.fromTo("#s424 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},996.810);
+tl.to("#s424 span",{opacity:0,duration:0.12},998.192);
+tl.fromTo("#s425 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},998.342);
+tl.to("#s425 span",{opacity:0,duration:0.12},1000.910);
+tl.fromTo("#s426 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1000.930);
+tl.to("#s426 span",{opacity:0,duration:0.12},1001.530);
+tl.fromTo("#s427 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1001.550);
+tl.to("#s427 span",{opacity:0,duration:0.12},1002.130);
+tl.fromTo("#s428 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1002.150);
+tl.to("#s428 span",{opacity:0,duration:0.12},1003.047);
+tl.fromTo("#s429 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1003.110);
+tl.to("#s429 span",{opacity:0,duration:0.12},1003.890);
+tl.fromTo("#s430 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1004.110);
+tl.to("#s430 span",{opacity:0,duration:0.12},1007.610);
+tl.fromTo("#s431 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1007.630);
+tl.to("#s431 span",{opacity:0,duration:0.12},1010.150);
+tl.fromTo("#s432 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1010.170);
+tl.to("#s432 span",{opacity:0,duration:0.12},1011.670);
+tl.fromTo("#s433 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1012.010);
+tl.to("#s433 span",{opacity:0,duration:0.12},1014.730);
+tl.fromTo("#s434 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1014.750);
+tl.to("#s434 span",{opacity:0,duration:0.12},1016.230);
+tl.fromTo("#s435 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1016.530);
+tl.to("#s435 span",{opacity:0,duration:0.12},1017.854);
+tl.fromTo("#s436 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1018.270);
+tl.to("#s436 span",{opacity:0,duration:0.12},1020.660);
+tl.fromTo("#s437 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1020.810);
+tl.to("#s437 span",{opacity:0,duration:0.12},1023.226);
+tl.fromTo("#s438 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1023.450);
+tl.to("#s438 span",{opacity:0,duration:0.12},1026.030);
+tl.fromTo("#s439 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1026.050);
+tl.to("#s439 span",{opacity:0,duration:0.12},1027.750);
+tl.fromTo("#s440 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1027.895);
+tl.to("#s440 span",{opacity:0,duration:0.12},1031.030);
+tl.fromTo("#s441 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1031.530);
+tl.to("#s441 span",{opacity:0,duration:0.12},1035.390);
+tl.fromTo("#s442 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1035.410);
+tl.to("#s442 span",{opacity:0,duration:0.12},1037.870);
+tl.fromTo("#s443 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1037.890);
+tl.to("#s443 span",{opacity:0,duration:0.12},1039.630);
+tl.fromTo("#s444 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1039.990);
+tl.to("#s444 span",{opacity:0,duration:0.12},1040.990);
+tl.fromTo("#s445 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1041.210);
+tl.to("#s445 span",{opacity:0,duration:0.12},1044.830);
+tl.fromTo("#s446 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1044.850);
+tl.to("#s446 span",{opacity:0,duration:0.12},1050.238);
+tl.fromTo("#s447 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1050.330);
+tl.to("#s447 span",{opacity:0,duration:0.12},1052.880);
+tl.fromTo("#s448 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1053.030);
+tl.to("#s448 span",{opacity:0,duration:0.12},1057.280);
+tl.fromTo("#s449 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1057.430);
+tl.to("#s449 span",{opacity:0,duration:0.12},1061.770);
+tl.fromTo("#s450 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1061.790);
+tl.to("#s450 span",{opacity:0,duration:0.12},1063.290);
+tl.fromTo("#s451 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1063.350);
+tl.to("#s451 span",{opacity:0,duration:0.12},1065.510);
+tl.fromTo("#s452 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1065.530);
+tl.to("#s452 span",{opacity:0,duration:0.12},1068.290);
+tl.fromTo("#s453 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1068.310);
+tl.to("#s453 span",{opacity:0,duration:0.12},1070.850);
+tl.fromTo("#s454 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1070.870);
+tl.to("#s454 span",{opacity:0,duration:0.12},1074.770);
+tl.fromTo("#s455 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1074.790);
+tl.to("#s455 span",{opacity:0,duration:0.12},1079.640);
+tl.fromTo("#s456 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1079.790);
+tl.to("#s456 span",{opacity:0,duration:0.12},1082.430);
+tl.fromTo("#s457 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1082.450);
+tl.to("#s457 span",{opacity:0,duration:0.12},1084.650);
+tl.fromTo("#s458 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1084.670);
+tl.to("#s458 span",{opacity:0,duration:0.12},1089.290);
+tl.fromTo("#s459 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1089.310);
+tl.to("#s459 span",{opacity:0,duration:0.12},1092.710);
+tl.fromTo("#s460 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1092.730);
+tl.to("#s460 span",{opacity:0,duration:0.12},1094.750);
+tl.fromTo("#s461 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1094.770);
+tl.to("#s461 span",{opacity:0,duration:0.12},1098.070);
+tl.fromTo("#s462 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1098.090);
+tl.to("#s462 span",{opacity:0,duration:0.12},1099.450);
+tl.fromTo("#s463 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1099.950);
+tl.to("#s463 span",{opacity:0,duration:0.12},1102.850);
+tl.fromTo("#s464 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1102.870);
+tl.to("#s464 span",{opacity:0,duration:0.12},1106.430);
+tl.fromTo("#s465 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1106.560);
+tl.to("#s465 span",{opacity:0,duration:0.12},1110.990);
+tl.fromTo("#s466 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1111.230);
+tl.to("#s466 span",{opacity:0,duration:0.12},1113.390);
+tl.fromTo("#s467 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1114.070);
+tl.to("#s467 span",{opacity:0,duration:0.12},1116.310);
+tl.fromTo("#s468 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1116.330);
+tl.to("#s468 span",{opacity:0,duration:0.12},1120.270);
+tl.fromTo("#s469 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1120.970);
+tl.to("#s469 span",{opacity:0,duration:0.12},1123.850);
+tl.fromTo("#s470 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1123.870);
+tl.to("#s470 span",{opacity:0,duration:0.12},1127.150);
+tl.fromTo("#s471 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1127.170);
+tl.to("#s471 span",{opacity:0,duration:0.12},1130.050);
+tl.fromTo("#s472 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1130.070);
+tl.to("#s472 span",{opacity:0,duration:0.12},1135.490);
+tl.fromTo("#s473 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1138.570);
+tl.to("#s473 span",{opacity:0,duration:0.12},1141.430);
+tl.fromTo("#s474 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1142.290);
+tl.to("#s474 span",{opacity:0,duration:0.12},1142.870);
+tl.fromTo("#s475 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1142.890);
+tl.to("#s475 span",{opacity:0,duration:0.12},1144.910);
+tl.fromTo("#s476 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1147.010);
+tl.to("#s476 span",{opacity:0,duration:0.12},1149.790);
+tl.fromTo("#s477 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1149.810);
+tl.to("#s477 span",{opacity:0,duration:0.12},1152.880);
+tl.fromTo("#s478 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1153.030);
+tl.to("#s478 span",{opacity:0,duration:0.12},1154.390);
+tl.fromTo("#s479 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1154.410);
+tl.to("#s479 span",{opacity:0,duration:0.12},1157.410);
+tl.fromTo("#s480 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1157.430);
+tl.to("#s480 span",{opacity:0,duration:0.12},1160.430);
+tl.fromTo("#s481 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1160.450);
+tl.to("#s481 span",{opacity:0,duration:0.12},1162.450);
+tl.fromTo("#s482 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1162.890);
+tl.to("#s482 span",{opacity:0,duration:0.12},1166.370);
+tl.fromTo("#s483 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1166.390);
+tl.to("#s483 span",{opacity:0,duration:0.12},1168.310);
+tl.fromTo("#s484 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1168.330);
+tl.to("#s484 span",{opacity:0,duration:0.12},1171.390);
+tl.fromTo("#s485 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1171.410);
+tl.to("#s485 span",{opacity:0,duration:0.12},1173.730);
+tl.fromTo("#s486 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1173.750);
+tl.to("#s486 span",{opacity:0,duration:0.12},1176.090);
+tl.fromTo("#s487 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1176.110);
+tl.to("#s487 span",{opacity:0,duration:0.12},1177.690);
+tl.fromTo("#s488 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1177.710);
+tl.to("#s488 span",{opacity:0,duration:0.12},1180.330);
+tl.fromTo("#s489 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1180.350);
+tl.to("#s489 span",{opacity:0,duration:0.12},1182.790);
+tl.fromTo("#s490 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1182.810);
+tl.to("#s490 span",{opacity:0,duration:0.12},1186.130);
+tl.fromTo("#s491 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1187.740);
+tl.to("#s491 span",{opacity:0,duration:0.12},1193.960);
+tl.fromTo("#s492 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1196.450);
+tl.to("#s492 span",{opacity:0,duration:0.12},1202.990);
+tl.fromTo("#s493 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1203.010);
+tl.to("#s493 span",{opacity:0,duration:0.12},1206.550);
+tl.fromTo("#s494 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1206.570);
+tl.to("#s494 span",{opacity:0,duration:0.12},1207.890);
+tl.fromTo("#s495 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1207.910);
+tl.to("#s495 span",{opacity:0,duration:0.12},1210.380);
+tl.fromTo("#s496 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1210.530);
+tl.to("#s496 span",{opacity:0,duration:0.12},1215.430);
+tl.fromTo("#s497 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1215.450);
+tl.to("#s497 span",{opacity:0,duration:0.12},1218.300);
+tl.fromTo("#s498 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1218.450);
+tl.to("#s498 span",{opacity:0,duration:0.12},1219.990);
+tl.fromTo("#s499 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1220.270);
+tl.to("#s499 span",{opacity:0,duration:0.12},1222.650);
+tl.fromTo("#s500 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1222.670);
+tl.to("#s500 span",{opacity:0,duration:0.12},1225.170);
+tl.fromTo("#s501 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1225.190);
+tl.to("#s501 span",{opacity:0,duration:0.12},1228.530);
+tl.fromTo("#s502 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1228.550);
+tl.to("#s502 span",{opacity:0,duration:0.12},1230.690);
+tl.fromTo("#s503 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1230.710);
+tl.to("#s503 span",{opacity:0,duration:0.12},1234.850);
+tl.fromTo("#s504 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1235.790);
+tl.to("#s504 span",{opacity:0,duration:0.12},1239.878);
+tl.fromTo("#s505 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1240.130);
+tl.to("#s505 span",{opacity:0,duration:0.12},1243.670);
+tl.fromTo("#s506 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1243.690);
+tl.to("#s506 span",{opacity:0,duration:0.12},1244.910);
+tl.fromTo("#s507 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1245.850);
+tl.to("#s507 span",{opacity:0,duration:0.12},1251.090);
+tl.fromTo("#s508 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1251.150);
+tl.to("#s508 span",{opacity:0,duration:0.12},1252.840);
+tl.fromTo("#s509 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1252.990);
+tl.to("#s509 span",{opacity:0,duration:0.12},1254.250);
+tl.fromTo("#s510 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1254.750);
+tl.to("#s510 span",{opacity:0,duration:0.12},1259.250);
+tl.fromTo("#s511 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1259.270);
+tl.to("#s511 span",{opacity:0,duration:0.12},1262.210);
+tl.fromTo("#s512 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1263.110);
+tl.to("#s512 span",{opacity:0,duration:0.12},1265.410);
+tl.fromTo("#s513 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1265.430);
+tl.to("#s513 span",{opacity:0,duration:0.12},1269.450);
+tl.fromTo("#s514 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1269.470);
+tl.to("#s514 span",{opacity:0,duration:0.12},1274.538);
+tl.fromTo("#s515 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1274.565);
+tl.to("#s515 span",{opacity:0,duration:0.12},1280.160);
+tl.fromTo("#s516 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1280.310);
+tl.to("#s516 span",{opacity:0,duration:0.12},1283.090);
+tl.fromTo("#s517 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1283.110);
+tl.to("#s517 span",{opacity:0,duration:0.12},1284.750);
+tl.fromTo("#s518 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1285.210);
+tl.to("#s518 span",{opacity:0,duration:0.12},1288.230);
+tl.fromTo("#s519 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1288.250);
+tl.to("#s519 span",{opacity:0,duration:0.12},1291.050);
+tl.fromTo("#s520 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1291.470);
+tl.to("#s520 span",{opacity:0,duration:0.12},1293.860);
+tl.fromTo("#s521 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1294.010);
+tl.to("#s521 span",{opacity:0,duration:0.12},1295.430);
+tl.fromTo("#s522 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1295.450);
+tl.to("#s522 span",{opacity:0,duration:0.12},1299.826);
+tl.fromTo("#s523 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1300.090);
+tl.to("#s523 span",{opacity:0,duration:0.12},1303.050);
+tl.fromTo("#s524 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1303.750);
+tl.to("#s524 span",{opacity:0,duration:0.12},1306.830);
+tl.fromTo("#s525 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1306.850);
+tl.to("#s525 span",{opacity:0,duration:0.12},1307.470);
+tl.fromTo("#s526 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1308.210);
+tl.to("#s526 span",{opacity:0,duration:0.12},1310.660);
+tl.fromTo("#s527 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1310.810);
+tl.to("#s527 span",{opacity:0,duration:0.12},1313.000);
+tl.fromTo("#s528 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1313.150);
+tl.to("#s528 span",{opacity:0,duration:0.12},1316.910);
+tl.fromTo("#s529 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1316.930);
+tl.to("#s529 span",{opacity:0,duration:0.12},1320.290);
+tl.fromTo("#s530 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1320.310);
+tl.to("#s530 span",{opacity:0,duration:0.12},1326.070);
+tl.fromTo("#s531 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1326.090);
+tl.to("#s531 span",{opacity:0,duration:0.12},1330.690);
+tl.fromTo("#s532 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1330.710);
+tl.to("#s532 span",{opacity:0,duration:0.12},1333.810);
+tl.fromTo("#s533 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1333.830);
+tl.to("#s533 span",{opacity:0,duration:0.12},1337.210);
+tl.fromTo("#s534 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1337.230);
+tl.to("#s534 span",{opacity:0,duration:0.12},1340.556);
+tl.fromTo("#s535 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1340.630);
+tl.to("#s535 span",{opacity:0,duration:0.12},1342.920);
+tl.fromTo("#s536 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1343.070);
+tl.to("#s536 span",{opacity:0,duration:0.12},1346.650);
+tl.fromTo("#s537 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1346.670);
+tl.to("#s537 span",{opacity:0,duration:0.12},1349.930);
+tl.fromTo("#s538 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1350.080);
+tl.to("#s538 span",{opacity:0,duration:0.12},1352.430);
+tl.fromTo("#s539 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1352.450);
+tl.to("#s539 span",{opacity:0,duration:0.12},1355.570);
+tl.fromTo("#s540 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1355.790);
+tl.to("#s540 span",{opacity:0,duration:0.12},1358.500);
+tl.fromTo("#s541 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1358.650);
+tl.to("#s541 span",{opacity:0,duration:0.12},1359.710);
+tl.fromTo("#s542 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1359.930);
+tl.to("#s542 span",{opacity:0,duration:0.12},1362.227);
+tl.fromTo("#s543 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1362.370);
+tl.to("#s543 span",{opacity:0,duration:0.12},1366.890);
+tl.fromTo("#s544 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1366.910);
+tl.to("#s544 span",{opacity:0,duration:0.12},1370.710);
+tl.fromTo("#s545 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1370.730);
+tl.to("#s545 span",{opacity:0,duration:0.12},1372.490);
+tl.fromTo("#s546 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1372.710);
+tl.to("#s546 span",{opacity:0,duration:0.12},1375.991);
+tl.fromTo("#s547 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1376.212);
+tl.to("#s547 span",{opacity:0,duration:0.12},1376.952);
+tl.fromTo("#s548 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1378.575);
+tl.to("#s548 span",{opacity:0,duration:0.12},1383.984);
+tl.fromTo("#s549 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1384.331);
+tl.to("#s549 span",{opacity:0,duration:0.12},1385.412);
+tl.fromTo("#s550 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1385.651);
+tl.to("#s550 span",{opacity:0,duration:0.12},1386.872);
+tl.fromTo("#s551 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1387.161);
+tl.to("#s551 span",{opacity:0,duration:0.12},1388.467);
+tl.fromTo("#s552 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1390.811);
+tl.to("#s552 span",{opacity:0,duration:0.12},1392.351);
+tl.fromTo("#s553 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1392.692);
+tl.to("#s553 span",{opacity:0,duration:0.12},1399.048);
+tl.fromTo("#s554 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1399.512);
+tl.to("#s554 span",{opacity:0,duration:0.12},1402.469);
+tl.fromTo("#s555 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1402.531);
+tl.to("#s555 span",{opacity:0,duration:0.12},1405.131);
+tl.fromTo("#s556 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1405.308);
+tl.to("#s556 span",{opacity:0,duration:0.12},1407.323);
+tl.fromTo("#s557 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1407.592);
+tl.to("#s557 span",{opacity:0,duration:0.12},1409.951);
+tl.fromTo("#s558 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1410.092);
+tl.to("#s558 span",{opacity:0,duration:0.12},1412.012);
+tl.fromTo("#s559 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1412.049);
+tl.to("#s559 span",{opacity:0,duration:0.12},1413.732);
+tl.fromTo("#s560 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1413.882);
+tl.to("#s560 span",{opacity:0,duration:0.12},1416.511);
+tl.fromTo("#s561 span",{opacity:0,y:8},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1416.531);
+tl.to("#s561 span",{opacity:0,duration:0.12},1418.992);
+window.__timelines["main"] = tl;
+</script>
+</body></html>

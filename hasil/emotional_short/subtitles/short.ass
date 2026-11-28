@@ -1,0 +1,55 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Verse,Cormorant Garamond Light Medium,96,&H00FFFFFF,&H00FFFFFF,&H00000000,&HA0000000,0,1,0,0,100,100,0.5,0,1,0,3,8,0,0,0,1
+Style: VerseS,Cormorant Garamond Light Medium,46,&H00F2F2F2,&H00FFFFFF,&H00000000,&H90000000,0,1,0,0,100,100,0.5,0,1,0,1.5,8,0,0,0,1
+Style: VerseL,Cormorant Garamond Light Medium,86,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,1,0,0,100,100,0.5,0,1,0,0,7,0,0,0,1
+Style: Sub,Inter SemiBold,48,&H00FFFFFF,&H00FFFFFF,&H90000000,&H80000000,0,0,0,0,100,100,0.3,0,1,2.4,1.5,2,90,90,0,1
+Style: Label,Inter SemiBold,30,&H004FB6F2,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,8,0,1,0,1,8,0,0,0,1
+Style: Small,Inter Medium,26,&H00C8C8C8,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,1,0,1,0,0,8,0,0,0,1
+Style: Gfx,Inter,20,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:33.80,Gfx,,0,0,0,,{\an7\pos(0,0)\fad(600,900)\p1\c&H000000&\alpha&H58&\blur70\bord0\shad0}m 0 1180 l 1080 1180 l 1080 1600 l 0 1600
+Dialogue: 3,0:00:00.25,0:00:02.13,Verse,,0,0,0,,{\an8\move(540,1278,540,1268,0,400)\fad(0,260)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(0,320,\alpha&H00&)}“Seandainya {\alpha&HFF&\c&H4FB6F2&\3c&H4FB6F2&\bord2.2\blur6\t(589,909,\alpha&H00&)}syurga
+Dialogue: 3,0:00:01.32,0:00:02.13,Verse,,0,0,0,,{\an8\move(540,1386,540,1376,0,400)\fad(0,260)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(0,320,\alpha&H00&)}itu {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(240,560,\alpha&H00&)}untukku,
+Dialogue: 3,0:00:02.10,0:00:04.18,Verse,,0,0,0,,{\an8\move(540,1278,540,1268,0,400)\fad(0,400)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(0,320,\alpha&H00&)}saya {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(220,540,\alpha&H00&)}tidak {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(520,840,\alpha&H00&)}perlukan
+Dialogue: 3,0:00:02.96,0:00:04.18,Verse,,0,0,0,,{\an8\move(540,1386,540,1376,0,400)\fad(0,400)}{\alpha&HFF&\c&H4FB6F2&\3c&H4FB6F2&\bord2.2\blur6\t(0,320,\alpha&H00&)}syurga {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(460,780,\alpha&H00&)}itu.”
+Dialogue: 4,0:00:04.22,0:00:06.90,Sub,,0,0,0,,{\an2\pos(540,1452)\fad(160,140)\blur2.2}Rabiatul Adawiyah yang saya ceritakan itu,
+Dialogue: 1,0:00:04.35,0:00:09.57,Gfx,,0,0,0,,{\an7\pos(0,0)\fad(500,700)\p1\c&H000000&\alpha&H60&\blur30\bord0\shad0}m 0 0 l 1080 0 l 1080 470 l 0 470
+Dialogue: 3,0:00:04.35,0:00:09.57,Label,,0,0,0,,{\an8\move(540,236,540,222,0,600)\fad(600,700)\fsp10}RABIATUL ADAWIYAH
+Dialogue: 3,0:00:04.65,0:00:09.57,Gfx,,0,0,0,,{\an7\pos(480,284)\p1\c&H4FB6F2&\bord0\shad0\fad(0,700)\clip(480,280,480,290)\t(0,700,0.5,\clip(480,280,600,290))}m 0 0 l 120 0 l 120 2 l 0 2
+Dialogue: 3,0:00:04.80,0:00:09.57,VerseS,,0,0,0,,{\an8\move(540,318,540,306,0,650)\fad(650,700)}penyair sufi · Basrah, abad ke-8
+Dialogue: 4,0:00:06.73,0:00:09.04,Sub,,0,0,0,,{\an2\pos(540,1452)\fad(160,140)\blur2.2}orang menganggap dia seperti orang
+Dialogue: 4,0:00:08.76,0:00:11.52,Sub,,0,0,0,,{\an2\pos(540,1452)\fad(160,140)\blur2.2}yang tidak punya, tidak punya apa,
+Dialogue: 4,0:00:11.29,0:00:13.18,Sub,,0,0,0,,{\an2\pos(540,1452)\fad(160,140)\blur2.2}yang bertentangan dengan agama,
+Dialogue: 4,0:00:12.95,0:00:15.02,Sub,,0,0,0,,{\an2\pos(540,1452)\fad(160,140)\blur2.2}tapi {\c&H4FB6F2&}luapan perasaan{\c&HFFFFFF&} itu...
+Dialogue: 3,0:00:15.15,0:00:16.40,Verse,,0,0,0,,{\an8\move(540,1278,540,1268,0,400)\fad(0,260)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(0,320,\alpha&H00&)}“Berikan {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(200,520,\alpha&H00&)}saja
+Dialogue: 3,0:00:15.63,0:00:16.40,Verse,,0,0,0,,{\an8\move(540,1386,540,1376,0,400)\fad(0,260)}{\alpha&HFF&\c&H4FB6F2&\3c&H4FB6F2&\bord2.2\blur6\t(0,320,\alpha&H00&)}syurga {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(400,720,\alpha&H00&)}itu
+Dialogue: 3,0:00:16.37,0:00:18.71,Verse,,0,0,0,,{\an8\move(540,1278,540,1268,0,400)\fad(0,260)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(0,320,\alpha&H00&)}kepada {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(680,1000,\alpha&H00&)}orang
+Dialogue: 3,0:00:17.47,0:00:18.71,Verse,,0,0,0,,{\an8\move(540,1386,540,1376,0,400)\fad(0,260)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(0,320,\alpha&H00&)}yang {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(140,460,\alpha&H00&)}Kau {\alpha&HFF&\c&H4FB6F2&\3c&H4FB6F2&\bord2.2\blur6\t(280,600,\alpha&H00&)}cintai.
+Dialogue: 3,0:00:18.71,0:00:20.06,Verse,,0,0,0,,{\an8\move(540,1278,540,1268,0,400)\fad(0,260)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(0,320,\alpha&H00&)}Kalau {\alpha&HFF&\c&H4FB6F2&\3c&H4FB6F2&\bord2.2\blur6\t(160,480,\alpha&H00&)}neraka
+Dialogue: 3,0:00:19.37,0:00:20.06,Verse,,0,0,0,,{\an8\move(540,1386,540,1376,0,400)\fad(0,260)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(0,320,\alpha&H00&)}itu {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(240,560,\alpha&H00&)}untukku,
+Dialogue: 3,0:00:20.03,0:00:21.37,Verse,,0,0,0,,{\an8\move(540,1278,540,1268,0,400)\fad(0,380)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(0,320,\alpha&H00&)}saya {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(99,419,\alpha&H00&)}tak {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(299,619,\alpha&H00&)}perlu
+Dialogue: 3,0:00:20.49,0:00:21.37,Verse,,0,0,0,,{\an8\move(540,1386,540,1376,0,400)\fad(0,380)}{\alpha&HFF&\c&H4FB6F2&\3c&H4FB6F2&\bord2.2\blur6\t(0,320,\alpha&H00&)}neraka {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(480,800,\alpha&H00&)}itu.”
+Dialogue: 3,0:00:21.79,0:00:23.41,Verse,,0,0,0,,{\an8\move(540,1278,540,1268,0,400)\fad(0,260)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(0,320,\alpha&H00&)}“Tetapi {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(400,720,\alpha&H00&)}kalau
+Dialogue: 3,0:00:22.71,0:00:23.41,Verse,,0,0,0,,{\an8\move(540,1386,540,1376,0,400)\fad(0,260)}{\alpha&HFF&\c&H4FB6F2&\3c&H4FB6F2&\bord2.2\blur6\t(0,320,\alpha&H00&)}jiwa {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(420,740,\alpha&H00&)}ini
+Dialogue: 3,0:00:23.37,0:00:24.65,Verse,,0,0,0,,{\an8\move(540,1278,540,1268,0,400)\fad(0,260)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(0,320,\alpha&H00&)}ada {\alpha&HFF&\c&H4FB6F2&\3c&H4FB6F2&\bord2.2\blur6\t(219,539,\alpha&H00&)\t(219,1619,\fscx107\fscy107)}rindu
+Dialogue: 3,0:00:24.09,0:00:24.65,Verse,,0,0,0,,{\an8\move(540,1386,540,1376,0,400)\fad(0,260)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(0,320,\alpha&H00&)}kepada-Mu,
+Dialogue: 3,0:00:24.62,0:00:26.13,Verse,,0,0,0,,{\an8\move(540,1330,540,1320,0,400)\fad(0,260)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(0,320,\alpha&H00&)}ya {\alpha&HFF&\c&H4FB6F2&\3c&H4FB6F2&\bord2.2\blur6\t(209,529,\alpha&H00&)}Tuhan,”
+Dialogue: 4,0:00:26.12,0:00:26.76,Sub,,0,0,0,,{\an2\pos(540,1452)\fad(160,140)\blur2.2}kata dia,
+Dialogue: 3,0:00:26.55,0:00:29.13,Verse,,0,0,0,,{\an8\move(540,1278,540,1268,0,400)\fad(0,500)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(0,320,\alpha&H00&)}“maka {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(539,859,\alpha&H00&)}jangan {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(860,1180,\alpha&H00&)}Kau
+Dialogue: 3,0:00:27.65,0:00:29.13,Verse,,0,0,0,,{\an8\move(540,1386,540,1376,0,400)\fad(0,500)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(0,320,\alpha&H00&)}tolak {\alpha&HFF&\c&H4FB6F2&\3c&H4FB6F2&\bord2.2\blur6\t(369,689,\alpha&H00&)\t(369,1769,\fscx107\fscy107)}rinduku {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.5\t(799,1119,\alpha&H00&)}ini.”
+Dialogue: 4,0:00:29.10,0:00:30.81,Sub,,0,0,0,,{\an2\pos(540,1452)\fad(160,140)\blur2.2}Itu dahsyat sekali.
+Dialogue: 3,0:00:32.80,0:00:36.30,VerseL,,0,0,0,,{\an8\move(540,842,540,830,0,600)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,600,\alpha&H00&)}“…maka {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(250,850,\alpha&H00&)}jangan {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(450,1050,\alpha&H00&)}Kau
+Dialogue: 3,0:00:33.55,0:00:36.30,VerseL,,0,0,0,,{\an8\move(540,946,540,934,0,600)}{\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(0,600,\alpha&H00&)}tolak {\alpha&HFF&\c&H4FB6F2&\3c&H4FB6F2&\bord2\blur8\t(250,850,\alpha&H00&)}rinduku {\alpha&HFF&\c&HFFFFFF&\bord0\blur0.4\t(550,1150,\alpha&H00&)}ini.”
+Dialogue: 3,0:00:34.50,0:00:36.30,Label,,0,0,0,,{\an8\pos(540,1080)\fad(600,0)\fsp8\fs28}RABIATUL ADAWIYAH
+Dialogue: 3,0:00:34.70,0:00:36.30,Small,,0,0,0,,{\an8\pos(540,1132)\fad(600,0)\fs30}diceritakan oleh Dr. Satria Abadi · Podcast Romantisisme
