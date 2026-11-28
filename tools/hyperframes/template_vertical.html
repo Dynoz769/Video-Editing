@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="assets/gsap.min.js"></script>
+<style>
+  html,body{margin:0;background:#000}
+  #main{position:relative;width:1080px;height:1920px;overflow:hidden}
+  #bg{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover}
+  #ask{position:absolute;left:0;right:0;top:1250px;text-align:center;font-family:Inter;font-weight:400;font-size:150px;color:#fff;letter-spacing:4px;text-shadow:0 4px 24px rgba(0,0,0,.6)}
+  #ans{position:absolute;left:0;right:0;top:1420px;text-align:center;font-family:Inter;font-weight:700;font-size:72px;color:#F2B64F;text-shadow:0 0 18px rgba(242,182,79,.55)}
+  #line{position:absolute;left:300px;top:1515px;width:480px;height:4px;background:#F2B64F;transform-origin:left center}
+</style>
+</head>
+<body>
+<div id="main" data-composition-id="main" data-start="0" data-duration="4" data-width="1080" data-height="1920">
+  <video id="bg" class="clip" src="assets/clip.mp4" data-start="0" data-duration="4" data-track-index="0" muted playsinline></video>
+  <div id="g" class="clip" data-start="0" data-duration="4" data-track-index="1">
+    <div id="ask">…apa?</div>
+    <div id="ans">Sebuah perbuatan lah.</div>
+    <div id="line"></div>
+  </div>
+</div>
+<script>
+  const tl = gsap.timeline({ paused: true });
+  tl.fromTo("#ask", {opacity:0, scale:0.94, filter:"blur(10px)"}, {opacity:1, scale:1.05, filter:"blur(0px)", duration:1.2, ease:"power3.out"}, 0.2)
+    .to("#ask", {opacity:0, duration:0.4}, 1.8)
+    .fromTo("#ans", {opacity:0, y:24}, {opacity:1, y:0, duration:0.6, ease:"power3.out"}, 2.0)
+    .fromTo("#line", {scaleX:0}, {scaleX:1, duration:0.8, ease:"power2.inOut"}, 2.4);
+  window.__timelines["main"] = tl;
+</script>
+</body>
+</html>

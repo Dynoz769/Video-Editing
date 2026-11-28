@@ -1,0 +1,381 @@
+{
+ "master_audio": {
+  "intro.m4a": 36.59,
+  "pengenalan_diri.m4a": 21.8,
+  "sesi_podcast.m4a": 1628.18,
+  "briefing.m4a": 153.39,
+  "briefing_2.m4a": 187.27
+ },
+ "master_audio_note": "Separate recorder audio is the master track. Effectively mono (L-R residual -44.7 dB). Peaks above 0 dBFS are kept in float decoding (no flat-topping found), and an -8 dB pre-gain is applied before processing.",
+ "method": "Cross-correlation (FFT) of each camera's own audio against the master audio, 8 kHz mono, pre-emphasis 0.97, normalised; the peak-to-median ratio is the confidence.",
+ "main_camera": [
+  {
+   "file": "IMG_2836.mov (part 1)",
+   "offset_s": 11.818,
+   "checks": [
+    [
+     10,
+     11.818
+    ],
+    [
+     200,
+     11.817
+    ],
+    [
+     400,
+     11.813
+    ],
+    [
+     540,
+     11.807
+    ]
+   ],
+   "drift_ms_over_10min": -11
+  },
+  {
+   "file": "main2.mov",
+   "offset_s": 611.777,
+   "checks": [
+    [
+     5,
+     611.782
+    ],
+    [
+     60,
+     611.783
+    ],
+    [
+     301,
+     611.774
+    ],
+    [
+     450,
+     611.771
+    ],
+    [
+     538,
+     611.78
+    ]
+   ],
+   "drift_ms_over_10min": -12
+  },
+  {
+   "file": "main3.mov",
+   "offset_s": [
+    1211.376,
+    1211.428
+   ],
+   "step_at_clip_s": 166,
+   "checks": [
+    [
+     20,
+     1211.375
+    ],
+    [
+     110,
+     1211.38
+    ],
+    [
+     160,
+     1211.362
+    ],
+    [
+     168,
+     1211.433
+    ],
+    [
+     260,
+     1211.428
+    ],
+    [
+     300,
+     1211.434
+    ]
+   ],
+   "handling": "+52 ms step in the recording at clip 166 s (master 1377.4 s): two sync regions (main3a / main3b)"
+  }
+ ],
+ "angles": {
+  "IMG_3709": {
+   "master": "pengenalan_diri",
+   "offset": 0.0535,
+   "ncc": 0.101,
+   "snr": 47.7,
+   "dur": 19.049375
+  },
+  "IMG_3710": {
+   "master": "intro",
+   "offset": 9.4151,
+   "ncc": 0.064,
+   "snr": 36.6,
+   "dur": 25.62
+  },
+  "IMG_3713": {
+   "master": "briefing_2",
+   "offset": 24.307,
+   "ncc": 0.077,
+   "snr": 32.8,
+   "dur": 16.38275
+  },
+  "IMG_3714": {
+   "master": "briefing_2",
+   "offset": 143.2827,
+   "ncc": 0.165,
+   "snr": 40.9,
+   "dur": 7.081375
+  },
+  "IMG_3715": {
+   "master": "briefing_2",
+   "offset": 172.4797,
+   "ncc": 0.101,
+   "snr": 29.9,
+   "dur": 11.64675
+  },
+  "IMG_3716": {
+   "master": null,
+   "offset": 644.9816,
+   "ncc": 0.076,
+   "snr": 51.6,
+   "dur": 26.81475,
+   "note": "false-start take, not in audio; excluded"
+  },
+  "IMG_3717": {
+   "master": "sesi_podcast",
+   "offset": 9.7119,
+   "ncc": 0.117,
+   "snr": 45.7,
+   "dur": 17.833375
+  },
+  "IMG_3718": {
+   "master": "sesi_podcast",
+   "offset": 44.0841,
+   "ncc": 0.208,
+   "snr": 108.0,
+   "dur": 34.75075
+  },
+  "IMG_3719": {
+   "master": "intro",
+   "offset": 0.3546,
+   "ncc": 0.084,
+   "snr": 22.6,
+   "dur": 7.67875
+  },
+  "IMG_3720": {
+   "master": "sesi_podcast",
+   "offset": 104.1754,
+   "ncc": 0.192,
+   "snr": 75.5,
+   "dur": 20.009375
+  },
+  "IMG_3721": {
+   "master": "sesi_podcast",
+   "offset": 134.8904,
+   "ncc": 0.246,
+   "snr": 117.2,
+   "dur": 23.316
+  },
+  "IMG_3722": {
+   "master": "sesi_podcast",
+   "offset": 173.5103,
+   "ncc": 0.271,
+   "snr": 141.1,
+   "dur": 36.649375
+  },
+  "IMG_3723": {
+   "master": "sesi_podcast",
+   "offset": 231.0169,
+   "ncc": 0.252,
+   "snr": 32.9,
+   "dur": 1.3
+  },
+  "IMG_3724": {
+   "master": "sesi_podcast",
+   "offset": 239.5545,
+   "ncc": 0.143,
+   "snr": 49.1,
+   "dur": 11.348
+  },
+  "IMG_3725": {
+   "master": "sesi_podcast",
+   "offset": 263.104,
+   "ncc": 0.094,
+   "snr": 62.4,
+   "dur": 41.108
+  },
+  "IMG_3726": {
+   "master": "sesi_podcast",
+   "offset": 337.0916,
+   "ncc": 0.128,
+   "snr": 78.2,
+   "dur": 38.377375
+  },
+  "IMG_3727": {
+   "master": "sesi_podcast",
+   "offset": 386.7886,
+   "ncc": 0.354,
+   "snr": 56.0,
+   "dur": 2.94275
+  },
+  "IMG_3728": {
+   "master": "sesi_podcast",
+   "offset": 395.0945,
+   "ncc": 0.192,
+   "snr": 104.7,
+   "dur": 46.676
+  },
+  "IMG_3730": {
+   "master": "sesi_podcast",
+   "offset": 493.5179,
+   "ncc": 0.146,
+   "snr": 74.2,
+   "dur": 34.17475
+  },
+  "IMG_3731": {
+   "master": "sesi_podcast",
+   "offset": 680.4495,
+   "ncc": 0.112,
+   "snr": 76.3,
+   "dur": 64.105375
+  },
+  "IMG_3732": {
+   "master": "sesi_podcast",
+   "offset": 818.8606,
+   "ncc": 0.2,
+   "snr": 30.3,
+   "dur": 3.049375
+  },
+  "IMG_3733": {
+   "master": "sesi_podcast",
+   "offset": 834.7608,
+   "ncc": 0.042,
+   "snr": 33.9,
+   "dur": 100.92675
+  },
+  "IMG_3734": {
+   "master": "sesi_podcast",
+   "offset": 979.4025,
+   "ncc": 0.049,
+   "snr": 43.3,
+   "dur": 112.31875
+  },
+  "IMG_3735": {
+   "master": "sesi_podcast",
+   "offset": 1133.9582,
+   "ncc": 0.063,
+   "snr": 62.4,
+   "dur": 138.985375
+  },
+  "IMG_3736": {
+   "master": "sesi_podcast",
+   "offset": 1384.3773,
+   "ncc": 0.303,
+   "snr": 45.2,
+   "dur": 1.641375
+  },
+  "IMG_3737": {
+   "master": "sesi_podcast",
+   "offset": 1391.0401,
+   "ncc": 0.051,
+   "snr": 57.1,
+   "dur": 152.596
+  }
+ },
+ "excluded": {
+  "IMG_3716": "false-start intro take, not in any audio file (its correlation peak was a false match)"
+ },
+ "encoder_compensation_ms": -33,
+ "encoder_compensation_note": "Part 1 QC measured a constant +23..43 ms lag introduced by AAC encoding/priming; the final audio is advanced by 33 ms.",
+ "final_lip_sync_verification": [
+  {
+   "timeline_s": 0.45,
+   "view": "3710",
+   "source": "IMG_3710.MOV",
+   "offset_ms": 6.8,
+   "confidence": 93.2
+  },
+  {
+   "timeline_s": 197.55,
+   "view": "WIDE",
+   "source": "IMG_2836.mov",
+   "offset_ms": -4.1,
+   "confidence": 86.7
+  },
+  {
+   "timeline_s": 400.18,
+   "view": "WIDE",
+   "source": "IMG_2836.mov",
+   "offset_ms": -7.4,
+   "confidence": 72.3
+  },
+  {
+   "timeline_s": 589.36,
+   "view": "WIDE",
+   "source": "IMG_2836.mov",
+   "offset_ms": -21.1,
+   "confidence": 93.5
+  },
+  {
+   "timeline_s": 787.85,
+   "view": "CU_D",
+   "source": "main2.mov",
+   "offset_ms": 2.2,
+   "confidence": 73.5
+  },
+  {
+   "timeline_s": 979.32,
+   "view": "3734",
+   "source": "IMG_3734.MOV",
+   "offset_ms": 0.5,
+   "confidence": 77.3
+  },
+  {
+   "timeline_s": 1200.02,
+   "view": "WIDE",
+   "source": "main3.mov",
+   "offset_ms": -10.0,
+   "confidence": 64.4
+  },
+  {
+   "timeline_s": 1408.02,
+   "view": "CU_H",
+   "source": "main3.mov",
+   "offset_ms": -7.8,
+   "confidence": 54.3
+  }
+ ],
+ "final_lip_sync_max_abs_ms": 21.1,
+ "audio_cuts": [
+  {
+   "master_from": 604.45,
+   "master_to": 661.95,
+   "why": "Alice's fumbled first attempt at the question / restart"
+  },
+  {
+   "master_from": 766.3,
+   "master_to": 805.2,
+   "why": "off-script chatter between questions"
+  },
+  {
+   "master_from": 1125.3,
+   "master_to": 1155.2,
+   "why": "host restarting the last question twice"
+  },
+  {
+   "master_from": 1333.3,
+   "master_to": 1369.45,
+   "why": "false ending + off-mic crew chatter before the empathy topic"
+  },
+  {
+   "master_from": 1531.7,
+   "master_to": 1542.3,
+   "why": "off-topic chatter"
+  }
+ ],
+ "keep_segments": 39,
+ "loudness": {
+  "integrated_lufs": -14.1,
+  "true_peak_dbfs": -1.3,
+  "lra_lu": 5.9
+ },
+ "processing": "39 segments, 12 ms fades; -8 dB pre-gain; HPF 80 Hz; EQ -2 dB @300 Hz, +1.5 dB @3.5 kHz; LPF 16 kHz; afftdn nr=8; compressor 2.5:1 @ -24 dB; +8.8 dB; true-peak limiter -1.5 dBTP; AAC 192k 48 kHz"
+}

@@ -1,0 +1,218 @@
+[
+ {
+  "id": 0,
+  "name": "A_hook",
+  "file": "IMG_3734.MOV",
+  "master_T": [
+   1066.2,
+   1070.4
+  ],
+  "tl": 0.0,
+  "frames": 126,
+  "rect": [
+   602,
+   436,
+   956,
+   1700
+  ],
+  "zoom": [
+   1.0,
+   1.08
+  ],
+  "speed": 1.0,
+  "exposure": 0.92,
+  "vignette": 0.55
+ },
+ {
+  "id": 1,
+  "name": "B1_ctx",
+  "file": "main2.mov",
+  "master_T": [
+   1047.5,
+   1049.95
+  ],
+  "tl": 4.2,
+  "frames": 74,
+  "rect": [
+   420,
+   570,
+   844,
+   1500
+  ],
+  "zoom": [
+   1.0,
+   1.05
+  ],
+  "speed": 1.0,
+  "exposure": 1.0,
+  "vignette": 0.45
+ },
+ {
+  "id": 2,
+  "name": "B2_ctx",
+  "file": "IMG_3734.MOV",
+  "master_T": [
+   1051.7,
+   1056.33
+  ],
+  "tl": 6.667,
+  "frames": 139,
+  "rect": [
+   646,
+   260,
+   1068,
+   1900
+  ],
+  "zoom": [
+   1.06,
+   1.0
+  ],
+  "speed": 1.0,
+  "exposure": 1.0,
+  "vignette": 0.45
+ },
+ {
+  "id": 3,
+  "name": "B3_env",
+  "file": "main2.mov",
+  "master_T": [
+   1056.33,
+   1059.85
+  ],
+  "tl": 11.3,
+  "frames": 106,
+  "rect": [
+   542,
+   0,
+   1214,
+   2160
+  ],
+  "zoom": [
+   1.0,
+   1.06
+  ],
+  "speed": 1.0,
+  "exposure": 0.97,
+  "vignette": 0.5
+ },
+ {
+  "id": 4,
+  "name": "C1_verse",
+  "file": "IMG_3734.MOV",
+  "master_T": [
+   1070.4,
+   1074.3
+  ],
+  "tl": 14.833,
+  "frames": 117,
+  "rect": [
+   568,
+   310,
+   1040,
+   1850
+  ],
+  "zoom": [
+   1.08,
+   1.0
+  ],
+  "speed": 1.0,
+  "exposure": 0.98,
+  "vignette": 0.5
+ },
+ {
+  "id": 5,
+  "name": "C2_verse",
+  "file": "main2.mov",
+  "master_T": [
+   1074.3,
+   1076.95
+  ],
+  "tl": 18.733,
+  "frames": 80,
+  "rect": [
+   420,
+   570,
+   844,
+   1500
+  ],
+  "zoom": [
+   1.0,
+   1.04
+  ],
+  "speed": 1.0,
+  "exposure": 0.97,
+  "vignette": 0.5
+ },
+ {
+  "id": 6,
+  "name": "D_peak",
+  "file": "IMG_3734.MOV",
+  "master_T": [
+   1080.85,
+   1088.6
+  ],
+  "tl": 21.4,
+  "frames": 232,
+  "rect": [
+   726,
+   350,
+   928,
+   1650
+  ],
+  "zoom": [
+   1.0,
+   1.11
+  ],
+  "speed": 1.0,
+  "exposure": 0.88,
+  "vignette": 0.7
+ },
+ {
+  "id": 7,
+  "name": "E_react",
+  "file": "main2.mov",
+  "master_T": [
+   1088.12,
+   1089.58
+  ],
+  "tl": 29.133,
+  "frames": 44,
+  "rect": [
+   2534,
+   600,
+   844,
+   1500
+  ],
+  "zoom": [
+   1.0,
+   1.03
+  ],
+  "speed": 1.0,
+  "exposure": 0.95,
+  "vignette": 0.55
+ },
+ {
+  "id": 8,
+  "name": "F_end",
+  "file": "IMG_3734.MOV",
+  "master_T": [
+   1088.15,
+   1089.75
+  ],
+  "tl": 30.6,
+  "frames": 96,
+  "rect": [
+   524,
+   260,
+   1068,
+   1900
+  ],
+  "zoom": [
+   1.0,
+   1.07
+  ],
+  "speed": 0.5,
+  "exposure": 0.92,
+  "vignette": 0.65
+ }
+]
